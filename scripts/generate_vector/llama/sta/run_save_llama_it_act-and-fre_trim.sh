@@ -1,0 +1,38 @@
+device=0
+path_dir=./data_for_STA/data
+sae_id=l14r_8x
+data_name=politically-liberal
+model_name=llama-3.1-8b-it
+mode=personality
+select_type=act_and_fre_trim
+
+hook_module=resid_canonical
+layers=(14)
+trims=(0.35)
+suffix=32k
+layer_num=${#layers[@]}
+
+for ((i=0; i<${layer_num}; i++)); do
+    layer=${layers[$i]}
+    trims_num=${#trims[@]}
+    echo "Layer: $layer, sae_path: $sae_path"
+    for ((j=0; j<${trims_num}; j++)); do
+        trim=${trims[$j]}
+        log_path=./temp/sae_caa_vector_it/${model_name}_${mode}/act_and_fre_trim/logs/${model_name}_${suffix}_steering_vector_sae_layer${layer}_act_and_fre_trim${trim}.log
+        log_dir=$(dirname ${log_path})
+        if [ ! -d "${log_dir}" ]; then
+            mkdir -p "${log_dir}"
+        fi
+        CUDA_VISIBLE_DEVICES=${device} python ./generate_sae_caa_vector.py \
+            --path_dir ${path_dir} \
+            --sae_id ${sae_id} \
+            --data_name ${data_name} \
+            --model_name ${model_name} \
+            --mode ${mode} \
+            --select_type ${select_type} \
+            --layers ${layer} \
+            --hook_module ${hook_module} \
+            --trim ${trim} #> ${log_path} 2>&1 &
+    done
+done
+#tail -f ${log_path}

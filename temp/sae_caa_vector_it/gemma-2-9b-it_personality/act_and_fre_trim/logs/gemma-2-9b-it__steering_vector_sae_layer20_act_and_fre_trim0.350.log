@@ -1,0 +1,20 @@
+Namespace(path_dir='./data_for_STA/data', sae_id='layer_20/width_16k/canonical', data_name='politically-liberal', model_name='gemma-2-9b-it', mode='personality', select_type='act_and_fre_trim', layers=[20], hook_module='resid_post', trim=[0.35], re_error_way=False)
+re_error_way: False
+##########layer20###########
+Traceback (most recent call last):
+  File "/home/skabi9001/activation_steering/llm-ideological-depth/./generate_sae_caa_vector.py", line 216, in <module>
+    act_and_fre(args.path_dir, 
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/skabi9001/activation_steering/llm-ideological-depth/./generate_sae_caa_vector.py", line 48, in act_and_fre
+    caa_vector = torch.load(f"{path_dir}/{data_name}/{caa_vector_name}/{model_name}_{mode}/{layer}.pt")
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/skabi9001/anaconda3/lib/python3.12/site-packages/torch/serialization.py", line 1425, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/skabi9001/anaconda3/lib/python3.12/site-packages/torch/serialization.py", line 751, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/skabi9001/anaconda3/lib/python3.12/site-packages/torch/serialization.py", line 732, in __init__
+    super().__init__(open(name, mode))
+                     ^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: './data_for_STA/data/politically-liberal/caa_vector_it/gemma-2-9b-it_personality/20.pt'

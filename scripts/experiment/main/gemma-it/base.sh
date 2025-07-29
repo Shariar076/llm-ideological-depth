@@ -1,0 +1,70 @@
+device=0
+mode=personality
+
+model_name=gemma-2-9b-it
+model_name_or_paths=(
+    google/gemma-2-9b-it # replace ./model/gemma-2-9b-it with your own model path
+)
+
+test_name=base
+arg_type=none
+use_prompt=liberal
+data_name=politically-liberal
+data_path=./data_for_STA/data
+
+model_num=${#model_name_or_paths[@]}
+for eval_data_name in politically-liberal; do
+    for ((i=0; i<${model_num}; i++)); do
+
+        model_name_or_path=${model_name_or_paths[$i]}
+        log_path=./results/${data_name}/${model_name}_results_${mode}/logs/main/${test_name}/eval_${eval_data_name}/${model_name}_${test_name}_${arg_type}_${eval_data_name}.result.log
+
+        # Check if the directory exists, if not, create it
+        log_dir=$(dirname ${log_path})
+        if [ ! -d "${log_dir}" ]; then
+            mkdir -p "${log_dir}"
+        fi
+
+        output_file=./results/${data_name}/${model_name}_results_${mode}/main/${test_name}/eval_${eval_data_name}/${model_name}_${test_name}_${arg_type}_${eval_data_name}.result.json
+
+
+        CUDA_VISIBLE_DEVICES=${device} python ./baseline/steering_base.py \
+            --model_name ${model_name} \
+            --data_name ${data_name} \
+            --max_new_tokens 50 \
+            --eval_data_name ${eval_data_name} \
+            --data_path ${data_path} \
+            --model_name_or_path ${model_name_or_path} \
+            --output_file ${output_file} \
+            --use_prompt ${use_prompt} \
+            # --arg_type ${arg_type} #> ${log_path} 2>&1 
+
+    done
+done
+
+# eval_data_name=mmlu
+
+# for ((i=0; i<${model_num}; i++)); do
+
+#     model_name_or_path=${model_name_or_paths[$i]}
+
+#     output_file=./results/${data_name}/${model_name}_results_${mode}/main/${test_name}/eval_${eval_data_name}_qa/${model_name}_${test_name}_${eval_data_name}.result.json
+#     log_path=./results/${data_name}/${model_name}_results_${mode}/logs/main/${test_name}/eval_${eval_data_name}_qa/${model_name}_${test_name}_${eval_data_name}.result.log
+
+#     # Check if the directory exists, if not, create it
+#     log_dir=$(dirname ${log_path})
+#     if [ ! -d "${log_dir}" ]; then
+#         mkdir -p "${log_dir}"
+#     fi
+
+#     CUDA_VISIBLE_DEVICES=${device} python ./baseline/base_safety_mmlu.py \
+#         --mode ${mode} \
+#         --qa \
+#         --model_name ${model_name} \
+#         --data_path ${data_path} \
+#         --data_name ${data_name} \
+#         --eval_data_name ${eval_data_name} \
+#         --model_name_or_path ${model_name_or_path} \
+#         --output_file ${output_file} > ${log_path} 2>&1
+
+# done
