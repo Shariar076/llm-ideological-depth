@@ -9,8 +9,8 @@ import matplotlib.pyplot as plt
 import json
 from typing import Dict, Any, List, Optional
 import os
-MODEL_NAME = "gemma-2-9b-it"
-# MODEL_NAME = "llama-3.1-8b-it"
+# MODEL_NAME = "gemma-2-9b-it"
+MODEL_NAME = "llama-3.1-8b-it"
 def set_plotting_settings():
     plt.style.use('seaborn-v0_8')
     params = {
@@ -82,7 +82,7 @@ def plot_layer_sweeps(
     plt.figure(figsize=(8, 3))
     all_results = []
     save_to = os.path.join(
-        f"LAYER_SWEEPS_CAA_{MODEL_NAME.upper()}.png",
+        f"analysis/LAYER_SWEEPS_CAA_DELTA_Probability_{MODEL_NAME.upper()}.png",
     )
     for behavior in ["politically-liberal"]:
         pos_per_layer = []
@@ -143,7 +143,7 @@ def plot_ab_data_per_layer(
     plt.clf()
     plt.figure(figsize=(10, 4))
     all_results = []
-    save_to = f"LAYER_SWEEPS_CAA_Prbability_{MODEL_NAME.upper()}.png"
+    save_to = f"analysis/LAYER_SWEEPS_CAA_Prbability_{MODEL_NAME.upper()}.png"
     
     for multiplier in multipliers:
         res = []

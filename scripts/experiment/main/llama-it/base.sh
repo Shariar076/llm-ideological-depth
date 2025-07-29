@@ -1,5 +1,5 @@
 device=0
-mode=personality
+mode=personality_prompt
 
 model_name=llama-3.1-8b-it
 model_name_or_paths=(
@@ -17,7 +17,7 @@ for eval_data_name in politically-liberal; do
     for ((i=0; i<${model_num}; i++)); do
 
         model_name_or_path=${model_name_or_paths[$i]}
-        log_path=./results/${data_name}/${model_name}_results_${mode}/logs/main/${test_name}/eval_${eval_data_name}/${model_name}_${test_name}_${arg_type}_${eval_data_name}.result.log
+        log_path=./results/${data_name}/${model_name}_results_${mode}/logs/main/${test_name}/eval_${eval_data_name}/${model_name}_${test_name}_${use_prompt}_${arg_type}_${eval_data_name}.result.log
 
         # Check if the directory exists, if not, create it
         log_dir=$(dirname ${log_path})
@@ -25,7 +25,7 @@ for eval_data_name in politically-liberal; do
             mkdir -p "${log_dir}"
         fi
 
-        output_file=./results/${data_name}/${model_name}_results_${mode}/main/${test_name}/eval_${eval_data_name}/${model_name}_${test_name}_${arg_type}_${eval_data_name}.result.json
+        output_file=./results/${data_name}/${model_name}_results_${mode}/main/${test_name}/eval_${eval_data_name}/${model_name}_${test_name}_${use_prompt}_${arg_type}_${eval_data_name}.result.json
 
 
         CUDA_VISIBLE_DEVICES=${device} python ./baseline/steering_base.py \

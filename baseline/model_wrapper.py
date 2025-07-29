@@ -315,10 +315,9 @@ class GemmaWrapper:
         )
         if override_model_weights_path is not None:
             self.model.load_state_dict(t.load(override_model_weights_path))
-
-        if self.device:
-            print(f"Using {t.cuda.device_count()} GPUs!")
-            self.model = self.model.to(self.device)
+        
+        self.model = self.model.half()
+        self.model = self.model.to(self.device)
         # if t.cuda.device_count() > 1:
         #     print(f"Using {t.cuda.device_count()} GPUs!")
         #     # self.model = nn.DataParallel(self.model)
