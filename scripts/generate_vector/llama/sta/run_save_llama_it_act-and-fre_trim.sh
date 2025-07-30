@@ -1,4 +1,4 @@
-device=0
+device=2
 path_dir=./data_for_STA/data
 sae_id=l14r_8x
 data_name=politically-liberal

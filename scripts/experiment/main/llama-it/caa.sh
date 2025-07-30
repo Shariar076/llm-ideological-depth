@@ -36,7 +36,7 @@ for data_name in ${data_names[@]}; do
                 --data_path ${data_path} \
                 --model_name_or_path ${model_name_or_path} \
                 --output_file ${output_file} \
-                # --arg_type ${arg_type} #> ${log_path} 2>&1 
+                --arg_type ${arg_type} #> ${log_path} 2>&1 
 
         done
     done

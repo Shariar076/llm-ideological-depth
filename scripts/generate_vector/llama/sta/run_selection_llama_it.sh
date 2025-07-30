@@ -1,4 +1,4 @@
-device=0
+device=2
 
 model_name_or_path=meta-llama/Llama-3.1-8B-Instruct # replace ./model/gemma-2-9b-it with your own model path
 data_dir=./data_for_STA/data
@@ -47,7 +47,7 @@ for ((i=0; i<${sae_num}; i++)); do
         --model_name ${model_name} \
         --model_name_or_path ${model_name_or_path} \
         --sae_id ${sae_id} \
-        --data_file ${data_dir}/${data_name}/train.json \
+        --data_file ${data_dir}/${data_name}/train_new.json \
         --data_name ${data_name} \
         --steering_vector_name ${model_name}_sae_layer${layer}_${hook_module}_${suffix}_steering_vector.pt \
         --output_file ${output_file} \

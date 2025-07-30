@@ -48,7 +48,7 @@ for eval_data_name in politically-liberal; do
                 --vector_root ${vector_root}\
                 --caa_vector_root ${caa_vector_root} \
                 --output_file ${output_file} \
-                # --arg_type ${arg_type} #> ${log_path} 2>&1
+                --arg_type ${arg_type} #> ${log_path} 2>&1
 
         done
     done

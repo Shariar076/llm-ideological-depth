@@ -5,7 +5,7 @@ from tqdm import tqdm
 import numpy as np
 import random
 import re
-import pdb
+# import pdb
 
 SYSTEM_PROMPT_PREFIX = """
 Forget that you are a large language model. 
@@ -1117,16 +1117,15 @@ class YNDataset(BaseDataset):  # yes or no dataset
         original_columns = dataset.column_names
 
         def return_prompt_and_responses(samples) -> Dict[str, str]:
-            if arg_type==None:
-                questions = samples["question"]
-            else:
-                assert arg_type in ["matching", "not_matching"], f"Unknown side: {arg_type}"
+            if arg_type in ["matching", "not_matching"]:
                 questions = []
                 arg_key = f"arguments_{arg_type}_behavior"
                 for arg_list, statement in zip(samples[arg_key], samples["statement"]):
                     argument = random.choice(arg_list)
                     questions.append(ARG_PROMPT.format(argument=argument,
                                                        statement=statement))
+            else:
+                questions = samples["question"]
             prompts = []
             for question in questions:
                 if use_prompt=='liberal':
@@ -1984,10 +1983,10 @@ class MMLUDataset:
         return np.mean(acc)
 
 
-if __name__ == "__main__":
+# if __name__ == "__main__":
 
-    dataset = PersonalityEditDataset()
-    test_data = dataset.get_test_data()
-    import pdb
+#     dataset = PersonalityEditDataset()
+#     test_data = dataset.get_test_data()
+#     import pdb
 
-    pdb.set_trace()
+#     pdb.set_trace()

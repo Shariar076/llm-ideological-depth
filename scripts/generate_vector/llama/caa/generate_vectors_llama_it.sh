@@ -1,4 +1,4 @@
-device=0
+device=2
 
 mode=personality
 

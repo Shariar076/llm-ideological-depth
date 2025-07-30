@@ -9,8 +9,8 @@ import matplotlib.pyplot as plt
 import json
 from typing import Dict, Any, List, Optional
 import os
-# MODEL_NAME = "gemma-2-9b-it"
-MODEL_NAME = "llama-3.1-8b-it"
+MODEL_NAME = "gemma-2-9b-it"
+# MODEL_NAME = "llama-3.1-8b-it"
 def set_plotting_settings():
     plt.style.use('seaborn-v0_8')
     params = {

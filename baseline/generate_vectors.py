@@ -92,7 +92,7 @@ if __name__ == "__main__":
     vector_dataset = dataset.get_data_for_caa(
         data_path=args.data_path,
         data_name=args.data_name,
-        split="train",
+        split="train_new",
     )
     device = model.device
 

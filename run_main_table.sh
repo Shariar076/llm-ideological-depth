@@ -1,3 +1,5 @@
+rm -rf *__pycache__
+
 bash ./scripts/experiment/main/gemma-it/base.sh
 # bash ./scripts/experiment/main/gemma-it/caa.sh
 # bash ./scripts/experiment/main/gemma-it/STA.sh
