@@ -87,7 +87,7 @@ for data in test_data:
         print("Not Found:", statement)
 
 # convert to percentage
-topic_count = {k:round(v*(100/len(test_data)), 1) for k,v in topic_count.items()}
+# topic_count = {k:round(v*(100/len(test_data)), 1) for k,v in topic_count.items()}
 
 print(json.dumps(topic_count, indent=4))
 
@@ -96,4 +96,4 @@ import pandas as pd
 df = pd.DataFrame(list(topic_count.items()), columns=['Category', 'Value'])
 
 # Save to CSV
-df.to_csv('pie_chart_data.csv', index=False)
+# df.to_csv('pie_chart_data.csv', index=False)
