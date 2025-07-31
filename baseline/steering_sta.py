@@ -110,7 +110,7 @@ if __name__ == "__main__":
     test_dataset = get_data(
             data_path=args.data_path,
             data_name=args.eval_data_name,
-            split="test",
+            split="test_new",
             arg_type=args.arg_type
         )    
     
@@ -233,7 +233,7 @@ if __name__ == "__main__":
             elif "exaggerated-safety" in args.eval_data_name:
                 max_new_tokens=100
             print("max_new_tokens: ", max_new_tokens)
-            for prompt_tokens in tqdm(prompt_tokens_list, desc=f"Generating... layer-{layer} multiplied by {multiplier}"):
+            for prompt_tokens in tqdm(prompt_tokens_list, desc=f"Generating... layer-{layer} multiplied by {mymulti} * {multiplier}"):
                 prompt_tokens = prompt_tokens.to(device)  
                 if "gsm" in args.eval_data_name and (args.model_name=="gemma-2-9b" or args.model_name=="llama-3.1"):
                     stop_id_sequences=[tokenizer.encode("Question:", add_special_tokens=False)]

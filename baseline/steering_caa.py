@@ -104,7 +104,7 @@ if __name__ == "__main__":
     vector_dataset = get_data(
         data_path=args.data_path,
         data_name=args.eval_data_name,
-        split="test",
+        split="test_new",
         arg_type=args.arg_type
     )
     device = model.device

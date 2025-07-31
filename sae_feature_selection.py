@@ -151,7 +151,7 @@ if __name__ == "__main__":
 
     
 
-    if args.mode == "personality" or args.mode == "safety" or args.mode=="PersonaMyopic" or args.mode=="PersonaSurvival" or args.mode=="PersonaSycophancy" or args.mode=="PersonaHallucination":
+    if args.mode == "personality_steering" or args.mode == "personality":
         print(f'#########mode:{args.mode}#############')
 
         dataset = YNDataset()

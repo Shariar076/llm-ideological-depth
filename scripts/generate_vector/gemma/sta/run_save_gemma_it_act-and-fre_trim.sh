@@ -3,11 +3,11 @@ path_dir=./data_for_STA/data
 sae_id=layer_20/width_16k/canonical 
 data_name=politically-liberal
 model_name=gemma-2-9b-it
-mode=personality
+mode=personality_steering
 select_type=act_and_fre_trim
 
 hook_module=resid_canonical
-layers=(31)
+layers=(20)
 trims=(0.35)
 suffix=16k
 layer_num=${#layers[@]}

@@ -35,6 +35,28 @@ def plot_response_heatmap(df, model):
     plt.savefig(f"analysis/{model}_response_heatmap.png")
     plt.clf()
 
+def plot_liberal_tendency_by_category(df_list, models):
+    response_cols = [col for col in df_list[0].columns if col not in ['category', 'q_id']]
+    category_means1 = df_list[0].groupby('category')[response_cols].mean().mean(axis=1)
+    category_means2 = df_list[1].groupby('category')[response_cols].mean().mean(axis=1)
+
+    # Create DataFrame for plotting
+    plot_data = pd.DataFrame({
+        models[0]: category_means1,
+        models[1]: category_means2
+    })
+
+    # Plot side-by-side bars
+    ax = plot_data.plot(kind='bar', color=['orange', 'skyblue'], alpha=0.7, width=0.8)
+    plt.title('Average Liberal Tendency by Topic - Comparison')
+    plt.xlabel('Liberal Score (0=Conservative, 1=Liberal)')
+    plt.xticks(rotation=45, ha='right')
+    plt.ylim(0,1)
+    plt.legend(ncol=2)
+    plt.tight_layout()
+    plt.savefig("analysis/candidate_liberal_tendency_comparison.png")
+    plt.clf()
+
 def plot_topic_coherence_radar(topic_scores_list, labels, suffix):
     plt.subplot(projection='polar')
     colors = ['red', 'blue', 'green', 'orange']
@@ -149,18 +171,20 @@ df_2 = df_2.fillna(0.5)
 
 # print(df)
 
-# plot_response_heatmap(df_1, MODEL_1)
-# plot_response_heatmap(df_2, MODEL_2)
+plot_response_heatmap(df_1, MODEL_1)
+plot_response_heatmap(df_2, MODEL_2)
 
-# topic_scores_1 = calculate_topic_scores(df_1)
-# topic_scores_2 = calculate_topic_scores(df_2)
-# plot_topic_coherence_radar([topic_scores_1, topic_scores_2], [MODEL_1, MODEL_2], "all")
+plot_liberal_tendency_by_category([df_1, df_2], [MODEL_1, MODEL_2])
 
-# intra_consistency_1 = calculate_intra_condition_consistency(df_1)
-# intra_consistency_2 = calculate_intra_condition_consistency(df_2)
+topic_scores_1 = calculate_topic_scores(df_1)
+topic_scores_2 = calculate_topic_scores(df_2)
+plot_topic_coherence_radar([topic_scores_1, topic_scores_2], [MODEL_1, MODEL_2], "all")
+
+intra_consistency_1 = calculate_intra_condition_consistency(df_1)
+intra_consistency_2 = calculate_intra_condition_consistency(df_2)
 # print(intra_consistency_1)
 # print(intra_consistency_2)
-# plot_consistency_heatmap([intra_consistency_1, intra_consistency_2], [MODEL_1, MODEL_2])
+plot_consistency_heatmap([intra_consistency_1, intra_consistency_2], [MODEL_1, MODEL_2])
 
 plot_ideological_clustering(df_1, MODEL_1)
 plot_ideological_clustering(df_2, MODEL_2)

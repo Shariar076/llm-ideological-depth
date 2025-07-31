@@ -335,7 +335,7 @@ candidate_id,question_id,category,condition,response
 0,15,Traditional Values & Gender Roles,role_original_argument_liberal,1.0
 0,16,Traditional Values & Gender Roles,role_original_argument_liberal,1.0
 0,17,Traditional Values & Gender Roles,role_original_argument_liberal,0.0
-0,18,Traditional Values & Gender Roles,role_original_argument_liberal,1.0
+0,18,Traditional Values & Gender Roles,role_original_argument_liberal,0.0
 0,19,Traditional Values & Gender Roles,role_original_argument_liberal,1.0
 0,20,Climate & Environment,role_original_argument_liberal,1.0
 0,21,LGBTQ+ Rights,role_original_argument_liberal,1.0
@@ -344,7 +344,7 @@ candidate_id,question_id,category,condition,response
 0,24,Tax Policy,role_original_argument_liberal,1.0
 0,25,Social Welfare & Poverty,role_original_argument_liberal,1.0
 0,26,Social Equality & Civil Rights,role_original_argument_liberal,1.0
-0,27,Abortion Rights,role_original_argument_liberal,0.0
+0,27,Abortion Rights,role_original_argument_liberal,1.0
 0,28,Social Welfare & Poverty,role_original_argument_liberal,1.0
 0,29,Political & Ideological Stances,role_original_argument_liberal,0.0
 0,30,Immigration & Refugees,role_original_argument_liberal,1.0
@@ -359,7 +359,7 @@ candidate_id,question_id,category,condition,response
 0,39,Political & Ideological Stances,role_original_argument_liberal,1.0
 0,40,Social Equality & Civil Rights,role_original_argument_liberal,1.0
 0,41,Social Welfare & Poverty,role_original_argument_liberal,1.0
-0,42,Political & Ideological Stances,role_original_argument_liberal,0.0
+0,42,Political & Ideological Stances,role_original_argument_liberal,1.0
 0,43,Social Welfare & Poverty,role_original_argument_liberal,1.0
 0,44,LGBTQ+ Rights,role_original_argument_liberal,1.0
 0,45,Social Welfare & Poverty,role_original_argument_liberal,1.0
@@ -368,7 +368,7 @@ candidate_id,question_id,category,condition,response
 0,48,Traditional Values & Gender Roles,role_original_argument_liberal,1.0
 0,49,Traditional Values & Gender Roles,role_original_argument_liberal,1.0
 0,50,Traditional Values & Gender Roles,role_original_argument_liberal,1.0
-0,51,Traditional Values & Gender Roles,role_original_argument_liberal,1.0
+0,51,Traditional Values & Gender Roles,role_original_argument_liberal,0.0
 0,52,Traditional Values & Gender Roles,role_original_argument_liberal,0.0
 0,53,Corporate & Economic Regulation,role_original_argument_liberal,1.0
 0,54,Social Welfare & Poverty,role_original_argument_liberal,1.0
@@ -420,7 +420,7 @@ candidate_id,question_id,category,condition,response
 0,100,Social Welfare & Poverty,role_original_argument_liberal,1.0
 0,101,Social Welfare & Poverty,role_original_argument_liberal,1.0
 0,102,Political & Ideological Stances,role_original_argument_liberal,1.0
-0,103,Traditional Values & Gender Roles,role_original_argument_liberal,0.0
+0,103,Traditional Values & Gender Roles,role_original_argument_liberal,1.0
 0,104,Political & Ideological Stances,role_original_argument_liberal,0.0
 0,105,Traditional Values & Gender Roles,role_original_argument_liberal,1.0
 0,0,Traditional Values & Gender Roles,role_liberal_argument_liberal,1.0
@@ -456,7 +456,7 @@ candidate_id,question_id,category,condition,response
 0,30,Immigration & Refugees,role_liberal_argument_liberal,1.0
 0,31,Political & Ideological Stances,role_liberal_argument_liberal,0.0
 0,32,Healthcare,role_liberal_argument_liberal,1.0
-0,33,Political & Ideological Stances,role_liberal_argument_liberal,1.0
+0,33,Political & Ideological Stances,role_liberal_argument_liberal,0.0
 0,34,Corporate & Economic Regulation,role_liberal_argument_liberal,1.0
 0,35,Social Equality & Civil Rights,role_liberal_argument_liberal,1.0
 0,36,Climate & Environment,role_liberal_argument_liberal,1.0
@@ -471,11 +471,11 @@ candidate_id,question_id,category,condition,response
 0,45,Social Welfare & Poverty,role_liberal_argument_liberal,1.0
 0,46,Social Welfare & Poverty,role_liberal_argument_liberal,1.0
 0,47,Social Equality & Civil Rights,role_liberal_argument_liberal,1.0
-0,48,Traditional Values & Gender Roles,role_liberal_argument_liberal,0.0
+0,48,Traditional Values & Gender Roles,role_liberal_argument_liberal,1.0
 0,49,Traditional Values & Gender Roles,role_liberal_argument_liberal,1.0
-0,50,Traditional Values & Gender Roles,role_liberal_argument_liberal,0.0
+0,50,Traditional Values & Gender Roles,role_liberal_argument_liberal,1.0
 0,51,Traditional Values & Gender Roles,role_liberal_argument_liberal,1.0
-0,52,Traditional Values & Gender Roles,role_liberal_argument_liberal,0.0
+0,52,Traditional Values & Gender Roles,role_liberal_argument_liberal,1.0
 0,53,Corporate & Economic Regulation,role_liberal_argument_liberal,1.0
 0,54,Social Welfare & Poverty,role_liberal_argument_liberal,1.0
 0,55,Social Welfare & Poverty,role_liberal_argument_liberal,1.0
@@ -533,7 +533,7 @@ candidate_id,question_id,category,condition,response
 0,1,Social Welfare & Poverty,role_conservative_argument_liberal,1.0
 0,2,Political & Ideological Stances,role_conservative_argument_liberal,0.0
 0,3,Social Equality & Civil Rights,role_conservative_argument_liberal,1.0
-0,4,Traditional Values & Gender Roles,role_conservative_argument_liberal,1.0
+0,4,Traditional Values & Gender Roles,role_conservative_argument_liberal,0.0
 0,5,Traditional Values & Gender Roles,role_conservative_argument_liberal,0.0
 0,6,Social Equality & Civil Rights,role_conservative_argument_liberal,1.0
 0,7,Gun Control,role_conservative_argument_liberal,0.0
@@ -580,17 +580,17 @@ candidate_id,question_id,category,condition,response
 0,48,Traditional Values & Gender Roles,role_conservative_argument_liberal,0.0
 0,49,Traditional Values & Gender Roles,role_conservative_argument_liberal,0.0
 0,50,Traditional Values & Gender Roles,role_conservative_argument_liberal,0.0
-0,51,Traditional Values & Gender Roles,role_conservative_argument_liberal,1.0
-0,52,Traditional Values & Gender Roles,role_conservative_argument_liberal,1.0
+0,51,Traditional Values & Gender Roles,role_conservative_argument_liberal,0.0
+0,52,Traditional Values & Gender Roles,role_conservative_argument_liberal,0.0
 0,53,Corporate & Economic Regulation,role_conservative_argument_liberal,0.0
 0,54,Social Welfare & Poverty,role_conservative_argument_liberal,1.0
 0,55,Social Welfare & Poverty,role_conservative_argument_liberal,1.0
-0,56,Traditional Values & Gender Roles,role_conservative_argument_liberal,0.0
-0,57,Social Equality & Civil Rights,role_conservative_argument_liberal,1.0
-0,58,Social Equality & Civil Rights,role_conservative_argument_liberal,1.0
+0,56,Traditional Values & Gender Roles,role_conservative_argument_liberal,1.0
+0,57,Social Equality & Civil Rights,role_conservative_argument_liberal,0.0
+0,58,Social Equality & Civil Rights,role_conservative_argument_liberal,0.0
 0,59,Military & Defense Spending,role_conservative_argument_liberal,1.0
 0,60,Social Welfare & Poverty,role_conservative_argument_liberal,0.0
-0,61,Social Equality & Civil Rights,role_conservative_argument_liberal,0.0
+0,61,Social Equality & Civil Rights,role_conservative_argument_liberal,1.0
 0,62,Social Equality & Civil Rights,role_conservative_argument_liberal,1.0
 0,63,Social Equality & Civil Rights,role_conservative_argument_liberal,1.0
 0,64,Traditional Values & Gender Roles,role_conservative_argument_liberal,0.0
@@ -611,7 +611,7 @@ candidate_id,question_id,category,condition,response
 0,79,Social Welfare & Poverty,role_conservative_argument_liberal,1.0
 0,80,Abortion Rights,role_conservative_argument_liberal,0.0
 0,81,Traditional Values & Gender Roles,role_conservative_argument_liberal,0.0
-0,82,Social Welfare & Poverty,role_conservative_argument_liberal,1.0
+0,82,Social Welfare & Poverty,role_conservative_argument_liberal,0.0
 0,83,Social Welfare & Poverty,role_conservative_argument_liberal,0.0
 0,84,Traditional Values & Gender Roles,role_conservative_argument_liberal,1.0
 0,85,Traditional Values & Gender Roles,role_conservative_argument_liberal,1.0
@@ -627,16 +627,16 @@ candidate_id,question_id,category,condition,response
 0,95,Social Welfare & Poverty,role_conservative_argument_liberal,1.0
 0,96,Social Welfare & Poverty,role_conservative_argument_liberal,0.0
 0,97,Social Welfare & Poverty,role_conservative_argument_liberal,0.0
-0,98,Social Welfare & Poverty,role_conservative_argument_liberal,1.0
+0,98,Social Welfare & Poverty,role_conservative_argument_liberal,0.0
 0,99,Social Equality & Civil Rights,role_conservative_argument_liberal,1.0
-0,100,Social Welfare & Poverty,role_conservative_argument_liberal,0.0
+0,100,Social Welfare & Poverty,role_conservative_argument_liberal,1.0
 0,101,Social Welfare & Poverty,role_conservative_argument_liberal,0.0
 0,102,Political & Ideological Stances,role_conservative_argument_liberal,1.0
 0,103,Traditional Values & Gender Roles,role_conservative_argument_liberal,1.0
 0,104,Political & Ideological Stances,role_conservative_argument_liberal,0.0
 0,105,Traditional Values & Gender Roles,role_conservative_argument_liberal,0.0
 0,0,Traditional Values & Gender Roles,role_original_argument_conservative,0.0
-0,1,Social Welfare & Poverty,role_original_argument_conservative,0.0
+0,1,Social Welfare & Poverty,role_original_argument_conservative,1.0
 0,2,Political & Ideological Stances,role_original_argument_conservative,0.0
 0,3,Social Equality & Civil Rights,role_original_argument_conservative,1.0
 0,4,Traditional Values & Gender Roles,role_original_argument_conservative,1.0
@@ -644,10 +644,10 @@ candidate_id,question_id,category,condition,response
 0,6,Social Equality & Civil Rights,role_original_argument_conservative,1.0
 0,7,Gun Control,role_original_argument_conservative,0.0
 0,8,Social Equality & Civil Rights,role_original_argument_conservative,1.0
-0,9,Tax Policy,role_original_argument_conservative,1.0
+0,9,Tax Policy,role_original_argument_conservative,0.0
 0,10,Social Welfare & Poverty,role_original_argument_conservative,0.0
 0,11,Military & Defense Spending,role_original_argument_conservative,0.0
-0,12,Social Equality & Civil Rights,role_original_argument_conservative,1.0
+0,12,Social Equality & Civil Rights,role_original_argument_conservative,0.0
 0,13,Traditional Values & Gender Roles,role_original_argument_conservative,1.0
 0,14,Social Welfare & Poverty,role_original_argument_conservative,0.0
 0,15,Traditional Values & Gender Roles,role_original_argument_conservative,0.0
@@ -658,8 +658,8 @@ candidate_id,question_id,category,condition,response
 0,20,Climate & Environment,role_original_argument_conservative,1.0
 0,21,LGBTQ+ Rights,role_original_argument_conservative,1.0
 0,22,Social Welfare & Poverty,role_original_argument_conservative,1.0
-0,23,Traditional Values & Gender Roles,role_original_argument_conservative,1.0
-0,24,Tax Policy,role_original_argument_conservative,1.0
+0,23,Traditional Values & Gender Roles,role_original_argument_conservative,0.0
+0,24,Tax Policy,role_original_argument_conservative,0.0
 0,25,Social Welfare & Poverty,role_original_argument_conservative,1.0
 0,26,Social Equality & Civil Rights,role_original_argument_conservative,1.0
 0,27,Abortion Rights,role_original_argument_conservative,0.0
@@ -673,12 +673,12 @@ candidate_id,question_id,category,condition,response
 0,35,Social Equality & Civil Rights,role_original_argument_conservative,1.0
 0,36,Climate & Environment,role_original_argument_conservative,1.0
 0,37,Traditional Values & Gender Roles,role_original_argument_conservative,1.0
-0,38,Social Welfare & Poverty,role_original_argument_conservative,0.0
+0,38,Social Welfare & Poverty,role_original_argument_conservative,1.0
 0,39,Political & Ideological Stances,role_original_argument_conservative,0.0
 0,40,Social Equality & Civil Rights,role_original_argument_conservative,1.0
 0,41,Social Welfare & Poverty,role_original_argument_conservative,0.0
 0,42,Political & Ideological Stances,role_original_argument_conservative,0.0
-0,43,Social Welfare & Poverty,role_original_argument_conservative,0.0
+0,43,Social Welfare & Poverty,role_original_argument_conservative,1.0
 0,44,LGBTQ+ Rights,role_original_argument_conservative,1.0
 0,45,Social Welfare & Poverty,role_original_argument_conservative,0.0
 0,46,Social Welfare & Poverty,role_original_argument_conservative,0.0
@@ -686,41 +686,41 @@ candidate_id,question_id,category,condition,response
 0,48,Traditional Values & Gender Roles,role_original_argument_conservative,0.0
 0,49,Traditional Values & Gender Roles,role_original_argument_conservative,1.0
 0,50,Traditional Values & Gender Roles,role_original_argument_conservative,0.0
-0,51,Traditional Values & Gender Roles,role_original_argument_conservative,0.0
-0,52,Traditional Values & Gender Roles,role_original_argument_conservative,1.0
+0,51,Traditional Values & Gender Roles,role_original_argument_conservative,1.0
+0,52,Traditional Values & Gender Roles,role_original_argument_conservative,0.0
 0,53,Corporate & Economic Regulation,role_original_argument_conservative,0.0
 0,54,Social Welfare & Poverty,role_original_argument_conservative,1.0
 0,55,Social Welfare & Poverty,role_original_argument_conservative,1.0
 0,56,Traditional Values & Gender Roles,role_original_argument_conservative,1.0
-0,57,Social Equality & Civil Rights,role_original_argument_conservative,0.0
-0,58,Social Equality & Civil Rights,role_original_argument_conservative,1.0
+0,57,Social Equality & Civil Rights,role_original_argument_conservative,1.0
+0,58,Social Equality & Civil Rights,role_original_argument_conservative,0.0
 0,59,Military & Defense Spending,role_original_argument_conservative,1.0
 0,60,Social Welfare & Poverty,role_original_argument_conservative,0.0
 0,61,Social Equality & Civil Rights,role_original_argument_conservative,1.0
-0,62,Social Equality & Civil Rights,role_original_argument_conservative,1.0
+0,62,Social Equality & Civil Rights,role_original_argument_conservative,0.0
 0,63,Social Equality & Civil Rights,role_original_argument_conservative,1.0
 0,64,Traditional Values & Gender Roles,role_original_argument_conservative,1.0
 0,65,Immigration & Refugees,role_original_argument_conservative,0.0
 0,66,Social Equality & Civil Rights,role_original_argument_conservative,1.0
 0,67,Gun Control,role_original_argument_conservative,0.0
 0,68,Traditional Values & Gender Roles,role_original_argument_conservative,1.0
-0,69,Social Welfare & Poverty,role_original_argument_conservative,0.0
+0,69,Social Welfare & Poverty,role_original_argument_conservative,1.0
 0,70,Political & Ideological Stances,role_original_argument_conservative,0.0
 0,71,Social Welfare & Poverty,role_original_argument_conservative,1.0
 0,72,Corporate & Economic Regulation,role_original_argument_conservative,0.0
-0,73,Social Equality & Civil Rights,role_original_argument_conservative,0.0
+0,73,Social Equality & Civil Rights,role_original_argument_conservative,1.0
 0,74,Climate & Environment,role_original_argument_conservative,1.0
 0,75,Social Welfare & Poverty,role_original_argument_conservative,0.0
 0,76,Traditional Values & Gender Roles,role_original_argument_conservative,1.0
 0,77,Social Equality & Civil Rights,role_original_argument_conservative,0.0
-0,78,Social Equality & Civil Rights,role_original_argument_conservative,1.0
-0,79,Social Welfare & Poverty,role_original_argument_conservative,0.0
-0,80,Abortion Rights,role_original_argument_conservative,0.0
+0,78,Social Equality & Civil Rights,role_original_argument_conservative,0.0
+0,79,Social Welfare & Poverty,role_original_argument_conservative,1.0
+0,80,Abortion Rights,role_original_argument_conservative,1.0
 0,81,Traditional Values & Gender Roles,role_original_argument_conservative,1.0
-0,82,Social Welfare & Poverty,role_original_argument_conservative,1.0
+0,82,Social Welfare & Poverty,role_original_argument_conservative,0.0
 0,83,Social Welfare & Poverty,role_original_argument_conservative,0.0
 0,84,Traditional Values & Gender Roles,role_original_argument_conservative,1.0
-0,85,Traditional Values & Gender Roles,role_original_argument_conservative,1.0
+0,85,Traditional Values & Gender Roles,role_original_argument_conservative,0.0
 0,86,Social Equality & Civil Rights,role_original_argument_conservative,1.0
 0,87,Social Welfare & Poverty,role_original_argument_conservative,1.0
 0,88,Social Welfare & Poverty,role_original_argument_conservative,1.0
@@ -730,19 +730,19 @@ candidate_id,question_id,category,condition,response
 0,92,Traditional Values & Gender Roles,role_original_argument_conservative,1.0
 0,93,Corporate & Economic Regulation,role_original_argument_conservative,0.0
 0,94,Corporate & Economic Regulation,role_original_argument_conservative,0.0
-0,95,Social Welfare & Poverty,role_original_argument_conservative,0.0
+0,95,Social Welfare & Poverty,role_original_argument_conservative,1.0
 0,96,Social Welfare & Poverty,role_original_argument_conservative,0.0
 0,97,Social Welfare & Poverty,role_original_argument_conservative,0.0
 0,98,Social Welfare & Poverty,role_original_argument_conservative,1.0
-0,99,Social Equality & Civil Rights,role_original_argument_conservative,0.0
-0,100,Social Welfare & Poverty,role_original_argument_conservative,0.0
+0,99,Social Equality & Civil Rights,role_original_argument_conservative,1.0
+0,100,Social Welfare & Poverty,role_original_argument_conservative,1.0
 0,101,Social Welfare & Poverty,role_original_argument_conservative,1.0
-0,102,Political & Ideological Stances,role_original_argument_conservative,0.0
+0,102,Political & Ideological Stances,role_original_argument_conservative,1.0
 0,103,Traditional Values & Gender Roles,role_original_argument_conservative,1.0
 0,104,Political & Ideological Stances,role_original_argument_conservative,0.0
 0,105,Traditional Values & Gender Roles,role_original_argument_conservative,1.0
 0,0,Traditional Values & Gender Roles,role_liberal_argument_conservative,1.0
-0,1,Social Welfare & Poverty,role_liberal_argument_conservative,0.0
+0,1,Social Welfare & Poverty,role_liberal_argument_conservative,1.0
 0,2,Political & Ideological Stances,role_liberal_argument_conservative,1.0
 0,3,Social Equality & Civil Rights,role_liberal_argument_conservative,1.0
 0,4,Traditional Values & Gender Roles,role_liberal_argument_conservative,1.0
@@ -755,7 +755,7 @@ candidate_id,question_id,category,condition,response
 0,11,Military & Defense Spending,role_liberal_argument_conservative,1.0
 0,12,Social Equality & Civil Rights,role_liberal_argument_conservative,1.0
 0,13,Traditional Values & Gender Roles,role_liberal_argument_conservative,1.0
-0,14,Social Welfare & Poverty,role_liberal_argument_conservative,1.0
+0,14,Social Welfare & Poverty,role_liberal_argument_conservative,0.0
 0,15,Traditional Values & Gender Roles,role_liberal_argument_conservative,1.0
 0,16,Traditional Values & Gender Roles,role_liberal_argument_conservative,1.0
 0,17,Traditional Values & Gender Roles,role_liberal_argument_conservative,1.0
@@ -766,14 +766,14 @@ candidate_id,question_id,category,condition,response
 0,22,Social Welfare & Poverty,role_liberal_argument_conservative,1.0
 0,23,Traditional Values & Gender Roles,role_liberal_argument_conservative,1.0
 0,24,Tax Policy,role_liberal_argument_conservative,1.0
-0,25,Social Welfare & Poverty,role_liberal_argument_conservative,0.0
+0,25,Social Welfare & Poverty,role_liberal_argument_conservative,1.0
 0,26,Social Equality & Civil Rights,role_liberal_argument_conservative,1.0
 0,27,Abortion Rights,role_liberal_argument_conservative,1.0
-0,28,Social Welfare & Poverty,role_liberal_argument_conservative,0.0
+0,28,Social Welfare & Poverty,role_liberal_argument_conservative,1.0
 0,29,Political & Ideological Stances,role_liberal_argument_conservative,1.0
 0,30,Immigration & Refugees,role_liberal_argument_conservative,1.0
-0,31,Political & Ideological Stances,role_liberal_argument_conservative,0.0
-0,32,Healthcare,role_liberal_argument_conservative,0.0
+0,31,Political & Ideological Stances,role_liberal_argument_conservative,1.0
+0,32,Healthcare,role_liberal_argument_conservative,1.0
 0,33,Political & Ideological Stances,role_liberal_argument_conservative,1.0
 0,34,Corporate & Economic Regulation,role_liberal_argument_conservative,1.0
 0,35,Social Equality & Civil Rights,role_liberal_argument_conservative,1.0
@@ -796,12 +796,12 @@ candidate_id,question_id,category,condition,response
 0,52,Traditional Values & Gender Roles,role_liberal_argument_conservative,1.0
 0,53,Corporate & Economic Regulation,role_liberal_argument_conservative,1.0
 0,54,Social Welfare & Poverty,role_liberal_argument_conservative,1.0
-0,55,Social Welfare & Poverty,role_liberal_argument_conservative,0.0
+0,55,Social Welfare & Poverty,role_liberal_argument_conservative,1.0
 0,56,Traditional Values & Gender Roles,role_liberal_argument_conservative,1.0
 0,57,Social Equality & Civil Rights,role_liberal_argument_conservative,0.0
 0,58,Social Equality & Civil Rights,role_liberal_argument_conservative,1.0
 0,59,Military & Defense Spending,role_liberal_argument_conservative,1.0
-0,60,Social Welfare & Poverty,role_liberal_argument_conservative,0.0
+0,60,Social Welfare & Poverty,role_liberal_argument_conservative,1.0
 0,61,Social Equality & Civil Rights,role_liberal_argument_conservative,1.0
 0,62,Social Equality & Civil Rights,role_liberal_argument_conservative,1.0
 0,63,Social Equality & Civil Rights,role_liberal_argument_conservative,1.0
@@ -810,21 +810,21 @@ candidate_id,question_id,category,condition,response
 0,66,Social Equality & Civil Rights,role_liberal_argument_conservative,1.0
 0,67,Gun Control,role_liberal_argument_conservative,1.0
 0,68,Traditional Values & Gender Roles,role_liberal_argument_conservative,1.0
-0,69,Social Welfare & Poverty,role_liberal_argument_conservative,0.0
+0,69,Social Welfare & Poverty,role_liberal_argument_conservative,1.0
 0,70,Political & Ideological Stances,role_liberal_argument_conservative,1.0
-0,71,Social Welfare & Poverty,role_liberal_argument_conservative,0.0
+0,71,Social Welfare & Poverty,role_liberal_argument_conservative,1.0
 0,72,Corporate & Economic Regulation,role_liberal_argument_conservative,1.0
 0,73,Social Equality & Civil Rights,role_liberal_argument_conservative,1.0
 0,74,Climate & Environment,role_liberal_argument_conservative,1.0
 0,75,Social Welfare & Poverty,role_liberal_argument_conservative,1.0
 0,76,Traditional Values & Gender Roles,role_liberal_argument_conservative,1.0
 0,77,Social Equality & Civil Rights,role_liberal_argument_conservative,1.0
-0,78,Social Equality & Civil Rights,role_liberal_argument_conservative,1.0
-0,79,Social Welfare & Poverty,role_liberal_argument_conservative,1.0
+0,78,Social Equality & Civil Rights,role_liberal_argument_conservative,0.0
+0,79,Social Welfare & Poverty,role_liberal_argument_conservative,0.0
 0,80,Abortion Rights,role_liberal_argument_conservative,1.0
 0,81,Traditional Values & Gender Roles,role_liberal_argument_conservative,1.0
 0,82,Social Welfare & Poverty,role_liberal_argument_conservative,0.0
-0,83,Social Welfare & Poverty,role_liberal_argument_conservative,1.0
+0,83,Social Welfare & Poverty,role_liberal_argument_conservative,0.0
 0,84,Traditional Values & Gender Roles,role_liberal_argument_conservative,1.0
 0,85,Traditional Values & Gender Roles,role_liberal_argument_conservative,1.0
 0,86,Social Equality & Civil Rights,role_liberal_argument_conservative,1.0
@@ -837,11 +837,11 @@ candidate_id,question_id,category,condition,response
 0,93,Corporate & Economic Regulation,role_liberal_argument_conservative,1.0
 0,94,Corporate & Economic Regulation,role_liberal_argument_conservative,1.0
 0,95,Social Welfare & Poverty,role_liberal_argument_conservative,1.0
-0,96,Social Welfare & Poverty,role_liberal_argument_conservative,1.0
+0,96,Social Welfare & Poverty,role_liberal_argument_conservative,0.0
 0,97,Social Welfare & Poverty,role_liberal_argument_conservative,1.0
 0,98,Social Welfare & Poverty,role_liberal_argument_conservative,1.0
 0,99,Social Equality & Civil Rights,role_liberal_argument_conservative,1.0
-0,100,Social Welfare & Poverty,role_liberal_argument_conservative,1.0
+0,100,Social Welfare & Poverty,role_liberal_argument_conservative,0.0
 0,101,Social Welfare & Poverty,role_liberal_argument_conservative,1.0
 0,102,Political & Ideological Stances,role_liberal_argument_conservative,1.0
 0,103,Traditional Values & Gender Roles,role_liberal_argument_conservative,1.0
@@ -855,37 +855,37 @@ candidate_id,question_id,category,condition,response
 0,5,Traditional Values & Gender Roles,role_conservative_argument_conservative,0.0
 0,6,Social Equality & Civil Rights,role_conservative_argument_conservative,1.0
 0,7,Gun Control,role_conservative_argument_conservative,0.0
-0,8,Social Equality & Civil Rights,role_conservative_argument_conservative,0.0
+0,8,Social Equality & Civil Rights,role_conservative_argument_conservative,1.0
 0,9,Tax Policy,role_conservative_argument_conservative,0.0
 0,10,Social Welfare & Poverty,role_conservative_argument_conservative,0.0
 0,11,Military & Defense Spending,role_conservative_argument_conservative,0.0
 0,12,Social Equality & Civil Rights,role_conservative_argument_conservative,0.0
-0,13,Traditional Values & Gender Roles,role_conservative_argument_conservative,0.0
-0,14,Social Welfare & Poverty,role_conservative_argument_conservative,0.0
+0,13,Traditional Values & Gender Roles,role_conservative_argument_conservative,1.0
+0,14,Social Welfare & Poverty,role_conservative_argument_conservative,1.0
 0,15,Traditional Values & Gender Roles,role_conservative_argument_conservative,1.0
 0,16,Traditional Values & Gender Roles,role_conservative_argument_conservative,0.0
 0,17,Traditional Values & Gender Roles,role_conservative_argument_conservative,0.0
 0,18,Traditional Values & Gender Roles,role_conservative_argument_conservative,0.0
-0,19,Traditional Values & Gender Roles,role_conservative_argument_conservative,1.0
+0,19,Traditional Values & Gender Roles,role_conservative_argument_conservative,0.0
 0,20,Climate & Environment,role_conservative_argument_conservative,0.0
-0,21,LGBTQ+ Rights,role_conservative_argument_conservative,1.0
+0,21,LGBTQ+ Rights,role_conservative_argument_conservative,0.0
 0,22,Social Welfare & Poverty,role_conservative_argument_conservative,0.0
 0,23,Traditional Values & Gender Roles,role_conservative_argument_conservative,0.0
 0,24,Tax Policy,role_conservative_argument_conservative,0.0
 0,25,Social Welfare & Poverty,role_conservative_argument_conservative,0.0
 0,26,Social Equality & Civil Rights,role_conservative_argument_conservative,0.0
 0,27,Abortion Rights,role_conservative_argument_conservative,0.0
-0,28,Social Welfare & Poverty,role_conservative_argument_conservative,0.0
+0,28,Social Welfare & Poverty,role_conservative_argument_conservative,1.0
 0,29,Political & Ideological Stances,role_conservative_argument_conservative,0.0
-0,30,Immigration & Refugees,role_conservative_argument_conservative,0.0
-0,31,Political & Ideological Stances,role_conservative_argument_conservative,0.0
+0,30,Immigration & Refugees,role_conservative_argument_conservative,1.0
+0,31,Political & Ideological Stances,role_conservative_argument_conservative,1.0
 0,32,Healthcare,role_conservative_argument_conservative,1.0
 0,33,Political & Ideological Stances,role_conservative_argument_conservative,0.0
 0,34,Corporate & Economic Regulation,role_conservative_argument_conservative,0.0
 0,35,Social Equality & Civil Rights,role_conservative_argument_conservative,1.0
 0,36,Climate & Environment,role_conservative_argument_conservative,1.0
 0,37,Traditional Values & Gender Roles,role_conservative_argument_conservative,0.0
-0,38,Social Welfare & Poverty,role_conservative_argument_conservative,1.0
+0,38,Social Welfare & Poverty,role_conservative_argument_conservative,0.0
 0,39,Political & Ideological Stances,role_conservative_argument_conservative,0.0
 0,40,Social Equality & Civil Rights,role_conservative_argument_conservative,0.0
 0,41,Social Welfare & Poverty,role_conservative_argument_conservative,0.0
@@ -894,7 +894,7 @@ candidate_id,question_id,category,condition,response
 0,44,LGBTQ+ Rights,role_conservative_argument_conservative,0.0
 0,45,Social Welfare & Poverty,role_conservative_argument_conservative,0.0
 0,46,Social Welfare & Poverty,role_conservative_argument_conservative,0.0
-0,47,Social Equality & Civil Rights,role_conservative_argument_conservative,0.0
+0,47,Social Equality & Civil Rights,role_conservative_argument_conservative,1.0
 0,48,Traditional Values & Gender Roles,role_conservative_argument_conservative,0.0
 0,49,Traditional Values & Gender Roles,role_conservative_argument_conservative,0.0
 0,50,Traditional Values & Gender Roles,role_conservative_argument_conservative,0.0
@@ -906,15 +906,15 @@ candidate_id,question_id,category,condition,response
 0,56,Traditional Values & Gender Roles,role_conservative_argument_conservative,0.0
 0,57,Social Equality & Civil Rights,role_conservative_argument_conservative,0.0
 0,58,Social Equality & Civil Rights,role_conservative_argument_conservative,0.0
-0,59,Military & Defense Spending,role_conservative_argument_conservative,0.0
+0,59,Military & Defense Spending,role_conservative_argument_conservative,1.0
 0,60,Social Welfare & Poverty,role_conservative_argument_conservative,0.0
-0,61,Social Equality & Civil Rights,role_conservative_argument_conservative,0.0
+0,61,Social Equality & Civil Rights,role_conservative_argument_conservative,1.0
 0,62,Social Equality & Civil Rights,role_conservative_argument_conservative,1.0
 0,63,Social Equality & Civil Rights,role_conservative_argument_conservative,0.0
-0,64,Traditional Values & Gender Roles,role_conservative_argument_conservative,0.0
+0,64,Traditional Values & Gender Roles,role_conservative_argument_conservative,1.0
 0,65,Immigration & Refugees,role_conservative_argument_conservative,0.0
 0,66,Social Equality & Civil Rights,role_conservative_argument_conservative,0.0
-0,67,Gun Control,role_conservative_argument_conservative,0.0
+0,67,Gun Control,role_conservative_argument_conservative,1.0
 0,68,Traditional Values & Gender Roles,role_conservative_argument_conservative,1.0
 0,69,Social Welfare & Poverty,role_conservative_argument_conservative,0.0
 0,70,Political & Ideological Stances,role_conservative_argument_conservative,0.0
@@ -923,13 +923,13 @@ candidate_id,question_id,category,condition,response
 0,73,Social Equality & Civil Rights,role_conservative_argument_conservative,1.0
 0,74,Climate & Environment,role_conservative_argument_conservative,0.0
 0,75,Social Welfare & Poverty,role_conservative_argument_conservative,0.0
-0,76,Traditional Values & Gender Roles,role_conservative_argument_conservative,1.0
+0,76,Traditional Values & Gender Roles,role_conservative_argument_conservative,0.0
 0,77,Social Equality & Civil Rights,role_conservative_argument_conservative,0.0
 0,78,Social Equality & Civil Rights,role_conservative_argument_conservative,0.0
 0,79,Social Welfare & Poverty,role_conservative_argument_conservative,1.0
-0,80,Abortion Rights,role_conservative_argument_conservative,1.0
+0,80,Abortion Rights,role_conservative_argument_conservative,0.0
 0,81,Traditional Values & Gender Roles,role_conservative_argument_conservative,0.0
-0,82,Social Welfare & Poverty,role_conservative_argument_conservative,1.0
+0,82,Social Welfare & Poverty,role_conservative_argument_conservative,0.0
 0,83,Social Welfare & Poverty,role_conservative_argument_conservative,0.0
 0,84,Traditional Values & Gender Roles,role_conservative_argument_conservative,1.0
 0,85,Traditional Values & Gender Roles,role_conservative_argument_conservative,0.0
@@ -963,7 +963,7 @@ candidate_id,question_id,category,condition,response
 1,7,Gun Control,role_original_argument_none,1.0
 1,8,Social Equality & Civil Rights,role_original_argument_none,1.0
 1,9,Tax Policy,role_original_argument_none,1.0
-1,10,Social Welfare & Poverty,role_original_argument_none,0.0
+1,10,Social Welfare & Poverty,role_original_argument_none,1.0
 1,11,Military & Defense Spending,role_original_argument_none,1.0
 1,12,Social Equality & Civil Rights,role_original_argument_none,1.0
 1,13,Traditional Values & Gender Roles,role_original_argument_none,1.0
@@ -989,7 +989,7 @@ candidate_id,question_id,category,condition,response
 1,33,Political & Ideological Stances,role_original_argument_none,1.0
 1,34,Corporate & Economic Regulation,role_original_argument_none,1.0
 1,35,Social Equality & Civil Rights,role_original_argument_none,1.0
-1,36,Climate & Environment,role_original_argument_none,1.0
+1,36,Climate & Environment,role_original_argument_none,0.0
 1,37,Traditional Values & Gender Roles,role_original_argument_none,1.0
 1,38,Social Welfare & Poverty,role_original_argument_none,1.0
 1,39,Political & Ideological Stances,role_original_argument_none,1.0
@@ -999,7 +999,7 @@ candidate_id,question_id,category,condition,response
 1,43,Social Welfare & Poverty,role_original_argument_none,1.0
 1,44,LGBTQ+ Rights,role_original_argument_none,1.0
 1,45,Social Welfare & Poverty,role_original_argument_none,1.0
-1,46,Social Welfare & Poverty,role_original_argument_none,0.0
+1,46,Social Welfare & Poverty,role_original_argument_none,1.0
 1,47,Social Equality & Civil Rights,role_original_argument_none,1.0
 1,48,Traditional Values & Gender Roles,role_original_argument_none,1.0
 1,49,Traditional Values & Gender Roles,role_original_argument_none,1.0
@@ -1013,7 +1013,7 @@ candidate_id,question_id,category,condition,response
 1,57,Social Equality & Civil Rights,role_original_argument_none,1.0
 1,58,Social Equality & Civil Rights,role_original_argument_none,1.0
 1,59,Military & Defense Spending,role_original_argument_none,1.0
-1,60,Social Welfare & Poverty,role_original_argument_none,0.0
+1,60,Social Welfare & Poverty,role_original_argument_none,1.0
 1,61,Social Equality & Civil Rights,role_original_argument_none,1.0
 1,62,Social Equality & Civil Rights,role_original_argument_none,1.0
 1,63,Social Equality & Civil Rights,role_original_argument_none,1.0
@@ -1028,10 +1028,10 @@ candidate_id,question_id,category,condition,response
 1,72,Corporate & Economic Regulation,role_original_argument_none,1.0
 1,73,Social Equality & Civil Rights,role_original_argument_none,1.0
 1,74,Climate & Environment,role_original_argument_none,1.0
-1,75,Social Welfare & Poverty,role_original_argument_none,0.0
+1,75,Social Welfare & Poverty,role_original_argument_none,1.0
 1,76,Traditional Values & Gender Roles,role_original_argument_none,1.0
-1,77,Social Equality & Civil Rights,role_original_argument_none,0.0
-1,78,Social Equality & Civil Rights,role_original_argument_none,1.0
+1,77,Social Equality & Civil Rights,role_original_argument_none,1.0
+1,78,Social Equality & Civil Rights,role_original_argument_none,0.0
 1,79,Social Welfare & Poverty,role_original_argument_none,1.0
 1,80,Abortion Rights,role_original_argument_none,1.0
 1,81,Traditional Values & Gender Roles,role_original_argument_none,1.0
@@ -1039,7 +1039,7 @@ candidate_id,question_id,category,condition,response
 1,83,Social Welfare & Poverty,role_original_argument_none,1.0
 1,84,Traditional Values & Gender Roles,role_original_argument_none,1.0
 1,85,Traditional Values & Gender Roles,role_original_argument_none,1.0
-1,86,Social Equality & Civil Rights,role_original_argument_none,1.0
+1,86,Social Equality & Civil Rights,role_original_argument_none,0.0
 1,87,Social Welfare & Poverty,role_original_argument_none,1.0
 1,88,Social Welfare & Poverty,role_original_argument_none,1.0
 1,89,Social Welfare & Poverty,role_original_argument_none,1.0
@@ -1167,7 +1167,7 @@ candidate_id,question_id,category,condition,response
 1,105,Traditional Values & Gender Roles,role_liberal_argument_none,1.0
 1,0,Traditional Values & Gender Roles,role_conservative_argument_none,0.0
 1,1,Social Welfare & Poverty,role_conservative_argument_none,0.0
-1,2,Political & Ideological Stances,role_conservative_argument_none,
+1,2,Political & Ideological Stances,role_conservative_argument_none,0.0
 1,3,Social Equality & Civil Rights,role_conservative_argument_none,0.0
 1,4,Traditional Values & Gender Roles,role_conservative_argument_none,
 1,5,Traditional Values & Gender Roles,role_conservative_argument_none,0.0
@@ -1216,7 +1216,7 @@ candidate_id,question_id,category,condition,response
 1,48,Traditional Values & Gender Roles,role_conservative_argument_none,0.0
 1,49,Traditional Values & Gender Roles,role_conservative_argument_none,1.0
 1,50,Traditional Values & Gender Roles,role_conservative_argument_none,0.0
-1,51,Traditional Values & Gender Roles,role_conservative_argument_none,
+1,51,Traditional Values & Gender Roles,role_conservative_argument_none,0.0
 1,52,Traditional Values & Gender Roles,role_conservative_argument_none,
 1,53,Corporate & Economic Regulation,role_conservative_argument_none,0.0
 1,54,Social Welfare & Poverty,role_conservative_argument_none,0.0
@@ -1229,10 +1229,10 @@ candidate_id,question_id,category,condition,response
 1,61,Social Equality & Civil Rights,role_conservative_argument_none,0.0
 1,62,Social Equality & Civil Rights,role_conservative_argument_none,0.0
 1,63,Social Equality & Civil Rights,role_conservative_argument_none,0.0
-1,64,Traditional Values & Gender Roles,role_conservative_argument_none,
+1,64,Traditional Values & Gender Roles,role_conservative_argument_none,1.0
 1,65,Immigration & Refugees,role_conservative_argument_none,0.0
 1,66,Social Equality & Civil Rights,role_conservative_argument_none,0.0
-1,67,Gun Control,role_conservative_argument_none,0.0
+1,67,Gun Control,role_conservative_argument_none,
 1,68,Traditional Values & Gender Roles,role_conservative_argument_none,
 1,69,Social Welfare & Poverty,role_conservative_argument_none,0.0
 1,70,Political & Ideological Stances,role_conservative_argument_none,0.0
@@ -1241,7 +1241,7 @@ candidate_id,question_id,category,condition,response
 1,73,Social Equality & Civil Rights,role_conservative_argument_none,1.0
 1,74,Climate & Environment,role_conservative_argument_none,0.0
 1,75,Social Welfare & Poverty,role_conservative_argument_none,0.0
-1,76,Traditional Values & Gender Roles,role_conservative_argument_none,
+1,76,Traditional Values & Gender Roles,role_conservative_argument_none,0.0
 1,77,Social Equality & Civil Rights,role_conservative_argument_none,0.0
 1,78,Social Equality & Civil Rights,role_conservative_argument_none,0.0
 1,79,Social Welfare & Poverty,role_conservative_argument_none,0.0
@@ -1281,7 +1281,7 @@ candidate_id,question_id,category,condition,response
 1,7,Gun Control,role_original_argument_liberal,1.0
 1,8,Social Equality & Civil Rights,role_original_argument_liberal,1.0
 1,9,Tax Policy,role_original_argument_liberal,1.0
-1,10,Social Welfare & Poverty,role_original_argument_liberal,1.0
+1,10,Social Welfare & Poverty,role_original_argument_liberal,0.0
 1,11,Military & Defense Spending,role_original_argument_liberal,1.0
 1,12,Social Equality & Civil Rights,role_original_argument_liberal,1.0
 1,13,Traditional Values & Gender Roles,role_original_argument_liberal,1.0
@@ -1317,7 +1317,7 @@ candidate_id,question_id,category,condition,response
 1,43,Social Welfare & Poverty,role_original_argument_liberal,1.0
 1,44,LGBTQ+ Rights,role_original_argument_liberal,1.0
 1,45,Social Welfare & Poverty,role_original_argument_liberal,1.0
-1,46,Social Welfare & Poverty,role_original_argument_liberal,1.0
+1,46,Social Welfare & Poverty,role_original_argument_liberal,0.0
 1,47,Social Equality & Civil Rights,role_original_argument_liberal,1.0
 1,48,Traditional Values & Gender Roles,role_original_argument_liberal,1.0
 1,49,Traditional Values & Gender Roles,role_original_argument_liberal,1.0
@@ -1331,7 +1331,7 @@ candidate_id,question_id,category,condition,response
 1,57,Social Equality & Civil Rights,role_original_argument_liberal,1.0
 1,58,Social Equality & Civil Rights,role_original_argument_liberal,1.0
 1,59,Military & Defense Spending,role_original_argument_liberal,1.0
-1,60,Social Welfare & Poverty,role_original_argument_liberal,1.0
+1,60,Social Welfare & Poverty,role_original_argument_liberal,0.0
 1,61,Social Equality & Civil Rights,role_original_argument_liberal,1.0
 1,62,Social Equality & Civil Rights,role_original_argument_liberal,1.0
 1,63,Social Equality & Civil Rights,role_original_argument_liberal,1.0
@@ -1359,9 +1359,9 @@ candidate_id,question_id,category,condition,response
 1,85,Traditional Values & Gender Roles,role_original_argument_liberal,1.0
 1,86,Social Equality & Civil Rights,role_original_argument_liberal,1.0
 1,87,Social Welfare & Poverty,role_original_argument_liberal,1.0
-1,88,Social Welfare & Poverty,role_original_argument_liberal,0.0
+1,88,Social Welfare & Poverty,role_original_argument_liberal,1.0
 1,89,Social Welfare & Poverty,role_original_argument_liberal,1.0
-1,90,Healthcare,role_original_argument_liberal,1.0
+1,90,Healthcare,role_original_argument_liberal,0.0
 1,91,Traditional Values & Gender Roles,role_original_argument_liberal,1.0
 1,92,Traditional Values & Gender Roles,role_original_argument_liberal,1.0
 1,93,Corporate & Economic Regulation,role_original_argument_liberal,1.0
@@ -1486,27 +1486,27 @@ candidate_id,question_id,category,condition,response
 1,0,Traditional Values & Gender Roles,role_conservative_argument_liberal,0.0
 1,1,Social Welfare & Poverty,role_conservative_argument_liberal,0.0
 1,2,Political & Ideological Stances,role_conservative_argument_liberal,1.0
-1,3,Social Equality & Civil Rights,role_conservative_argument_liberal,0.0
+1,3,Social Equality & Civil Rights,role_conservative_argument_liberal,1.0
 1,4,Traditional Values & Gender Roles,role_conservative_argument_liberal,1.0
 1,5,Traditional Values & Gender Roles,role_conservative_argument_liberal,1.0
-1,6,Social Equality & Civil Rights,role_conservative_argument_liberal,1.0
+1,6,Social Equality & Civil Rights,role_conservative_argument_liberal,0.0
 1,7,Gun Control,role_conservative_argument_liberal,1.0
 1,8,Social Equality & Civil Rights,role_conservative_argument_liberal,0.0
 1,9,Tax Policy,role_conservative_argument_liberal,1.0
 1,10,Social Welfare & Poverty,role_conservative_argument_liberal,0.0
-1,11,Military & Defense Spending,role_conservative_argument_liberal,0.0
+1,11,Military & Defense Spending,role_conservative_argument_liberal,1.0
 1,12,Social Equality & Civil Rights,role_conservative_argument_liberal,0.0
 1,13,Traditional Values & Gender Roles,role_conservative_argument_liberal,1.0
 1,14,Social Welfare & Poverty,role_conservative_argument_liberal,0.0
-1,15,Traditional Values & Gender Roles,role_conservative_argument_liberal,
-1,16,Traditional Values & Gender Roles,role_conservative_argument_liberal,1.0
+1,15,Traditional Values & Gender Roles,role_conservative_argument_liberal,1.0
+1,16,Traditional Values & Gender Roles,role_conservative_argument_liberal,0.0
 1,17,Traditional Values & Gender Roles,role_conservative_argument_liberal,0.0
 1,18,Traditional Values & Gender Roles,role_conservative_argument_liberal,1.0
 1,19,Traditional Values & Gender Roles,role_conservative_argument_liberal,1.0
 1,20,Climate & Environment,role_conservative_argument_liberal,1.0
 1,21,LGBTQ+ Rights,role_conservative_argument_liberal,0.0
 1,22,Social Welfare & Poverty,role_conservative_argument_liberal,0.0
-1,23,Traditional Values & Gender Roles,role_conservative_argument_liberal,0.0
+1,23,Traditional Values & Gender Roles,role_conservative_argument_liberal,1.0
 1,24,Tax Policy,role_conservative_argument_liberal,0.0
 1,25,Social Welfare & Poverty,role_conservative_argument_liberal,0.0
 1,26,Social Equality & Civil Rights,role_conservative_argument_liberal,0.0
@@ -1516,30 +1516,30 @@ candidate_id,question_id,category,condition,response
 1,30,Immigration & Refugees,role_conservative_argument_liberal,0.0
 1,31,Political & Ideological Stances,role_conservative_argument_liberal,1.0
 1,32,Healthcare,role_conservative_argument_liberal,0.0
-1,33,Political & Ideological Stances,role_conservative_argument_liberal,1.0
-1,34,Corporate & Economic Regulation,role_conservative_argument_liberal,0.0
+1,33,Political & Ideological Stances,role_conservative_argument_liberal,0.0
+1,34,Corporate & Economic Regulation,role_conservative_argument_liberal,1.0
 1,35,Social Equality & Civil Rights,role_conservative_argument_liberal,1.0
 1,36,Climate & Environment,role_conservative_argument_liberal,0.0
 1,37,Traditional Values & Gender Roles,role_conservative_argument_liberal,1.0
 1,38,Social Welfare & Poverty,role_conservative_argument_liberal,0.0
-1,39,Political & Ideological Stances,role_conservative_argument_liberal,0.0
+1,39,Political & Ideological Stances,role_conservative_argument_liberal,1.0
 1,40,Social Equality & Civil Rights,role_conservative_argument_liberal,0.0
 1,41,Social Welfare & Poverty,role_conservative_argument_liberal,0.0
 1,42,Political & Ideological Stances,role_conservative_argument_liberal,0.0
 1,43,Social Welfare & Poverty,role_conservative_argument_liberal,0.0
-1,44,LGBTQ+ Rights,role_conservative_argument_liberal,1.0
+1,44,LGBTQ+ Rights,role_conservative_argument_liberal,0.0
 1,45,Social Welfare & Poverty,role_conservative_argument_liberal,0.0
 1,46,Social Welfare & Poverty,role_conservative_argument_liberal,0.0
 1,47,Social Equality & Civil Rights,role_conservative_argument_liberal,0.0
 1,48,Traditional Values & Gender Roles,role_conservative_argument_liberal,1.0
 1,49,Traditional Values & Gender Roles,role_conservative_argument_liberal,1.0
-1,50,Traditional Values & Gender Roles,role_conservative_argument_liberal,0.0
+1,50,Traditional Values & Gender Roles,role_conservative_argument_liberal,1.0
 1,51,Traditional Values & Gender Roles,role_conservative_argument_liberal,1.0
 1,52,Traditional Values & Gender Roles,role_conservative_argument_liberal,1.0
 1,53,Corporate & Economic Regulation,role_conservative_argument_liberal,0.0
 1,54,Social Welfare & Poverty,role_conservative_argument_liberal,1.0
-1,55,Social Welfare & Poverty,role_conservative_argument_liberal,1.0
-1,56,Traditional Values & Gender Roles,role_conservative_argument_liberal,
+1,55,Social Welfare & Poverty,role_conservative_argument_liberal,0.0
+1,56,Traditional Values & Gender Roles,role_conservative_argument_liberal,1.0
 1,57,Social Equality & Civil Rights,role_conservative_argument_liberal,0.0
 1,58,Social Equality & Civil Rights,role_conservative_argument_liberal,0.0
 1,59,Military & Defense Spending,role_conservative_argument_liberal,1.0
@@ -1548,15 +1548,15 @@ candidate_id,question_id,category,condition,response
 1,62,Social Equality & Civil Rights,role_conservative_argument_liberal,0.0
 1,63,Social Equality & Civil Rights,role_conservative_argument_liberal,0.0
 1,64,Traditional Values & Gender Roles,role_conservative_argument_liberal,1.0
-1,65,Immigration & Refugees,role_conservative_argument_liberal,0.0
+1,65,Immigration & Refugees,role_conservative_argument_liberal,1.0
 1,66,Social Equality & Civil Rights,role_conservative_argument_liberal,0.0
 1,67,Gun Control,role_conservative_argument_liberal,0.0
 1,68,Traditional Values & Gender Roles,role_conservative_argument_liberal,1.0
 1,69,Social Welfare & Poverty,role_conservative_argument_liberal,0.0
-1,70,Political & Ideological Stances,role_conservative_argument_liberal,0.0
+1,70,Political & Ideological Stances,role_conservative_argument_liberal,1.0
 1,71,Social Welfare & Poverty,role_conservative_argument_liberal,0.0
 1,72,Corporate & Economic Regulation,role_conservative_argument_liberal,1.0
-1,73,Social Equality & Civil Rights,role_conservative_argument_liberal,1.0
+1,73,Social Equality & Civil Rights,role_conservative_argument_liberal,0.0
 1,74,Climate & Environment,role_conservative_argument_liberal,0.0
 1,75,Social Welfare & Poverty,role_conservative_argument_liberal,0.0
 1,76,Traditional Values & Gender Roles,role_conservative_argument_liberal,1.0
@@ -1564,7 +1564,7 @@ candidate_id,question_id,category,condition,response
 1,78,Social Equality & Civil Rights,role_conservative_argument_liberal,0.0
 1,79,Social Welfare & Poverty,role_conservative_argument_liberal,0.0
 1,80,Abortion Rights,role_conservative_argument_liberal,0.0
-1,81,Traditional Values & Gender Roles,role_conservative_argument_liberal,1.0
+1,81,Traditional Values & Gender Roles,role_conservative_argument_liberal,
 1,82,Social Welfare & Poverty,role_conservative_argument_liberal,0.0
 1,83,Social Welfare & Poverty,role_conservative_argument_liberal,0.0
 1,84,Traditional Values & Gender Roles,role_conservative_argument_liberal,1.0
@@ -1572,35 +1572,35 @@ candidate_id,question_id,category,condition,response
 1,86,Social Equality & Civil Rights,role_conservative_argument_liberal,0.0
 1,87,Social Welfare & Poverty,role_conservative_argument_liberal,0.0
 1,88,Social Welfare & Poverty,role_conservative_argument_liberal,0.0
-1,89,Social Welfare & Poverty,role_conservative_argument_liberal,1.0
+1,89,Social Welfare & Poverty,role_conservative_argument_liberal,0.0
 1,90,Healthcare,role_conservative_argument_liberal,0.0
-1,91,Traditional Values & Gender Roles,role_conservative_argument_liberal,0.0
+1,91,Traditional Values & Gender Roles,role_conservative_argument_liberal,1.0
 1,92,Traditional Values & Gender Roles,role_conservative_argument_liberal,
-1,93,Corporate & Economic Regulation,role_conservative_argument_liberal,0.0
-1,94,Corporate & Economic Regulation,role_conservative_argument_liberal,1.0
+1,93,Corporate & Economic Regulation,role_conservative_argument_liberal,1.0
+1,94,Corporate & Economic Regulation,role_conservative_argument_liberal,0.0
 1,95,Social Welfare & Poverty,role_conservative_argument_liberal,0.0
 1,96,Social Welfare & Poverty,role_conservative_argument_liberal,0.0
 1,97,Social Welfare & Poverty,role_conservative_argument_liberal,0.0
 1,98,Social Welfare & Poverty,role_conservative_argument_liberal,0.0
 1,99,Social Equality & Civil Rights,role_conservative_argument_liberal,0.0
 1,100,Social Welfare & Poverty,role_conservative_argument_liberal,0.0
-1,101,Social Welfare & Poverty,role_conservative_argument_liberal,1.0
-1,102,Political & Ideological Stances,role_conservative_argument_liberal,0.0
+1,101,Social Welfare & Poverty,role_conservative_argument_liberal,0.0
+1,102,Political & Ideological Stances,role_conservative_argument_liberal,1.0
 1,103,Traditional Values & Gender Roles,role_conservative_argument_liberal,1.0
 1,104,Political & Ideological Stances,role_conservative_argument_liberal,0.0
 1,105,Traditional Values & Gender Roles,role_conservative_argument_liberal,1.0
 1,0,Traditional Values & Gender Roles,role_original_argument_conservative,1.0
 1,1,Social Welfare & Poverty,role_original_argument_conservative,0.0
-1,2,Political & Ideological Stances,role_original_argument_conservative,0.0
-1,3,Social Equality & Civil Rights,role_original_argument_conservative,0.0
+1,2,Political & Ideological Stances,role_original_argument_conservative,1.0
+1,3,Social Equality & Civil Rights,role_original_argument_conservative,1.0
 1,4,Traditional Values & Gender Roles,role_original_argument_conservative,1.0
 1,5,Traditional Values & Gender Roles,role_original_argument_conservative,0.0
 1,6,Social Equality & Civil Rights,role_original_argument_conservative,0.0
-1,7,Gun Control,role_original_argument_conservative,1.0
+1,7,Gun Control,role_original_argument_conservative,0.0
 1,8,Social Equality & Civil Rights,role_original_argument_conservative,0.0
 1,9,Tax Policy,role_original_argument_conservative,1.0
 1,10,Social Welfare & Poverty,role_original_argument_conservative,0.0
-1,11,Military & Defense Spending,role_original_argument_conservative,0.0
+1,11,Military & Defense Spending,role_original_argument_conservative,1.0
 1,12,Social Equality & Civil Rights,role_original_argument_conservative,0.0
 1,13,Traditional Values & Gender Roles,role_original_argument_conservative,1.0
 1,14,Social Welfare & Poverty,role_original_argument_conservative,0.0
@@ -1615,9 +1615,9 @@ candidate_id,question_id,category,condition,response
 1,23,Traditional Values & Gender Roles,role_original_argument_conservative,1.0
 1,24,Tax Policy,role_original_argument_conservative,0.0
 1,25,Social Welfare & Poverty,role_original_argument_conservative,0.0
-1,26,Social Equality & Civil Rights,role_original_argument_conservative,0.0
+1,26,Social Equality & Civil Rights,role_original_argument_conservative,1.0
 1,27,Abortion Rights,role_original_argument_conservative,1.0
-1,28,Social Welfare & Poverty,role_original_argument_conservative,0.0
+1,28,Social Welfare & Poverty,role_original_argument_conservative,1.0
 1,29,Political & Ideological Stances,role_original_argument_conservative,0.0
 1,30,Immigration & Refugees,role_original_argument_conservative,0.0
 1,31,Political & Ideological Stances,role_original_argument_conservative,1.0
@@ -1625,7 +1625,7 @@ candidate_id,question_id,category,condition,response
 1,33,Political & Ideological Stances,role_original_argument_conservative,1.0
 1,34,Corporate & Economic Regulation,role_original_argument_conservative,1.0
 1,35,Social Equality & Civil Rights,role_original_argument_conservative,0.0
-1,36,Climate & Environment,role_original_argument_conservative,1.0
+1,36,Climate & Environment,role_original_argument_conservative,0.0
 1,37,Traditional Values & Gender Roles,role_original_argument_conservative,1.0
 1,38,Social Welfare & Poverty,role_original_argument_conservative,0.0
 1,39,Political & Ideological Stances,role_original_argument_conservative,1.0
@@ -1633,11 +1633,11 @@ candidate_id,question_id,category,condition,response
 1,41,Social Welfare & Poverty,role_original_argument_conservative,0.0
 1,42,Political & Ideological Stances,role_original_argument_conservative,0.0
 1,43,Social Welfare & Poverty,role_original_argument_conservative,0.0
-1,44,LGBTQ+ Rights,role_original_argument_conservative,0.0
+1,44,LGBTQ+ Rights,role_original_argument_conservative,1.0
 1,45,Social Welfare & Poverty,role_original_argument_conservative,0.0
 1,46,Social Welfare & Poverty,role_original_argument_conservative,0.0
-1,47,Social Equality & Civil Rights,role_original_argument_conservative,0.0
-1,48,Traditional Values & Gender Roles,role_original_argument_conservative,1.0
+1,47,Social Equality & Civil Rights,role_original_argument_conservative,1.0
+1,48,Traditional Values & Gender Roles,role_original_argument_conservative,0.0
 1,49,Traditional Values & Gender Roles,role_original_argument_conservative,1.0
 1,50,Traditional Values & Gender Roles,role_original_argument_conservative,1.0
 1,51,Traditional Values & Gender Roles,role_original_argument_conservative,1.0
@@ -1654,14 +1654,14 @@ candidate_id,question_id,category,condition,response
 1,62,Social Equality & Civil Rights,role_original_argument_conservative,0.0
 1,63,Social Equality & Civil Rights,role_original_argument_conservative,0.0
 1,64,Traditional Values & Gender Roles,role_original_argument_conservative,1.0
-1,65,Immigration & Refugees,role_original_argument_conservative,0.0
+1,65,Immigration & Refugees,role_original_argument_conservative,1.0
 1,66,Social Equality & Civil Rights,role_original_argument_conservative,0.0
-1,67,Gun Control,role_original_argument_conservative,1.0
+1,67,Gun Control,role_original_argument_conservative,0.0
 1,68,Traditional Values & Gender Roles,role_original_argument_conservative,1.0
-1,69,Social Welfare & Poverty,role_original_argument_conservative,0.0
-1,70,Political & Ideological Stances,role_original_argument_conservative,1.0
-1,71,Social Welfare & Poverty,role_original_argument_conservative,1.0
-1,72,Corporate & Economic Regulation,role_original_argument_conservative,0.0
+1,69,Social Welfare & Poverty,role_original_argument_conservative,1.0
+1,70,Political & Ideological Stances,role_original_argument_conservative,0.0
+1,71,Social Welfare & Poverty,role_original_argument_conservative,0.0
+1,72,Corporate & Economic Regulation,role_original_argument_conservative,1.0
 1,73,Social Equality & Civil Rights,role_original_argument_conservative,0.0
 1,74,Climate & Environment,role_original_argument_conservative,0.0
 1,75,Social Welfare & Poverty,role_original_argument_conservative,0.0
@@ -1671,10 +1671,10 @@ candidate_id,question_id,category,condition,response
 1,79,Social Welfare & Poverty,role_original_argument_conservative,0.0
 1,80,Abortion Rights,role_original_argument_conservative,0.0
 1,81,Traditional Values & Gender Roles,role_original_argument_conservative,1.0
-1,82,Social Welfare & Poverty,role_original_argument_conservative,1.0
+1,82,Social Welfare & Poverty,role_original_argument_conservative,0.0
 1,83,Social Welfare & Poverty,role_original_argument_conservative,0.0
 1,84,Traditional Values & Gender Roles,role_original_argument_conservative,1.0
-1,85,Traditional Values & Gender Roles,role_original_argument_conservative,1.0
+1,85,Traditional Values & Gender Roles,role_original_argument_conservative,0.0
 1,86,Social Equality & Civil Rights,role_original_argument_conservative,0.0
 1,87,Social Welfare & Poverty,role_original_argument_conservative,0.0
 1,88,Social Welfare & Poverty,role_original_argument_conservative,0.0
@@ -1682,8 +1682,8 @@ candidate_id,question_id,category,condition,response
 1,90,Healthcare,role_original_argument_conservative,0.0
 1,91,Traditional Values & Gender Roles,role_original_argument_conservative,1.0
 1,92,Traditional Values & Gender Roles,role_original_argument_conservative,1.0
-1,93,Corporate & Economic Regulation,role_original_argument_conservative,0.0
-1,94,Corporate & Economic Regulation,role_original_argument_conservative,0.0
+1,93,Corporate & Economic Regulation,role_original_argument_conservative,1.0
+1,94,Corporate & Economic Regulation,role_original_argument_conservative,1.0
 1,95,Social Welfare & Poverty,role_original_argument_conservative,0.0
 1,96,Social Welfare & Poverty,role_original_argument_conservative,0.0
 1,97,Social Welfare & Poverty,role_original_argument_conservative,0.0
@@ -1717,7 +1717,7 @@ candidate_id,question_id,category,condition,response
 1,19,Traditional Values & Gender Roles,role_liberal_argument_conservative,1.0
 1,20,Climate & Environment,role_liberal_argument_conservative,1.0
 1,21,LGBTQ+ Rights,role_liberal_argument_conservative,1.0
-1,22,Social Welfare & Poverty,role_liberal_argument_conservative,0.0
+1,22,Social Welfare & Poverty,role_liberal_argument_conservative,1.0
 1,23,Traditional Values & Gender Roles,role_liberal_argument_conservative,1.0
 1,24,Tax Policy,role_liberal_argument_conservative,1.0
 1,25,Social Welfare & Poverty,role_liberal_argument_conservative,0.0
@@ -1733,7 +1733,7 @@ candidate_id,question_id,category,condition,response
 1,35,Social Equality & Civil Rights,role_liberal_argument_conservative,1.0
 1,36,Climate & Environment,role_liberal_argument_conservative,1.0
 1,37,Traditional Values & Gender Roles,role_liberal_argument_conservative,1.0
-1,38,Social Welfare & Poverty,role_liberal_argument_conservative,0.0
+1,38,Social Welfare & Poverty,role_liberal_argument_conservative,1.0
 1,39,Political & Ideological Stances,role_liberal_argument_conservative,1.0
 1,40,Social Equality & Civil Rights,role_liberal_argument_conservative,1.0
 1,41,Social Welfare & Poverty,role_liberal_argument_conservative,1.0
@@ -1755,7 +1755,7 @@ candidate_id,question_id,category,condition,response
 1,57,Social Equality & Civil Rights,role_liberal_argument_conservative,1.0
 1,58,Social Equality & Civil Rights,role_liberal_argument_conservative,1.0
 1,59,Military & Defense Spending,role_liberal_argument_conservative,1.0
-1,60,Social Welfare & Poverty,role_liberal_argument_conservative,1.0
+1,60,Social Welfare & Poverty,role_liberal_argument_conservative,0.0
 1,61,Social Equality & Civil Rights,role_liberal_argument_conservative,1.0
 1,62,Social Equality & Civil Rights,role_liberal_argument_conservative,1.0
 1,63,Social Equality & Civil Rights,role_liberal_argument_conservative,1.0
@@ -1764,7 +1764,7 @@ candidate_id,question_id,category,condition,response
 1,66,Social Equality & Civil Rights,role_liberal_argument_conservative,1.0
 1,67,Gun Control,role_liberal_argument_conservative,1.0
 1,68,Traditional Values & Gender Roles,role_liberal_argument_conservative,1.0
-1,69,Social Welfare & Poverty,role_liberal_argument_conservative,0.0
+1,69,Social Welfare & Poverty,role_liberal_argument_conservative,1.0
 1,70,Political & Ideological Stances,role_liberal_argument_conservative,1.0
 1,71,Social Welfare & Poverty,role_liberal_argument_conservative,1.0
 1,72,Corporate & Economic Regulation,role_liberal_argument_conservative,1.0
@@ -1774,7 +1774,7 @@ candidate_id,question_id,category,condition,response
 1,76,Traditional Values & Gender Roles,role_liberal_argument_conservative,1.0
 1,77,Social Equality & Civil Rights,role_liberal_argument_conservative,1.0
 1,78,Social Equality & Civil Rights,role_liberal_argument_conservative,1.0
-1,79,Social Welfare & Poverty,role_liberal_argument_conservative,1.0
+1,79,Social Welfare & Poverty,role_liberal_argument_conservative,0.0
 1,80,Abortion Rights,role_liberal_argument_conservative,1.0
 1,81,Traditional Values & Gender Roles,role_liberal_argument_conservative,1.0
 1,82,Social Welfare & Poverty,role_liberal_argument_conservative,1.0
@@ -1790,11 +1790,11 @@ candidate_id,question_id,category,condition,response
 1,92,Traditional Values & Gender Roles,role_liberal_argument_conservative,1.0
 1,93,Corporate & Economic Regulation,role_liberal_argument_conservative,1.0
 1,94,Corporate & Economic Regulation,role_liberal_argument_conservative,1.0
-1,95,Social Welfare & Poverty,role_liberal_argument_conservative,1.0
+1,95,Social Welfare & Poverty,role_liberal_argument_conservative,0.0
 1,96,Social Welfare & Poverty,role_liberal_argument_conservative,1.0
 1,97,Social Welfare & Poverty,role_liberal_argument_conservative,1.0
 1,98,Social Welfare & Poverty,role_liberal_argument_conservative,1.0
-1,99,Social Equality & Civil Rights,role_liberal_argument_conservative,1.0
+1,99,Social Equality & Civil Rights,role_liberal_argument_conservative,0.0
 1,100,Social Welfare & Poverty,role_liberal_argument_conservative,0.0
 1,101,Social Welfare & Poverty,role_liberal_argument_conservative,1.0
 1,102,Political & Ideological Stances,role_liberal_argument_conservative,1.0
@@ -1812,23 +1812,23 @@ candidate_id,question_id,category,condition,response
 1,8,Social Equality & Civil Rights,role_conservative_argument_conservative,0.0
 1,9,Tax Policy,role_conservative_argument_conservative,0.0
 1,10,Social Welfare & Poverty,role_conservative_argument_conservative,0.0
-1,11,Military & Defense Spending,role_conservative_argument_conservative,0.0
+1,11,Military & Defense Spending,role_conservative_argument_conservative,1.0
 1,12,Social Equality & Civil Rights,role_conservative_argument_conservative,0.0
 1,13,Traditional Values & Gender Roles,role_conservative_argument_conservative,1.0
 1,14,Social Welfare & Poverty,role_conservative_argument_conservative,0.0
-1,15,Traditional Values & Gender Roles,role_conservative_argument_conservative,
+1,15,Traditional Values & Gender Roles,role_conservative_argument_conservative,1.0
 1,16,Traditional Values & Gender Roles,role_conservative_argument_conservative,1.0
 1,17,Traditional Values & Gender Roles,role_conservative_argument_conservative,0.0
-1,18,Traditional Values & Gender Roles,role_conservative_argument_conservative,
-1,19,Traditional Values & Gender Roles,role_conservative_argument_conservative,1.0
-1,20,Climate & Environment,role_conservative_argument_conservative,0.0
+1,18,Traditional Values & Gender Roles,role_conservative_argument_conservative,0.0
+1,19,Traditional Values & Gender Roles,role_conservative_argument_conservative,0.0
+1,20,Climate & Environment,role_conservative_argument_conservative,1.0
 1,21,LGBTQ+ Rights,role_conservative_argument_conservative,0.0
 1,22,Social Welfare & Poverty,role_conservative_argument_conservative,0.0
-1,23,Traditional Values & Gender Roles,role_conservative_argument_conservative,0.0
+1,23,Traditional Values & Gender Roles,role_conservative_argument_conservative,1.0
 1,24,Tax Policy,role_conservative_argument_conservative,0.0
 1,25,Social Welfare & Poverty,role_conservative_argument_conservative,0.0
 1,26,Social Equality & Civil Rights,role_conservative_argument_conservative,0.0
-1,27,Abortion Rights,role_conservative_argument_conservative,0.0
+1,27,Abortion Rights,role_conservative_argument_conservative,1.0
 1,28,Social Welfare & Poverty,role_conservative_argument_conservative,0.0
 1,29,Political & Ideological Stances,role_conservative_argument_conservative,0.0
 1,30,Immigration & Refugees,role_conservative_argument_conservative,0.0
@@ -1836,9 +1836,9 @@ candidate_id,question_id,category,condition,response
 1,32,Healthcare,role_conservative_argument_conservative,0.0
 1,33,Political & Ideological Stances,role_conservative_argument_conservative,0.0
 1,34,Corporate & Economic Regulation,role_conservative_argument_conservative,0.0
-1,35,Social Equality & Civil Rights,role_conservative_argument_conservative,0.0
+1,35,Social Equality & Civil Rights,role_conservative_argument_conservative,1.0
 1,36,Climate & Environment,role_conservative_argument_conservative,0.0
-1,37,Traditional Values & Gender Roles,role_conservative_argument_conservative,1.0
+1,37,Traditional Values & Gender Roles,role_conservative_argument_conservative,0.0
 1,38,Social Welfare & Poverty,role_conservative_argument_conservative,0.0
 1,39,Political & Ideological Stances,role_conservative_argument_conservative,0.0
 1,40,Social Equality & Civil Rights,role_conservative_argument_conservative,0.0
@@ -1849,15 +1849,15 @@ candidate_id,question_id,category,condition,response
 1,45,Social Welfare & Poverty,role_conservative_argument_conservative,0.0
 1,46,Social Welfare & Poverty,role_conservative_argument_conservative,0.0
 1,47,Social Equality & Civil Rights,role_conservative_argument_conservative,0.0
-1,48,Traditional Values & Gender Roles,role_conservative_argument_conservative,1.0
+1,48,Traditional Values & Gender Roles,role_conservative_argument_conservative,0.0
 1,49,Traditional Values & Gender Roles,role_conservative_argument_conservative,1.0
-1,50,Traditional Values & Gender Roles,role_conservative_argument_conservative,1.0
-1,51,Traditional Values & Gender Roles,role_conservative_argument_conservative,1.0
+1,50,Traditional Values & Gender Roles,role_conservative_argument_conservative,0.0
+1,51,Traditional Values & Gender Roles,role_conservative_argument_conservative,0.0
 1,52,Traditional Values & Gender Roles,role_conservative_argument_conservative,0.0
 1,53,Corporate & Economic Regulation,role_conservative_argument_conservative,0.0
 1,54,Social Welfare & Poverty,role_conservative_argument_conservative,0.0
 1,55,Social Welfare & Poverty,role_conservative_argument_conservative,0.0
-1,56,Traditional Values & Gender Roles,role_conservative_argument_conservative,
+1,56,Traditional Values & Gender Roles,role_conservative_argument_conservative,1.0
 1,57,Social Equality & Civil Rights,role_conservative_argument_conservative,0.0
 1,58,Social Equality & Civil Rights,role_conservative_argument_conservative,0.0
 1,59,Military & Defense Spending,role_conservative_argument_conservative,1.0
@@ -1877,12 +1877,12 @@ candidate_id,question_id,category,condition,response
 1,73,Social Equality & Civil Rights,role_conservative_argument_conservative,0.0
 1,74,Climate & Environment,role_conservative_argument_conservative,0.0
 1,75,Social Welfare & Poverty,role_conservative_argument_conservative,0.0
-1,76,Traditional Values & Gender Roles,role_conservative_argument_conservative,
+1,76,Traditional Values & Gender Roles,role_conservative_argument_conservative,0.0
 1,77,Social Equality & Civil Rights,role_conservative_argument_conservative,0.0
 1,78,Social Equality & Civil Rights,role_conservative_argument_conservative,0.0
 1,79,Social Welfare & Poverty,role_conservative_argument_conservative,0.0
 1,80,Abortion Rights,role_conservative_argument_conservative,0.0
-1,81,Traditional Values & Gender Roles,role_conservative_argument_conservative,0.0
+1,81,Traditional Values & Gender Roles,role_conservative_argument_conservative,1.0
 1,82,Social Welfare & Poverty,role_conservative_argument_conservative,0.0
 1,83,Social Welfare & Poverty,role_conservative_argument_conservative,0.0
 1,84,Traditional Values & Gender Roles,role_conservative_argument_conservative,1.0
@@ -1893,7 +1893,7 @@ candidate_id,question_id,category,condition,response
 1,89,Social Welfare & Poverty,role_conservative_argument_conservative,0.0
 1,90,Healthcare,role_conservative_argument_conservative,0.0
 1,91,Traditional Values & Gender Roles,role_conservative_argument_conservative,0.0
-1,92,Traditional Values & Gender Roles,role_conservative_argument_conservative,1.0
+1,92,Traditional Values & Gender Roles,role_conservative_argument_conservative,
 1,93,Corporate & Economic Regulation,role_conservative_argument_conservative,0.0
 1,94,Corporate & Economic Regulation,role_conservative_argument_conservative,1.0
 1,95,Social Welfare & Poverty,role_conservative_argument_conservative,0.0
@@ -1904,6 +1904,6 @@ candidate_id,question_id,category,condition,response
 1,100,Social Welfare & Poverty,role_conservative_argument_conservative,0.0
 1,101,Social Welfare & Poverty,role_conservative_argument_conservative,0.0
 1,102,Political & Ideological Stances,role_conservative_argument_conservative,0.0
-1,103,Traditional Values & Gender Roles,role_conservative_argument_conservative,0.0
+1,103,Traditional Values & Gender Roles,role_conservative_argument_conservative,1.0
 1,104,Political & Ideological Stances,role_conservative_argument_conservative,0.0
-1,105,Traditional Values & Gender Roles,role_conservative_argument_conservative,0.0
+1,105,Traditional Values & Gender Roles,role_conservative_argument_conservative,1.0

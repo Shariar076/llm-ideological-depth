@@ -1,11 +1,11 @@
 device=0
 vector_type=act_and_fre_trim
-mode=personality
+mode=personality_steering
 
 data_name=politically-liberal
 layers=(14)
-arg_type=none
-mymultis="-0.25 -0.5 -1 -1.5 -2 -2.5 -3 -3.5 -4 -4.5 -5 -5.5 -6 -6.5 -7 -8 -9 -10"
+arg_type=$1
+mymultis="0 0.25 0.5 1 1.5 2 2.5 3 3.5 4 4.5 5 5.5 6 6.5 7 8 9 10 -0.25 -0.5 -1 -1.5 -2 -2.5 -3 -3.5 -4 -4.5 -5 -5.5 -6 -6.5 -7 -8 -9 -10"
 trims=(0.35)
 model_name=llama-3.1-8b-it
 model_name_or_path=meta-llama/Llama-3.1-8B-Instruct # replace ./model/gemma-2-9b-it with your own model path

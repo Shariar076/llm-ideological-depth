@@ -133,7 +133,7 @@ class LlamaWrapper:
         if override_model_weights_path is not None:
             self.model.load_state_dict(t.load(override_model_weights_path))
         
-        self.model = self.model.half()
+        # self.model = self.model.half()
         self.model = self.model.to(self.device)
         if use_chat:
             self.END_STR = t.tensor(self.tokenizer.encode(ADD_FROM_POS_CHAT)[1:]).to(
@@ -316,7 +316,7 @@ class GemmaWrapper:
         if override_model_weights_path is not None:
             self.model.load_state_dict(t.load(override_model_weights_path))
         
-        self.model = self.model.half()
+        # self.model = self.model.half()
         self.model = self.model.to(self.device)
         # if t.cuda.device_count() > 1:
         #     print(f"Using {t.cuda.device_count()} GPUs!")

@@ -7,8 +7,8 @@ model_name_or_paths=(
 )
 
 test_name=base
-arg_type=not_matching
-use_prompt=conservative
+arg_type=$1
+use_prompt=$2
 data_name=politically-liberal
 data_path=./data_for_STA/data
 

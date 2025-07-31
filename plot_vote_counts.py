@@ -15,32 +15,41 @@ import numpy as np
 #         [(48, 2, 0), (48, 2, 0), (48, 2, 0), (44, 6, 0), (37, 13, 0), (33, 17, 0), (23, 27, 0), (17, 33, 0), (12, 38, 0), (7, 43, 0)]
 #     ],
 # ]
-
+# plot_data = [[[(21, 29, 0), (26, 24, 0)], [(21, 29, 0), (19, 31, 0), (18, 32, 0), (20, 30, 0), (18, 32, 0), (17, 33, 0), (16, 34, 0), (23, 27, 0), (27, 23, 0), (24, 26, 0), (24, 26, 0)], [(21, 29, 0), (19, 31, 0), (19, 31, 0), (18, 32, 0), (19, 31, 0), (19, 31, 0), (19, 31, 0), (16, 34, 0), (21, 29, 0), (21, 29, 0), (21, 29, 0)]], [[(23, 27, 0), (28, 22, 0)], [(22, 28, 0), (22, 28, 0), (21, 29, 0), (26, 24, 0), (30, 20, 0), (29, 21, 0), (29, 21, 0), (29, 21, 0), (29, 21, 0), (29, 21, 0), (29, 21, 0)], [(22, 28, 0), (22, 28, 0), (21, 29, 0), (23, 27, 0), (28, 22, 0), (30, 20, 0), (29, 21, 0), (28, 22, 0), (28, 22, 0), (30, 20, 0), (32, 18, 0)]]]
+# plot_data = [[[(21, 29, 0), (22, 28, 0)], [(21, 29, 0), (22, 28, 0), (22, 28, 0), (22, 28, 0), (22, 28, 0), (24, 26, 0), (24, 26, 0), (23, 27, 0), (23, 27, 0), (23, 27, 0), (24, 26, 0)], [(21, 29, 0), (20, 30, 0), (22, 28, 0), (22, 28, 0), (22, 28, 0), (23, 27, 0), (21, 29, 0), (23, 27, 0), (23, 27, 0), (23, 27, 0), (23, 27, 0)]], [[(23, 27, 0), (23, 27, 0)], [(22, 28, 0), (24, 26, 0), (27, 23, 0), (27, 23, 0), (28, 22, 0), (29, 21, 0), (29, 21, 0), (29, 21, 0), (29, 21, 0), (28, 22, 0), (31, 19, 0)], [(22, 28, 0), (24, 26, 0), (27, 23, 0), (27, 23, 0), (31, 19, 0), (29, 21, 0), (29, 21, 0), (29, 21, 0), (29, 21, 0), (29, 21, 0), (31, 19, 0)]]]
 
 layer = 14
 model= "llama-3.1-8b-it"
-plot_data = [
-    [
-        [(3, 40, 7)], 
-        [(43, 4, 3), (29, 7, 14), (19, 10, 21), (36, 2, 12), (37, 8, 5), (38, 12, 0), (32, 18, 0), (30, 18, 0)], 
-        [(46, 3, 1), (41, 3, 6), (40, 5, 5), (44, 3, 3), (41, 8, 1), (38, 12, 0), (32, 16, 2), (29, 13, 8), (15, 4, 31), (0, 0, 50)]
-    ], 
-    [
-        [(14, 34, 2)], 
-        [(47, 3, 0), (36, 14, 0), (34, 16, 0), (30, 20, 0), (32, 18, 0), (29, 21, 0), (28, 22, 0), (16, 19, 3)], 
-        [(47, 3, 0), (46, 4, 0), (45, 5, 0), (39, 11, 0), (29, 21, 0), (19, 21, 10), (14, 10, 26), (0, 3, 47), (0, 0, 50), (0, 0, 50)]
-    ],
-]
+# plot_data = [
+#     [
+#         [(3, 40, 7)], 
+#         [(43, 4, 3), (29, 7, 14), (19, 10, 21), (36, 2, 12), (37, 8, 5), (38, 12, 0), (32, 18, 0), (30, 18, 0)], 
+#         [(46, 3, 1), (41, 3, 6), (40, 5, 5), (44, 3, 3), (41, 8, 1), (38, 12, 0), (32, 16, 2), (29, 13, 8), (15, 4, 31), (0, 0, 50)]
+#     ], 
+#     [
+#         [(14, 34, 2)], 
+#         [(47, 3, 0), (36, 14, 0), (34, 16, 0), (30, 20, 0), (32, 18, 0), (29, 21, 0), (28, 22, 0), (16, 19, 3)], 
+#         [(47, 3, 0), (46, 4, 0), (45, 5, 0), (39, 11, 0), (29, 21, 0), (19, 21, 10), (14, 10, 26), (0, 3, 47), (0, 0, 50), (0, 0, 50)]
+#     ],
+# ]
+
+# plot_data = [[[(23, 27, 0), (24, 17, 9)], [(23, 27, 0), (20, 28, 2), (17, 24, 9), (16, 12, 22), (18, 20, 12), (28, 20, 2), (29, 21, 0), (27, 23, 0), (28, 22, 0), (30, 20, 0), (11, 10, 14)], [(23, 27, 0), (20, 30, 0), (20, 28, 2), (18, 24, 8), (24, 25, 1), (23, 26, 1), (25, 25, 0), (26, 21, 3), (25, 19, 6), (11, 13, 26), (0, 0, 50)]], [[(22, 28, 0), (17, 33, 0)], [(26, 24, 0), (22, 28, 0), (21, 29, 0), (20, 30, 0), (20, 30, 0), (29, 21, 0), (24, 26, 0), (25, 25, 0), (29, 19, 0), (26, 16, 1), (4, 6, 19)], [(24, 26, 0), (23, 27, 0), (23, 27, 0), (18, 32, 0), (27, 23, 0), (29, 21, 0), (26, 20, 4), (20, 8, 22), (3, 1, 46), (0, 0, 50), (0, 0, 50)]]]
+plot_data = [[[(23, 27, 0), (22, 28, 0)], [(23, 27, 0), (22, 28, 0), (22, 28, 0), (22, 28, 0), (23, 27, 0), (24, 26, 0), (25, 25, 0), (24, 26, 0), (27, 23, 0), (26, 24, 0), (29, 21, 0)], [(23, 27, 0), (22, 28, 0), (23, 27, 0), (22, 28, 0), (22, 28, 0), (23, 27, 0), (23, 27, 0), (22, 28, 0), (21, 29, 0), (24, 26, 0), (6, 10, 0)]], [[(22, 28, 0), (22, 28, 0)], [(26, 24, 0), (22, 28, 0), (22, 28, 0), (24, 26, 0), (27, 23, 0), (29, 21, 0), (29, 21, 0), (29, 21, 0), (29, 21, 0), (29, 21, 0), (29, 21, 0)], [(24, 26, 0), (23, 27, 0), (22, 28, 0), (23, 27, 0), (21, 29, 0), (22, 28, 0), (23, 27, 0), (22, 28, 0), (20, 30, 0), (18, 20, 0), (0, 0, 0)]]]
 
 def plot_marked_lines():
     # Define x-values
-    x_vals_base = [0]  # dummy x for base
-    x_vals_caa = ["-0.25", "-0.5", "-1.0", "-1.5", "-2.0", "-2.5", "-3.0", "-4",]
-    x_vals_sta = ["-0.25", "-0.5", "-1.0", "-1.5", "-2.0", "-2.5", "-3.0", "-3.5", "-4.0", "-5.0"]
-
+    # being conservative
+    # x_vals_base = ["role_none", "role_conservative"]
+    # x_vals_caa = ["0.0", "-0.25", "-0.5", "-1.0", "-1.5", "-2.0", "-2.5", "-3.0", "-3.5", "-4.0", "-5.0"]
+    # x_vals_sta = ["0.0", "-0.25", "-0.5", "-1.0", "-1.5", "-2.0", "-2.5", "-3.0", "-3.5", "-4.0", "-5.0"]
+    # being liberal
+    x_vals_base = ["role_none", "role_liberal"]
+    x_vals_caa = ["0.0", "0.25", "0.5", "1.0", "1.5", "2.0", "2.5", "3.0", "3.5", "4.0", "5.0"]
+    x_vals_sta = ["0.0", "0.25", "0.5", "1.0", "1.5", "2.0", "2.5", "3.0", "3.5", "4.0", "5.0"]
+    
     # Flatten all y-values to get global min/max for consistent y-axis
     # all_values = sum([sum(setting, []) for setting in plot_data], [])
-    y_min, y_max = 0, 100 #min(all_values), max(all_values)
+    y_min, y_max = 0, 50 #min(all_values), max(all_values)
 
     # Add a margin for better readability
     y_margin = (y_max - y_min) * 0.1
@@ -56,7 +65,7 @@ def plot_marked_lines():
     # Colors for comparison
     markers = ['^', 's']
     linestyles = ['-', '--']
-    labels = ['Baseline', 'Argumentative']
+    labels = ['No Argument', 'Argumentative']
 
     # Plot each method: Base, CAA, STA
     for i in range(3):
@@ -64,33 +73,35 @@ def plot_marked_lines():
         for j in range(2):  # 0 = baseline, 1 = argumentative
             data = plot_data[j][i]
             # Extract liberal, conservative, and null votes from tuples
-            lib_data = [element[0] * (100/50) for element in data]
-            cons_data = [element[1] * (100/50) for element in data]
-            null_data = [element[2] * (100/50) for element in data]
+            # mult  * (100/106) to get %
+            lib_data = [element[0] for element in data]
+            cons_data = [element[1] for element in data]
+            null_data = [element[2] for element in data]
             
             if i == 0:
-                ax.plot(x_vals_base, lib_data, markers[j], label=f'{labels[j]} Liberal', color="blue", linestyle=linestyles[j])
-                ax.plot(x_vals_base, cons_data, markers[j], label=f'{labels[j]} Conservative', color="red", linestyle=linestyles[j])
-                ax.plot(x_vals_base, null_data, markers[j], label=f'{labels[j]} Null', color="green", linestyle=linestyles[j])
+                ax.plot(x_vals_base, lib_data, markers[j], label=f'{labels[j]} Lib Vote', color="blue", linestyle=linestyles[j])
+                ax.plot(x_vals_base, cons_data, markers[j], label=f'{labels[j]} Cons Vote', color="red", linestyle=linestyles[j])
+                ax.plot(x_vals_base, null_data, markers[j], label=f'{labels[j]} Null Vote', color="green", linestyle=linestyles[j])
             elif i == 1:
-                ax.plot(x_vals_caa, lib_data, markers[j], label=f'{labels[j]} Liberal', color="blue", linestyle=linestyles[j])
-                ax.plot(x_vals_caa, cons_data, markers[j], label=f'{labels[j]} Conservative', color="red", linestyle=linestyles[j])
-                ax.plot(x_vals_caa, null_data, markers[j], label=f'{labels[j]} Null', color="green", linestyle=linestyles[j])
+                ax.plot(x_vals_caa, lib_data, markers[j], label=f'{labels[j]} Lib Vote', color="blue", linestyle=linestyles[j])
+                ax.plot(x_vals_caa, cons_data, markers[j], label=f'{labels[j]} Cons Vote', color="red", linestyle=linestyles[j])
+                ax.plot(x_vals_caa, null_data, markers[j], label=f'{labels[j]} Null Vote', color="green", linestyle=linestyles[j])
             else:
-                ax.plot(x_vals_sta, lib_data, markers[j], label=f'{labels[j]} Liberal', color="blue", linestyle=linestyles[j])
-                ax.plot(x_vals_sta, cons_data, markers[j], label=f'{labels[j]} Conservative', color="red", linestyle=linestyles[j])
-                ax.plot(x_vals_sta, null_data, markers[j], label=f'{labels[j]} Null', color="green", linestyle=linestyles[j])
+                ax.plot(x_vals_sta, lib_data, markers[j], label=f'{labels[j]} Lib Vote', color="blue", linestyle=linestyles[j])
+                ax.plot(x_vals_sta, cons_data, markers[j], label=f'{labels[j]} Cons Vote', color="red", linestyle=linestyles[j])
+                ax.plot(x_vals_sta, null_data, markers[j], label=f'{labels[j]} Null Vote', color="green", linestyle=linestyles[j])
         
         ax.set_title(titles[i])
         ax.set_ylim(y_min, y_max)
         ax.set_xlabel('Multiplier')
-        ax.set_ylabel('% of non-liberal votes')
+        ax.set_ylabel('Number of non-liberal votes')
         ax.grid(True)
         ax.legend()
 
     plt.tight_layout()
+    # plt.savefig(f'analysis/comparison_layer_{layer}_{model}_being_conservative.png')
+    plt.savefig(f'analysis/comparison_layer_{layer}_{model}_being_liberal.png')
 
-    plt.savefig(f'analysis/comparison_layer_{layer}_{model}.png')
 
 def plot_grouped_bars():
     # Define x-values
@@ -160,4 +171,4 @@ def plot_grouped_bars():
     
     
 plot_marked_lines()
-plot_grouped_bars()
+# plot_grouped_bars()

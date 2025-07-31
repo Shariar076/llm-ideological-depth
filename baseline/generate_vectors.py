@@ -147,9 +147,9 @@ if __name__ == "__main__":
                 # ques = B_SYS + args.system_prompt + E_SYS
                 # ques += f"{B_INST}{ques}{E_INST}"
                 ques = f"{B_INST}{ques}{E_INST}"
-            print("Question:", ques)
-            print("chosen:", chosen)
-            print("rejected:", rejected)
+            # print("Question:", ques)
+            # print("chosen:", chosen)
+            # print("rejected:", rejected)
                     
             ques_tokens = tokenizer.encode(ques, return_tensors="pt")
             pos_tokens = tokenizer.encode(ques + f"({chosen})", return_tensors="pt")

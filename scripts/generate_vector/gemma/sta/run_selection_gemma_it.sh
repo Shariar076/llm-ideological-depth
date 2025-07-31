@@ -13,7 +13,7 @@ suffix=16k
 hook_module=resid_canonical
 data_name=politically-liberal
 select_type=sae_vector
-mode=personality
+mode=personality_steering
 sae_num=${#sae_ids[@]}
 
 for ((i=0; i<${sae_num}; i++)); do

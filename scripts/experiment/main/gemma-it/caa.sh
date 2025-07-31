@@ -1,12 +1,12 @@
 device=0
-mode=personality
+mode=personality_steering
 
 model_name=gemma-2-9b-it
 model_name_or_path=google/gemma-2-9b-it # replace ./model/gemma-2-9b-it with your own model path
 data_names=(politically-liberal)
 layers=(20)
 layer_num=${#layers[@]}
-arg_type=none
+arg_type=$1
 max_new_tokens=(50)
 max_new_tokens=${max_new_tokens[0]}
 
@@ -29,7 +29,7 @@ for data_name in ${data_names[@]}; do
                 --mode ${mode} \
                 --layers ${layer} \
                 --max_new_tokens ${max_new_tokens} \
-                --multipliers -0.25 -0.5 -1 -1.5 -2 -2.5 -3 -3.5 -4 -4.5 -5 -5.5 -6 -6.5 -7 -8 -9 -10 \
+                --multipliers 0 0.25 0.5 1 1.5 2 2.5 3 3.5 4 4.5 5 5.5 6 6.5 7 8 9 10 -0.25 -0.5 -1 -1.5 -2 -2.5 -3 -3.5 -4 -4.5 -5 -5.5 -6 -6.5 -7 -8 -9 -10 \
                 --eval_data_name ${eval_data_name} \
                 --model_name ${model_name} \
                 --data_name ${data_name} \

@@ -1,3 +1,4 @@
 results/*
 */prob_results/*
 *__pycache__
+*.log
