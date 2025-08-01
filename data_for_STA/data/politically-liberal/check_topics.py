@@ -71,12 +71,12 @@ statement_topics = ['Political & Ideological Stances', 'Tax Policy', 'Healthcare
 topic_count = {topic:0 for topic in statement_topics}
 
 categorized_statements = json.load(open("categorized_statements.json", "r"))
-# test_data = json.load(open("test.json", "r"))
-test_data = json.load(open("statements.json", "r"))
+test_data = json.load(open("test_new.json", "r"))
+# test_data = json.load(open("statements.json", "r"))
 
 for data in test_data:
-    # statement = data['statement']
-    statement = data
+    statement = data['statement']
+    # statement = data
     found=False
     for topic in statement_topics:
         if statement in categorized_statements[topic]:
@@ -97,3 +97,29 @@ df = pd.DataFrame(list(topic_count.items()), columns=['Category', 'Value'])
 
 # Save to CSV
 # df.to_csv('pie_chart_data.csv', index=False)
+
+# import numpy as np
+# import matplotlib.pyplot as plt
+# import matplotlib.cm as cm
+
+# df = df.sort_values('Value', ascending=False)
+# # df.set_index('Category').plot.pie(y='Value', figsize=(10, 6))
+# plt.figure(figsize=(7, 4))
+# colors = cm.tab20(np.linspace(0, 1, len(df)))  # Generate unique colors
+# wedges, texts, autotexts = plt.pie(df['Value'],
+#                                    colors=colors,
+#                                    autopct='%1.1f%%',
+#                                    startangle=90)
+
+# # Add legend instead of labels on the pie for better readability
+# plt.legend(wedges, df['Category'], 
+#            title="Categories",
+#            loc="center left",
+#            bbox_to_anchor=(1, 0, 0.5, 1))
+
+# plt.title('Distribution by Category')
+# plt.axis('equal')
+# plt.tight_layout()
+# plt.show()
+# plt.tight_layout()
+# plt.savefig("category_proportions.png")

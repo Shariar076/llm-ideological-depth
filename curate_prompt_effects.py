@@ -28,6 +28,15 @@ def count_votes(data):
         #     print(">>>>", non_lib_vote, llm_vote)
     return lib_votes, con_votes, null_votes
 
+def get_vote(vote):
+    llm_vote = vote['pred'].replace("<eos>", "").replace("<end_of_turn>", "").replace("<|eot_id|>", "").lower().split('.')[0].split('\n')[0]
+    if len(llm_vote)>8: # at most len("(a) yes.")==8
+        # print(">>>",vote['pred'])
+        return None
+    if 'a' in llm_vote:
+        return 1
+    if 'b' in llm_vote:
+        return 0
 
 def get_vote_label(vote, q_idx):
     lib_vote =  gt_data[q_idx]["answer_matching_behavior"].lower()
@@ -72,6 +81,7 @@ json_data = []
 for model_idx, model in enumerate(models):
     print("="*50, model, "="*50)
     dataset = []
+    votes_dataset = []
     columns = []
     categories = []
     for argument in argument_conditions:
@@ -85,16 +95,19 @@ for model_idx, model in enumerate(models):
             data = json.load(open(data_path, "r"))
             print(f"role_{role}", f"arg_{arg}", "Total lib_votes, con_votes, null_votes:", count_votes(data))
             row_data = []
+            row_votes = []
             if len(categories)==0:
                 init_categories=True
             else:
                 init_categories=False
             for q_idx, vote in enumerate(data):
                 vote_label = get_vote_label(vote, q_idx)
+                bin_vote = get_vote(vote)
                 category = get_ques_topic(q_idx)
                 if init_categories:
                     categories.append(category)
                 row_data.append(vote_label)
+                row_votes.append(bin_vote)
                 json_data.append({
                     'candidate_id': model_idx,
                     'question_id': q_idx,
@@ -103,17 +116,24 @@ for model_idx, model in enumerate(models):
                     'response': vote_label
                 })
             dataset.append(row_data)
+            votes_dataset.append(row_votes)
 
-    print('\n'.join(columns))
+    # print('\n'.join(columns))
 
+    # print(categories)
+    
     df = pd.DataFrame(dataset, index=columns).T.rename_axis('q_id')
-    print(categories)
     df["category"]=pd.Series(categories)
     df.to_csv(f"analysis/{model}_labeled_votes.csv")
+    
+    vote_df = pd.DataFrame(votes_dataset, index=columns).T.rename_axis('q_id')
+    vote_df["category"]=pd.Series(categories)
+    vote_df.to_csv(f"analysis/{model}_votes.csv")
+    
 
 full_df = pd.DataFrame(json_data)
 print(full_df.category.unique())
-print(full_df.condition.unique())
+print('\n'.join(full_df.condition.unique()))
 full_df.to_csv("analysis/all_labeled_votes.csv", index=False)
 """
 I have political 100 yes/no questions spanning 13 different political topics:

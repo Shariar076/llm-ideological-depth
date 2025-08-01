@@ -57,6 +57,42 @@ def plot_liberal_tendency_by_category(df_list, models):
     plt.savefig("analysis/candidate_liberal_tendency_comparison.png")
     plt.clf()
 
+def plot_null_vote_tendency_by_category(df_list, models, null_value=0.5):
+    response_cols = [col for col in df_list[0].columns if col not in ['category', 'q_id']]
+    # category_means1 = (df_list[0]==null_value).groupby('category')[response_cols].sum().sum()
+    # category_means2 = (df_list[1]==null_value).groupby('category')[response_cols].sum().sum()
+    # print(category_means1)
+    # print(category_means2)
+       
+    categories = df_list[0].category.unique()
+    null_rates = {}
+    for df, candidate in zip(df_list, models):
+        null_rates[candidate] = {}
+            
+        for category in categories:
+            cat_data = df[df['category'] == category][response_cols]
+            # print(f"total_questions {category} = ", len(cat_data))
+            null_responses = int((cat_data==null_value).sum().sum())
+            
+            null_rates[candidate][category] = null_responses/cat_data.size # need total votes
+    
+    # print(pd.DataFrame(null_rates))
+
+    # Create DataFrame for plotting
+    plot_data = pd.DataFrame(null_rates)
+    plot_data =plot_data.loc[(plot_data!=0).any(axis=1)]
+
+    # Plot side-by-side bars
+    ax = plot_data.plot(kind='bar', color=['orange', 'salmon'], alpha=0.7, width=0.8, figsize=(7,6))
+    plt.title('Null response rate by Topic - Comparison')
+    plt.xlabel('Categories')
+    plt.xticks(rotation=45, ha='right')
+    plt.ylim(0,0.5)
+    plt.legend(ncol=2)
+    plt.tight_layout()
+    plt.savefig("analysis/candidate_null_vote_tendency_comparison.png")
+    plt.clf()
+
 def plot_topic_coherence_radar(topic_scores_list, labels, suffix):
     plt.subplot(projection='polar')
     colors = ['red', 'blue', 'green', 'orange']
@@ -107,10 +143,10 @@ def plot_ideological_clustering(df, model):
     pca = PCA(n_components=2)
     pca_data = pca.fit_transform(scaled_data)
     
-    plt.scatter(pca_data[:, 0], pca_data[:, 1], alpha=0.7)
+    plt.scatter(pca_data[:, 0], pca_data[:, 1], alpha=1.0)
     for i, condition in enumerate(response_cols):
-        plt.annotate(condition, (pca_data[i, 0], pca_data[i, 1]), fontsize=8)
-    plt.title('Ideological Position Clustering (PCA)')
+        plt.annotate(condition, (pca_data[i, 0], pca_data[i, 1]), fontsize=12, rotation=0)
+    plt.title(f'Ideological Position Clustering (PCA) {model}')
     plt.xlabel(f'PC1 ({pca.explained_variance_ratio_[0]:.1%} variance)')
     plt.ylabel(f'PC2 ({pca.explained_variance_ratio_[1]:.1%} variance)')
     plt.tight_layout()
@@ -123,7 +159,7 @@ def calculate_topic_scores(df):
     categories = df.category.unique()
     for category in categories:
         category_questions = df[df['category'] == category]
-        if len(category_questions) < 2:
+        if len(category_questions) < 3:
             continue
         
         # roleplaying
@@ -171,20 +207,22 @@ df_2 = df_2.fillna(0.5)
 
 # print(df)
 
-plot_response_heatmap(df_1, MODEL_1)
-plot_response_heatmap(df_2, MODEL_2)
+# plot_response_heatmap(df_1, MODEL_1)
+# plot_response_heatmap(df_2, MODEL_2)
 
-plot_liberal_tendency_by_category([df_1, df_2], [MODEL_1, MODEL_2])
+# plot_liberal_tendency_by_category([df_1, df_2], [MODEL_1, MODEL_2])
 
-topic_scores_1 = calculate_topic_scores(df_1)
-topic_scores_2 = calculate_topic_scores(df_2)
-plot_topic_coherence_radar([topic_scores_1, topic_scores_2], [MODEL_1, MODEL_2], "all")
+plot_null_vote_tendency_by_category([df_1, df_2], [MODEL_1, MODEL_2])
 
-intra_consistency_1 = calculate_intra_condition_consistency(df_1)
-intra_consistency_2 = calculate_intra_condition_consistency(df_2)
-# print(intra_consistency_1)
-# print(intra_consistency_2)
-plot_consistency_heatmap([intra_consistency_1, intra_consistency_2], [MODEL_1, MODEL_2])
+# topic_scores_1 = calculate_topic_scores(df_1)
+# topic_scores_2 = calculate_topic_scores(df_2)
+# plot_topic_coherence_radar([topic_scores_1, topic_scores_2], [MODEL_1, MODEL_2], "all")
 
-plot_ideological_clustering(df_1, MODEL_1)
-plot_ideological_clustering(df_2, MODEL_2)
+# intra_consistency_1 = calculate_intra_condition_consistency(df_1)
+# intra_consistency_2 = calculate_intra_condition_consistency(df_2)
+# # print(intra_consistency_1)
+# # print(intra_consistency_2)
+# plot_consistency_heatmap([intra_consistency_1, intra_consistency_2], [MODEL_1, MODEL_2])
+
+# plot_ideological_clustering(df_1, MODEL_1)
+# plot_ideological_clustering(df_2, MODEL_2)
