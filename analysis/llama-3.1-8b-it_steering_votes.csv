@@ -1,0 +1,107 @@
+q_id,steering_caa_argument_none,steering_sta_argument_none,steering_caa_argument_liberal,steering_sta_argument_liberal,steering_caa_argument_conservative,steering_sta_argument_conservative,category
+0,0.0,0.0,0.0,0.0,0.0,0.0,Traditional Values & Gender Roles
+1,1.0,1.0,1.0,1.0,1.0,0.0,Social Welfare & Poverty
+2,,,0.0,0.0,0.0,0.0,Political & Ideological Stances
+3,1.0,1.0,1.0,1.0,1.0,0.0,Social Equality & Civil Rights
+4,,0.0,0.0,0.0,0.0,0.0,Traditional Values & Gender Roles
+5,0.0,0.0,0.0,0.0,0.0,1.0,Traditional Values & Gender Roles
+6,1.0,1.0,0.0,1.0,0.0,0.0,Social Equality & Civil Rights
+7,,0.0,0.0,0.0,0.0,1.0,Gun Control
+8,1.0,1.0,0.0,1.0,0.0,0.0,Social Equality & Civil Rights
+9,0.0,0.0,0.0,0.0,0.0,0.0,Tax Policy
+10,0.0,1.0,1.0,1.0,1.0,1.0,Social Welfare & Poverty
+11,0.0,0.0,0.0,0.0,0.0,0.0,Military & Defense Spending
+12,,1.0,1.0,1.0,1.0,0.0,Social Equality & Civil Rights
+13,,0.0,0.0,0.0,0.0,0.0,Traditional Values & Gender Roles
+14,0.0,1.0,0.0,1.0,0.0,0.0,Social Welfare & Poverty
+15,,0.0,0.0,0.0,0.0,1.0,Traditional Values & Gender Roles
+16,,0.0,0.0,1.0,0.0,0.0,Traditional Values & Gender Roles
+17,,0.0,0.0,0.0,1.0,1.0,Traditional Values & Gender Roles
+18,,0.0,0.0,0.0,0.0,1.0,Traditional Values & Gender Roles
+19,0.0,0.0,0.0,0.0,0.0,1.0,Traditional Values & Gender Roles
+20,,0.0,0.0,1.0,0.0,0.0,Climate & Environment
+21,,,1.0,0.0,0.0,0.0,LGBTQ+ Rights
+22,,,1.0,1.0,0.0,0.0,Social Welfare & Poverty
+23,0.0,0.0,0.0,0.0,0.0,0.0,Traditional Values & Gender Roles
+24,1.0,1.0,0.0,1.0,0.0,0.0,Tax Policy
+25,1.0,1.0,1.0,1.0,0.0,0.0,Social Welfare & Poverty
+26,1.0,1.0,0.0,1.0,0.0,1.0,Social Equality & Civil Rights
+27,,0.0,0.0,0.0,0.0,0.0,Abortion Rights
+28,0.0,1.0,0.0,1.0,0.0,1.0,Social Welfare & Poverty
+29,0.0,0.0,0.0,0.0,1.0,1.0,Political & Ideological Stances
+30,1.0,1.0,1.0,1.0,0.0,0.0,Immigration & Refugees
+31,0.0,0.0,0.0,0.0,0.0,0.0,Political & Ideological Stances
+32,,1.0,0.0,0.0,1.0,0.0,Healthcare
+33,,,0.0,0.0,0.0,1.0,Political & Ideological Stances
+34,1.0,0.0,0.0,0.0,0.0,1.0,Corporate & Economic Regulation
+35,1.0,1.0,1.0,1.0,0.0,0.0,Social Equality & Civil Rights
+36,0.0,1.0,1.0,1.0,0.0,0.0,Climate & Environment
+37,0.0,,0.0,0.0,1.0,0.0,Traditional Values & Gender Roles
+38,0.0,1.0,1.0,1.0,0.0,0.0,Social Welfare & Poverty
+39,,0.0,0.0,0.0,0.0,0.0,Political & Ideological Stances
+40,1.0,1.0,0.0,1.0,1.0,0.0,Social Equality & Civil Rights
+41,,1.0,1.0,1.0,0.0,0.0,Social Welfare & Poverty
+42,,1.0,0.0,0.0,1.0,1.0,Political & Ideological Stances
+43,0.0,1.0,0.0,0.0,0.0,1.0,Social Welfare & Poverty
+44,,1.0,0.0,1.0,1.0,0.0,LGBTQ+ Rights
+45,1.0,1.0,0.0,1.0,1.0,1.0,Social Welfare & Poverty
+46,,,0.0,1.0,0.0,0.0,Social Welfare & Poverty
+47,,,1.0,0.0,0.0,0.0,Social Equality & Civil Rights
+48,,,0.0,0.0,1.0,1.0,Traditional Values & Gender Roles
+49,0.0,0.0,0.0,0.0,0.0,1.0,Traditional Values & Gender Roles
+50,1.0,0.0,0.0,1.0,0.0,1.0,Traditional Values & Gender Roles
+51,0.0,0.0,0.0,0.0,0.0,0.0,Traditional Values & Gender Roles
+52,0.0,0.0,0.0,0.0,0.0,0.0,Traditional Values & Gender Roles
+53,0.0,1.0,0.0,0.0,0.0,1.0,Corporate & Economic Regulation
+54,,0.0,0.0,0.0,1.0,1.0,Social Welfare & Poverty
+55,0.0,1.0,1.0,0.0,0.0,0.0,Social Welfare & Poverty
+56,,,1.0,0.0,0.0,0.0,Traditional Values & Gender Roles
+57,,1.0,0.0,1.0,0.0,1.0,Social Equality & Civil Rights
+58,1.0,1.0,1.0,1.0,0.0,0.0,Social Equality & Civil Rights
+59,,,0.0,0.0,0.0,0.0,Military & Defense Spending
+60,0.0,0.0,0.0,1.0,0.0,1.0,Social Welfare & Poverty
+61,1.0,1.0,0.0,1.0,0.0,0.0,Social Equality & Civil Rights
+62,1.0,1.0,0.0,1.0,0.0,1.0,Social Equality & Civil Rights
+63,1.0,1.0,0.0,1.0,1.0,1.0,Social Equality & Civil Rights
+64,0.0,0.0,0.0,0.0,0.0,0.0,Traditional Values & Gender Roles
+65,,,0.0,0.0,0.0,0.0,Immigration & Refugees
+66,,,0.0,1.0,1.0,0.0,Social Equality & Civil Rights
+67,,,0.0,1.0,0.0,0.0,Gun Control
+68,,0.0,0.0,0.0,0.0,0.0,Traditional Values & Gender Roles
+69,0.0,1.0,1.0,1.0,0.0,1.0,Social Welfare & Poverty
+70,0.0,0.0,0.0,0.0,1.0,1.0,Political & Ideological Stances
+71,0.0,1.0,0.0,1.0,0.0,0.0,Social Welfare & Poverty
+72,1.0,1.0,0.0,0.0,0.0,1.0,Corporate & Economic Regulation
+73,0.0,1.0,0.0,1.0,0.0,0.0,Social Equality & Civil Rights
+74,1.0,1.0,0.0,1.0,0.0,0.0,Climate & Environment
+75,0.0,1.0,1.0,1.0,0.0,0.0,Social Welfare & Poverty
+76,,0.0,0.0,0.0,0.0,0.0,Traditional Values & Gender Roles
+77,0.0,1.0,0.0,1.0,0.0,0.0,Social Equality & Civil Rights
+78,0.0,0.0,1.0,0.0,0.0,1.0,Social Equality & Civil Rights
+79,1.0,1.0,1.0,0.0,0.0,1.0,Social Welfare & Poverty
+80,,1.0,1.0,1.0,0.0,0.0,Abortion Rights
+81,,0.0,1.0,0.0,1.0,0.0,Traditional Values & Gender Roles
+82,1.0,1.0,1.0,1.0,0.0,0.0,Social Welfare & Poverty
+83,,1.0,0.0,0.0,0.0,0.0,Social Welfare & Poverty
+84,,0.0,0.0,0.0,0.0,0.0,Traditional Values & Gender Roles
+85,1.0,0.0,0.0,0.0,0.0,0.0,Traditional Values & Gender Roles
+86,,1.0,1.0,1.0,0.0,0.0,Social Equality & Civil Rights
+87,0.0,1.0,0.0,1.0,0.0,0.0,Social Welfare & Poverty
+88,0.0,1.0,0.0,1.0,1.0,0.0,Social Welfare & Poverty
+89,1.0,1.0,0.0,0.0,0.0,1.0,Social Welfare & Poverty
+90,1.0,1.0,0.0,1.0,0.0,0.0,Healthcare
+91,,,0.0,0.0,1.0,1.0,Traditional Values & Gender Roles
+92,,0.0,0.0,0.0,0.0,0.0,Traditional Values & Gender Roles
+93,,0.0,0.0,0.0,1.0,1.0,Corporate & Economic Regulation
+94,,0.0,0.0,0.0,0.0,0.0,Corporate & Economic Regulation
+95,,1.0,0.0,1.0,0.0,0.0,Social Welfare & Poverty
+96,,1.0,1.0,1.0,0.0,0.0,Social Welfare & Poverty
+97,0.0,1.0,0.0,1.0,0.0,0.0,Social Welfare & Poverty
+98,0.0,,0.0,1.0,0.0,0.0,Social Welfare & Poverty
+99,1.0,1.0,0.0,1.0,0.0,0.0,Social Equality & Civil Rights
+100,1.0,1.0,1.0,1.0,0.0,1.0,Social Welfare & Poverty
+101,0.0,0.0,0.0,0.0,0.0,0.0,Social Welfare & Poverty
+102,,0.0,0.0,0.0,0.0,1.0,Political & Ideological Stances
+103,,0.0,0.0,0.0,1.0,0.0,Traditional Values & Gender Roles
+104,0.0,0.0,0.0,0.0,1.0,0.0,Political & Ideological Stances
+105,0.0,0.0,0.0,0.0,0.0,1.0,Traditional Values & Gender Roles

@@ -107,7 +107,7 @@ def plot_topic_coherence_radar(topic_scores_list, labels, suffix):
         plt.plot(angles, values, 'o-', linewidth=2, color=colors[idx], alpha=0.7, label=labels[idx])
         plt.fill(angles, values, alpha=0.25, color=colors[idx])
         plt.xticks(angles[:-1], [cat[:15] + '...' if len(cat) > 15 else cat for cat in categories])
-    plt.title('Topic-Specific Ideological Consistency')
+    plt.title(f'{suffix.upper()} Topic-Specific Ideological Consistency')
     plt.legend(bbox_to_anchor=(1.05, 1),
                          loc='upper left', borderaxespad=0.)
     plt.tight_layout()
@@ -153,7 +153,7 @@ def plot_ideological_clustering(df, model):
     plt.savefig(f"analysis/{model}_condition_ideological_clustering.png")
     plt.clf()
 
-def calculate_topic_scores(df):
+def calculate_topic_scores(df, suffix):
     """Calculate ideological consistency within each topic category"""
     topic_scores = {}
     categories = df.category.unique()
@@ -170,9 +170,35 @@ def calculate_topic_scores(df):
         # response_cols = [
         #     'role_original_argument_none', 'role_liberal_argument_none', 'role_conservative_argument_none'
         # ]
-
-        # across all conditions for this category
-        response_cols = [col for col in df.columns if col not in ['category', 'q_id']]
+        
+        if suffix=='role_original':
+            # being original
+            response_cols = [
+                'role_original_argument_none', 'role_original_argument_liberal', 'role_original_argument_conservative'
+            ]
+        elif suffix=='role_liberal':
+            # being liberal
+            response_cols = [
+                'role_liberal_argument_none', 'role_liberal_argument_liberal', 'role_liberal_argument_conservative'
+            ]
+        elif suffix=='role_conservative':
+            # being conservative
+            response_cols = [
+                'role_conservative_argument_none', 'role_conservative_argument_liberal', 'role_conservative_argument_conservative'
+            ]
+        elif suffix=='steering_conservative_caa':
+            # being conservative
+            response_cols = [
+                'steering_caa_argument_none', 'steering_caa_argument_liberal', 'steering_caa_argument_conservative'
+            ]
+        elif suffix=='steering_conservative_sta':
+            # being conservative
+            response_cols = [
+                'steering_sta_argument_none', 'steering_sta_argument_liberal', 'steering_sta_argument_conservative'
+            ]
+        else:
+            # across all conditions for this category
+            response_cols = [col for col in df.columns if col not in ['category', 'q_id']]
 
         category_data = category_questions[response_cols]
         
@@ -200,10 +226,14 @@ def calculate_intra_condition_consistency(df):
         intra_consistency[condition] = 1 - (4 * responses.var())
     return intra_consistency
         
-df_1 = pd.read_csv(f"analysis/{MODEL_1}_labeled_votes.csv")
-df_1 = df_1.fillna(0.5)
-df_2 = pd.read_csv(f"analysis/{MODEL_2}_labeled_votes.csv")
-df_2 = df_2.fillna(0.5)
+# df_1 = pd.read_csv(f"analysis/{MODEL_1}_labeled_votes.csv")
+# # df_1 = df_1.fillna(0.5)
+# df_2 = pd.read_csv(f"analysis/{MODEL_2}_labeled_votes.csv")
+# # df_2 = df_2.fillna(0.5)
+
+direction = "liberal"
+df_1 = pd.read_csv(f"analysis/{MODEL_1}_labeled_{direction}_steering_votes.csv")
+df_2 = pd.read_csv(f"analysis/{MODEL_2}_labeled_{direction}_steering_votes.csv")
 
 # print(df)
 
@@ -212,11 +242,27 @@ df_2 = df_2.fillna(0.5)
 
 # plot_liberal_tendency_by_category([df_1, df_2], [MODEL_1, MODEL_2])
 
-plot_null_vote_tendency_by_category([df_1, df_2], [MODEL_1, MODEL_2])
+# plot_null_vote_tendency_by_category([df_1, df_2], [MODEL_1, MODEL_2])
 
-# topic_scores_1 = calculate_topic_scores(df_1)
-# topic_scores_2 = calculate_topic_scores(df_2)
-# plot_topic_coherence_radar([topic_scores_1, topic_scores_2], [MODEL_1, MODEL_2], "all")
+topic_scores_1 = calculate_topic_scores(df_1, f"steering_{direction}_caa")
+topic_scores_2 = calculate_topic_scores(df_2, f"steering_{direction}_caa")
+plot_topic_coherence_radar([topic_scores_1, topic_scores_2], [MODEL_1, MODEL_2], f"steering_{direction}_caa")
+topic_scores_1 = calculate_topic_scores(df_1, f"steering_{direction}_sta")
+topic_scores_2 = calculate_topic_scores(df_2, f"steering_{direction}_sta")
+plot_topic_coherence_radar([topic_scores_1, topic_scores_2], [MODEL_1, MODEL_2], f"steering_{direction}_sta")
+
+# topic_scores_1 = calculate_topic_scores(df_1, "role_all")
+# topic_scores_2 = calculate_topic_scores(df_2, "role_all")
+# plot_topic_coherence_radar([topic_scores_1, topic_scores_2], [MODEL_1, MODEL_2], "role_all")
+# topic_scores_1 = calculate_topic_scores(df_1, "role_original")
+# topic_scores_2 = calculate_topic_scores(df_2, "role_original")
+# plot_topic_coherence_radar([topic_scores_1, topic_scores_2], [MODEL_1, MODEL_2], "role_original")
+# topic_scores_1 = calculate_topic_scores(df_1, "role_liberal")
+# topic_scores_2 = calculate_topic_scores(df_2, "role_liberal")
+# plot_topic_coherence_radar([topic_scores_1, topic_scores_2], [MODEL_1, MODEL_2], "role_liberal")
+# topic_scores_1 = calculate_topic_scores(df_1, "role_conservative")
+# topic_scores_2 = calculate_topic_scores(df_2, "role_conservative")
+# plot_topic_coherence_radar([topic_scores_1, topic_scores_2], [MODEL_1, MODEL_2], "role_conservative")
 
 # intra_consistency_1 = calculate_intra_condition_consistency(df_1)
 # intra_consistency_2 = calculate_intra_condition_consistency(df_2)

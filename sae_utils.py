@@ -587,10 +587,10 @@ def activation_selection_contrastive_for_toxic_freq(
     
     json.dump({idx.item(): (pos_feature_freq[idx].item(), 
                             pos_act_mean[idx].item()) for idx in (pos_feature_freq > 0).nonzero().squeeze()},
-              open("temp/pos_feature_freq.json", "w"), indent=4)
+              open(f"temp/pos_feature_freq_{model_name}.json", "w"), indent=4)
     json.dump({idx.item(): (neg_feature_freq[idx].item(), 
                             neg_act_mean[idx].item()) for idx in (neg_feature_freq > 0).nonzero().squeeze()},
-              open("temp/neg_feature_freq.json", "w"), indent=4)
+              open(f"temp/neg_feature_{model_name}.json", "w"), indent=4)
     
     return feature_score, pos_feature_freq, neg_feature_freq, pos_act_mean, neg_act_mean
 

@@ -2,3 +2,6 @@ results/*
 */prob_results/*
 *__pycache__
 *.log
+irt_files/*
+!irt_files/*.stan
+*.tar.gz

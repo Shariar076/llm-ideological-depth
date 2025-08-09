@@ -1,6 +1,6 @@
 import json
 
-gt_data_path = "data_for_STA/data/politically-liberal/test.json"
+gt_data_path = "data_for_STA/data/politically-liberal/test_new.json"
 
 
 layer = 14
@@ -27,6 +27,7 @@ def count_mismatched_votes(data):
     lib_votes = 0
     con_votes = 0
     null_votes = 0
+    assert len(data)==len(gt_data), "Data len don't match"
     for gt_vote, vote in zip(gt_data, data):
         lib_vote =  gt_vote["answer_matching_behavior"].lower()
         con_vote =  gt_vote["answer_not_matching_behavior"].lower()
