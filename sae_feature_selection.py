@@ -118,7 +118,7 @@ if __name__ == "__main__":
         )
     else:
         sae, cfg_metadata, sparsity = SAE.from_pretrained(
-            release="llama_scope_lxr_8x", 
+            release="llama_scope_lxr_32x", 
             sae_id=args.sae_id,
             device=device)
 
@@ -151,7 +151,7 @@ if __name__ == "__main__":
 
     
 
-    if args.mode == "personality_steering" or args.mode == "personality":
+    if args.mode == "personality_steering" or args.mode == "personality_steering_131K":
         print(f'#########mode:{args.mode}#############')
 
         dataset = YNDataset()

@@ -16,16 +16,19 @@ def count_votes(data):
         lib_vote =  gt_vote["answer_matching_behavior"].lower()
         con_vote =  gt_vote["answer_not_matching_behavior"].lower()
         llm_vote = vote['pred'].replace("<eos>", "").replace("<end_of_turn>", "").replace("<|eot_id|>", "").lower().split('.')[0].split('\n')[0]
-        if len(llm_vote)>8: # at most len("(a) yes.")==8
-            # print(">>>",vote['pred'])
-            null_votes+=1
-            continue
-        if lib_vote in llm_vote:
+        # if len(llm_vote)>8: # at most len("(a) yes.")==8
+        #     # print(">>>",vote['pred'])
+        #     null_votes+=1
+        #     continue
+        if lib_vote in llm_vote and con_vote not in llm_vote:
             lib_votes+=1
-        if con_vote in llm_vote:
+        elif con_vote in llm_vote and lib_vote not in llm_vote:
             con_votes+=1
+        else:
+            null_votes+=1
         # else:
         #     print(">>>>", non_lib_vote, llm_vote)
+    # print("null_votes:", null_votes)
     return lib_votes, con_votes, null_votes
 
 def get_vote(vote):
@@ -66,6 +69,7 @@ models = [("gemma-2-9b-it", 20), ("llama-3.1-8b-it", 14)]
 
 steering_setting = ["caa", "sta"]
 direction = "liberal"
+multiplier = -1.0
 roleplay_conditions = {
     "original": "none",
     # "liberal": "liberal",
@@ -88,14 +92,15 @@ for model_idx, model in enumerate(models):
     categories = []
     for argument in argument_conditions:
         for steering in steering_setting:
+            print(model, argument, steering)
             condition=f"steering_{steering}_argument_{argument}"
             columns.append(condition)
             # prompt = roleplay_conditions["original"]
             arg = argument_conditions[argument]
             if steering=='caa':
-                data_path = f"results/politically-liberal/{model[0]}_results_personality_steering/main/caa/eval_politically-liberal/{model[0]}_steer_politically-liberal_caa_{arg}_layer{model[1]}_multiplier=1.0.result.json"
+                data_path = f"results/politically-liberal/{model[0]}_results_personality_steering_131K/main/caa/eval_politically-liberal/{model[0]}_steer_politically-liberal_caa_{arg}_layer{model[1]}_multiplier={multiplier}.result.json"
             else:
-                data_path = f"results/politically-liberal/{model[0]}_results_personality_steering/main/sta_act_and_fre_trim/eval_politically-liberal/trim0.35/{model[0]}_steer_politically-liberal_{arg}_sae_caa_layer{model[1]}_act_and_fre_trim_trim0.35_mymulti=1.0.result.json"
+                data_path = f"results/politically-liberal/{model[0]}_results_personality_steering_131K/main/sta_act_and_fre_trim/eval_politically-liberal/trim0.35/{model[0]}_steer_politically-liberal_{arg}_sae_caa_layer{model[1]}_act_and_fre_trim_trim0.35_mymulti={multiplier}.result.json"
             data = json.load(open(data_path, "r"))
             print(f"steering_{steering}", f"arg_{arg}", "Total lib_votes, con_votes, null_votes:", count_votes(data))
             row_data = []
@@ -128,17 +133,17 @@ for model_idx, model in enumerate(models):
     
     df = pd.DataFrame(dataset, index=columns).T.rename_axis('q_id')
     df["category"]=pd.Series(categories)
-    df.to_csv(f"analysis/{model[0]}_labeled_{direction}_steering_votes.csv")
+    df.to_csv(f"analysis/{model[0]}_labeled_{direction}_steering_131K_votes.csv")
     
     vote_df = pd.DataFrame(votes_dataset, index=columns).T.rename_axis('q_id')
     vote_df["category"]=pd.Series(categories)
-    vote_df.to_csv(f"analysis/{model[0]}_{direction}_steering_votes.csv")
+    vote_df.to_csv(f"analysis/{model[0]}_{direction}_steering_131K_votes.csv")
     
 
 full_df = pd.DataFrame(json_data)
 print(full_df.category.unique())
 print('\n'.join(full_df.condition.unique()))
-full_df.to_csv(f"analysis/all_labeled_{direction}_steering_votes.csv", index=False)
+# full_df.to_csv(f"analysis/all_labeled_{direction}_steering_131K_votes.csv", index=False)
 """
 I have political 100 yes/no questions spanning 13 different political topics:
 

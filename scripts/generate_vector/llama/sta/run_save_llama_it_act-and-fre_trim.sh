@@ -1,15 +1,15 @@
 device=2
 path_dir=./data_for_STA/data
-sae_id=l14r_8x
+sae_id=l14r_32x
 data_name=politically-liberal
 model_name=llama-3.1-8b-it
-mode=personality_steering
+mode=personality_steering_131K
 select_type=act_and_fre_trim
 
 hook_module=resid_canonical
 layers=(14)
 trims=(0.35)
-suffix=32k
+suffix=131k
 layer_num=${#layers[@]}
 
 for ((i=0; i<${layer_num}; i++)); do

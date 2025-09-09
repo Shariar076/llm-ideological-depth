@@ -5,15 +5,15 @@ data_dir=./data_for_STA/data
 model_name=llama-3.1-8b-it
 
 sae_ids=(
-    l14r_8x
+    l14r_32x
 )
 
-suffix=32k
+suffix=131k
 
 hook_module=resid_canonical
 data_name=politically-liberal
 select_type=sae_vector
-mode=personality_steering
+mode=personality_steering_131K
 sae_num=${#sae_ids[@]}
 
 for ((i=0; i<${sae_num}; i++)); do

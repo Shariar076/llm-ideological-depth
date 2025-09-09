@@ -1,6 +1,6 @@
 device=2
 
-mode=personality_steering
+mode=personality_steering_131K
 
 data_path=./data_for_STA/data
 model_name=llama-3.1-8b-it

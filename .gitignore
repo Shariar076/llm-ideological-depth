@@ -5,3 +5,4 @@ results/*
 irt_files/*
 !irt_files/*.stan
 *.tar.gz
+es_plot/*

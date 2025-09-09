@@ -9,8 +9,8 @@ import matplotlib.pyplot as plt
 import json
 from typing import Dict, Any, List, Optional
 import os
-MODEL_NAME = "gemma-2-9b-it"
-# MODEL_NAME = "llama-3.1-8b-it"
+# MODEL_NAME = "gemma-2-9b-it"
+MODEL_NAME = "llama-3.1-8b-it"
 def set_plotting_settings():
     plt.style.use('seaborn-v0_8')
     params = {
@@ -137,6 +137,7 @@ def plot_layer_sweeps(
     plt.legend()
     plt.tight_layout()
     plt.savefig(save_to, format="png")
+    plt.savefig(save_to, format="png")
 
 def plot_ab_data_per_layer(
     layers: List[int], multipliers: List[float]):
@@ -165,7 +166,7 @@ def plot_ab_data_per_layer(
     plt.gca().yaxis.set_major_formatter(plt.FuncFormatter(lambda x, _: f"{x:.0%}"))
     plt.title(f"politically liberal CAA, {MODEL_NAME.upper()}")
     plt.xlabel("Layer")
-    plt.ylabel("Probability of answer matching behavior")
+    plt.ylabel("Probability of a Liberal Answer")
     plt.xticks(ticks=sorted(layers)[::2], labels=sorted(layers)[::2])
     plt.legend()
     plt.tight_layout()

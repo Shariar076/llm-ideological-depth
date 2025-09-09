@@ -1,6 +1,6 @@
 device=2
 
-mode=personality_steering
+mode=personality_steering_131K
 
 data_path=./data_for_STA/data
 model_name=gemma-2-9b-it

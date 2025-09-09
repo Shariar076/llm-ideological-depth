@@ -33,7 +33,7 @@ def act_and_fre(path_dir,
     #     raise ValueError("Precision not supported")
     if model_name in ["gemma-2-9b-it", "llama-3.1-8b-it"]:
         caa_vector_name = "caa_vector_it"
-        sae_caa_vector_name = "sae_caa_vector_it"
+        sae_caa_vector_name = f"sae_caa_vector_it"
     elif args.model_name == "gemma-2-9b":
         caa_vector_name = "caa_vector_pt"
         sae_caa_vector_name = "sae_caa_vector_pt"
@@ -50,16 +50,16 @@ def act_and_fre(path_dir,
         print(f"no1-torch.norm(caa_vector): {torch.norm(caa_vector)}")
         for trim in trims:
             if args.model_name == "llama-3.1-8b-it":
-                suffix = "32k"
+                suffix = "131k"
                 # sae, _ = load_llama_sae(f"{sae_path}/layer_{layer}/{suffix}", device="cpu")
                 sae, cfg_metadata, sparsity = SAE.from_pretrained(
-                    release="llama_scope_lxr_8x", 
+                    release="llama_scope_lxr_32x", 
                     sae_id=sae_id,
                     device="cuda",
                 )
             elif args.model_name == "gemma-2-9b-it":
                 # print(f'type(sae_path)\n{type(sae_path)}\n\n{sae_path}')
-                suffix = "16k"
+                suffix = "131k"
                 # sae, _ = load_gemma_sae(sae_path, device="cpu")
                 # sae, _ = load_gemma_sae(args.sae_path, device="cpu")
                 sae, cfg_metadata, sparsity = SAE.from_pretrained(

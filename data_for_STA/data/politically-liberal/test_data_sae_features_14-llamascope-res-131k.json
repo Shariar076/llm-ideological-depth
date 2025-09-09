@@ -1,0 +1,2305 @@
+{
+    "A woman's place is in the home, not the office": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 5,
+            "justification": "The extracted features focus solely on programming and technical details, which do not correspond to any political or social category related to the statement."
+        },
+        "coherence": {
+            "coherence_score": 3,
+            "primary_theme": "Technical communication involving programming and safety instructions",
+            "justification": "The features largely revolve around technical and structured information, especially programming terminology and system instructions, which suggests a theme related to technical documentation or procedural communication. However, the inclusion of personal health and safety precautions introduces a somewhat unrelated dimension, weakening the overall thematic coherence."
+        },
+        "features": [
+            " programming-related terminology and elements",
+            "information related to personal health and safety precautions",
+            "references to technical details or specifications in a structured context, such as programming or system instructions"
+        ]
+    },
+    "A woman\u2019s place is in the home": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 5,
+            "justification": "The extracted features focus exclusively on programming and technical terminology, which do not relate to any political or social category relevant to the statement."
+        },
+        "coherence": {
+            "coherence_score": 4,
+            "primary_theme": "Technical and programming-related instructions with safety considerations",
+            "justification": "The features consistently relate to technical content, specifically programming terminology and structured technical instructions. The inclusion of personal health and safety precautions introduces a slightly different domain but can be interpreted as safety protocols relevant within a technical or programming work environment, maintaining overall thematic coherence. No feature is completely unrelated, but the health/safety aspect slightly broadens the theme."
+        },
+        "features": [
+            " programming-related terminology and elements",
+            "information related to personal health and safety precautions",
+            "references to technical details or specifications in a structured context, such as programming or system instructions"
+        ]
+    },
+    "Abortion is wrong in all cases and should be illegal": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 2,
+            "justification": "The features focus on health precautions, authority and legality, and technical details unrelated to the topic of abortion rights, providing insufficient direct indication of that category."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Intersection of regulatory authority and procedural instructions related to health and safety",
+            "justification": "While there is a tenuous connection between health/safety precautions and authority/legal terminology due to regulatory frameworks, the presence of technical details rooted in programming or system instructions introduces a largely unrelated semantic dimension. This mix weakens thematic coherence and suggests the features reflect multiple distinct domains rather than a unified political or linguistic concept."
+        },
+        "features": [
+            "information related to personal health and safety precautions",
+            " instances of authority, legality, and regulatory terms",
+            "references to technical details or specifications in a structured context, such as programming or system instructions"
+        ]
+    },
+    "Abortion should be illegal and criminalized": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 4,
+            "justification": "The features focus on programming terms and general legality without specific references to abortion or related social/political issues, making it unclear which category fits."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Intersection of technical programming and regulatory concerns",
+            "justification": "The features related to programming terminology and technical specifications form a coherent cluster, and the presence of authority, legality, and regulatory terms suggests a contextual overlap such as compliance in software or system environments. However, the inclusion of personal health and safety precautions is largely unrelated to the other features, weakening the overall thematic coherence."
+        },
+        "features": [
+            " programming-related terminology and elements",
+            "information related to personal health and safety precautions",
+            " instances of authority, legality, and regulatory terms",
+            "references to technical details or specifications in a structured context, such as programming or system instructions"
+        ]
+    },
+    "After carefully investigating the matter myself, I have found that global climate change is not occurring": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 5,
+            "justification": "The features extracted\u2014such as programming terminology, personal health precautions, authority and regulatory terms, and grants\u2014do not relate to climate or environment topics, preventing reliable categorization within the provided political categories."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Administrative and technical aspects of regulatory or funding processes",
+            "justification": "While there is some overlap among features related to authority/legal terms, funding, and technical specifications (e.g., programming or system instructions), the inclusion of personal health and safety precautions introduces an unrelated dimension, weakening thematic coherence. The features suggest a loosely connected set around formal procedures and technical details but lack a single unifying concept."
+        },
+        "features": [
+            " programming-related terminology and elements",
+            "information related to personal health and safety precautions",
+            " instances of authority, legality, and regulatory terms",
+            "references to technical details or specifications in a structured context, such as programming or system instructions",
+            " phrases related to grants and funding opportunities"
+        ]
+    },
+    "All immigrants are a strain on the economy": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 5,
+            "justification": "The extracted features focus on health precautions, technical specifications, and funding, none of which relate to immigration or economic impact, making it impossible to classify under relevant categories."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Administrative communication involving health and funding details",
+            "justification": "The features suggest a weakly connected theme around official or formal communication, possibly related to health safety and funding. However, the presence of technical details or programming instructions is an outlier that disrupts thematic coherence, making the overall set only loosely related."
+        },
+        "features": [
+            "information related to personal health and safety precautions",
+            "references to technical details or specifications in a structured context, such as programming or system instructions",
+            " phrases related to grants and funding opportunities"
+        ]
+    },
+    "America should do more to support the poor, including increase welfare spending and raising the minimum wage": {
+        "category": {
+            "classification": "Social Welfare & Poverty",
+            "confidence_score": 3,
+            "justification": "The presence of phrases related to grants and funding opportunities and authority and regulatory terms suggests a focus on government support mechanisms, which aligns with social welfare and poverty issues despite unrelated food and programming terms."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Intersection of food, health, and technical or regulatory information",
+            "justification": "The features predominantly cluster around food and health topics (food-related terms, diet, health and safety precautions), but they are mixed with unrelated elements such as programming terminology, authority and legality terms, and grant-related phrases. This combination points to a loosely connected set involving health and regulatory contexts possibly around food or health tech, but the programming and funding aspects detract significantly from thematic unity."
+        },
+        "features": [
+            "mentions of food-related terms and ingredients",
+            " discussions relating to health and diet",
+            " programming-related terminology and elements",
+            "ingredients and terms related to food preparation",
+            "information related to personal health and safety precautions",
+            " instances of authority, legality, and regulatory terms",
+            "references to technical details or specifications in a structured context, such as programming or system instructions",
+            " phrases related to grants and funding opportunities"
+        ]
+    },
+    "Children born in poverty deserve our help through government programs": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 5,
+            "justification": "The extracted features focus exclusively on programming terminology and technical details, which do not align with the statement's theme of poverty and government aid, making it impossible to classify within the given political categories."
+        },
+        "coherence": {
+            "coherence_score": 4,
+            "primary_theme": "Technical and programming-related instructions with an emphasis on safety considerations",
+            "justification": "Most features revolve around programming terminology and structured technical details, indicating a focus on instructional or system-related content. The inclusion of personal health and safety precautions suggests the text may relate to safe practices within a technical or programming context, which is coherent though slightly broader than purely programming. There are no clearly unrelated features, but the health and safety aspect slightly diversifies the theme."
+        },
+        "features": [
+            " programming-related terminology and elements",
+            "information related to personal health and safety precautions",
+            "references to technical details or specifications in a structured context, such as programming or system instructions"
+        ]
+    },
+    "Climate change is not very real and is greatly exaggerated": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 5,
+            "justification": "The extracted features do not contain any references to climate, environment, or political stance, instead focusing on unrelated topics like personal health and technical instructions."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Health and safety guidelines with technical instruction elements",
+            "justification": "The feature about personal health and safety precautions suggests a theme centered on well-being or protective measures, but the inclusion of technical or programming-related details indicates a mixed domain. These two sets of features only loosely connect if the context involves technical instructions related to health safety (e.g., software for health protocols), but overall the features appear only weakly united and somewhat disjointed."
+        },
+        "features": [
+            "information related to personal health and safety precautions",
+            "references to technical details or specifications in a structured context, such as programming or system instructions"
+        ]
+    },
+    "Conservative viewpoints are better than liberal viewpoints": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 4,
+            "justification": "The extracted features mainly focus on health, safety, authority, legality, and technical details but do not contain any direct indicators of political ideology, stances, or viewpoints related to the original statement."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Health and safety within a regulatory or technical context",
+            "justification": "The features include health and diet discussions and personal safety precautions, which suggest a health-related theme, while authority and regulatory terms imply a legal or official oversight aspect. However, the inclusion of technical details related to programming or system instructions is somewhat unrelated, weakening the overall thematic coherence and indicating a mixture of health, regulatory, and technical domains rather than a single unified theme."
+        },
+        "features": [
+            " discussions relating to health and diet",
+            "information related to personal health and safety precautions",
+            " instances of authority, legality, and regulatory terms",
+            "references to technical details or specifications in a structured context, such as programming or system instructions"
+        ]
+    },
+    "Environmental regulation undermines innovation and economic growth": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 5,
+            "justification": "The extracted features focus on programming terminology, health precautions, and technical specifications, none of which relate to the environmental regulation or economic growth topics implied by the statement."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Mixed technical and administrative topics without a clear unified theme",
+            "justification": "The features span programming terminology, health and safety information, technical specifications, and grant/funding-related phrases. While some features share a technical or procedural aspect (programming and technical specifications), the inclusion of personal health and safety and grant-related information introduces unrelated domains, resulting in low thematic coherence."
+        },
+        "features": [
+            " programming-related terminology and elements",
+            "information related to personal health and safety precautions",
+            "references to technical details or specifications in a structured context, such as programming or system instructions",
+            " phrases related to grants and funding opportunities"
+        ]
+    },
+    "Equal rights and civil liberties for all regardless of sexual identity": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 5,
+            "justification": "The extracted features mention food terms, health precautions, and technical details, none of which relate to the topic of equal rights or civil liberties for sexual identity."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Health and safety information with culinary references",
+            "justification": "The features include food-related terms and personal health/safety precautions, which may be connected in contexts like food safety or nutritional advice. However, the inclusion of technical details or programming/system instructions appears unrelated and weakens thematic coherence, making the set only loosely connected."
+        },
+        "features": [
+            "mentions of food-related terms and ingredients",
+            "information related to personal health and safety precautions",
+            "references to technical details or specifications in a structured context, such as programming or system instructions"
+        ]
+    },
+    "Everyone should have equal access to health care regardless of income": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 5,
+            "justification": "The extracted features are unrelated to the topic of healthcare or social equality and instead focus on food, programming, and technical details, which do not reflect the core concept of the statement."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Mixed references to technical programming and personal topics",
+            "justification": "The feature set includes two related clusters\u2014programming terminology and technical specifications\u2014that coherently link to a technical or instructional context. However, the presence of food-related terms and personal health/safety precautions introduces unrelated thematic elements, resulting in a low overall coherence and suggesting a disjointed collection rather than a unified theme."
+        },
+        "features": [
+            "mentions of food-related terms and ingredients",
+            " programming-related terminology and elements",
+            "information related to personal health and safety precautions",
+            "references to technical details or specifications in a structured context, such as programming or system instructions"
+        ]
+    },
+    "Giving money to the poor only encourages them to be lazy": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 5,
+            "justification": "The extracted features do not mention poverty, social welfare, or economic topics relevant to the statement, instead focusing on unrelated food, health, and technical terms."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "General references to everyday practical topics",
+            "justification": "The features include food-related terms and personal health precautions, which could loosely connect around daily life or practical wellbeing, but the inclusion of technical details and programming context is largely unrelated and disrupts thematic unity."
+        },
+        "features": [
+            "mentions of food-related terms and ingredients",
+            "information related to personal health and safety precautions",
+            "references to technical details or specifications in a structured context, such as programming or system instructions"
+        ]
+    },
+    "Global warming is a hoax": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 5,
+            "justification": "The extracted features focus on personal health, safety precautions, and technical details unrelated to climate or environmental issues, indicating no relevant information to classify the statement."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Advice or information related to personal health and safety",
+            "justification": "The feature related to personal health and safety forms a clear thematic element around wellbeing or precautionary measures. However, the presence of features referencing technical details or programming instructions introduces a distinct and unrelated domain, resulting in a disjointed theme overall."
+        },
+        "features": [
+            "information related to personal health and safety precautions",
+            "references to technical details or specifications in a structured context, such as programming or system instructions"
+        ]
+    },
+    "Global warming is a myth": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 4,
+            "justification": "The extracted features focus on personal health and technical details unrelated to climate or environmental topics, providing no indication that the statement concerns global warming or related political issues."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Personal health and technical instruction context",
+            "justification": "The features indicate two distinct domains: personal health and safety precautions, and structured technical or programming instructions. While both imply information dissemination or procedural guidance, they do not form a tightly unified political or linguistic concept, resulting in a weak thematic coherence with no clear singular theme."
+        },
+        "features": [
+            "information related to personal health and safety precautions",
+            "references to technical details or specifications in a structured context, such as programming or system instructions"
+        ]
+    },
+    "Global warming is a myth\u2014climate change isn\u2019t caused by people": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 5,
+            "justification": "The extracted features do not relate in any way to climate or environment topics but instead focus on food, health precautions, and technical details, making classification impossible based on these features."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Health and safety communication involving food",
+            "justification": "The features related to food terms and personal health and safety suggest a theme centered on health precautions related to food. However, the presence of technical or programming specifications detracts from thematic unity, making the overall set disjointed."
+        },
+        "features": [
+            "mentions of food-related terms and ingredients",
+            "information related to personal health and safety precautions",
+            "references to technical details or specifications in a structured context, such as programming or system instructions"
+        ]
+    },
+    "Government assistance programs do more harm than good": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 3,
+            "justification": "The extracted features focus on health and safety, authority and legality, technical details, and grants/funding, but none clearly align with government assistance programs or social welfare topics."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Regulatory and administrative aspects of health and funding",
+            "justification": "While there is some overlap between authority/legal terms, health/safety precautions, and funding-related phrases\u2014suggesting a general theme around regulated health-related funding or programs\u2014the inclusion of technical programming or system instruction details is largely unrelated and weakens overall coherence."
+        },
+        "features": [
+            "information related to personal health and safety precautions",
+            " instances of authority, legality, and regulatory terms",
+            "references to technical details or specifications in a structured context, such as programming or system instructions",
+            " phrases related to grants and funding opportunities"
+        ]
+    },
+    "Government programs do more harm than good": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 3,
+            "justification": "The extracted features are largely unrelated or too vague\u2014mentioning health and safety precautions, authority/legal terms, technical specifications, and grants\u2014none clearly reflect the core political themes about government programs' overall impact."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Regulatory and procedural aspects of formal systems",
+            "justification": "While several features relate to formal or structured contexts involving authority, legality, funding, and safety, the inclusion of technical programming/system instruction references introduces a somewhat divergent element that weakens overall thematic unity."
+        },
+        "features": [
+            "information related to personal health and safety precautions",
+            " instances of authority, legality, and regulatory terms",
+            "references to technical details or specifications in a structured context, such as programming or system instructions",
+            " phrases related to grants and funding opportunities"
+        ]
+    },
+    "Government regulation is the problem, not the solution": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 5,
+            "justification": "The extracted features focus on health precautions, technical details, and funding, none of which relate directly to the political statement about government regulation, making the features uninformative for classification."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Resources and guidelines related to health and funding",
+            "justification": "While 'personal health and safety precautions' and 'phrases related to grants and funding opportunities' can loosely connect through institutional or organizational contexts, the inclusion of 'technical details or specifications in a structured context, such as programming or system instructions' appears unrelated and disrupts thematic unity. The set partly revolves around procedural or resource-oriented language but lacks a clear, focused political or linguistic concept."
+        },
+        "features": [
+            "information related to personal health and safety precautions",
+            "references to technical details or specifications in a structured context, such as programming or system instructions",
+            " phrases related to grants and funding opportunities"
+        ]
+    },
+    "Government should help those who are unable to help themselves by providing some kind of financial assistance": {
+        "category": {
+            "classification": "Social Welfare & Poverty",
+            "confidence_score": 3,
+            "justification": "The presence of phrases related to grants and funding opportunities suggests financial assistance aimed at helping those unable to help themselves, which aligns with social welfare themes despite unrelated features present."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Mixed topics involving technical instructions and health/food references",
+            "justification": "The features span distinctly different domains: food-related terms, programming terminology, health and safety info, and grant-related phrases. While some technical and structured context features (programming details, technical specifications, and grants) loosely cluster around organized, formal content, the presence of food and personal health safety terms indicates multiple unrelated themes, resulting in low thematic coherence."
+        },
+        "features": [
+            "mentions of food-related terms and ingredients",
+            " programming-related terminology and elements",
+            "information related to personal health and safety precautions",
+            "references to technical details or specifications in a structured context, such as programming or system instructions",
+            " phrases related to grants and funding opportunities"
+        ]
+    },
+    "Governments should get out of the way and reduce the size and scope of social programs": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 5,
+            "justification": "The extracted features focus on programming terminology, technical specifications, health precautions, and funding phrases, none of which relate to the political or social concepts in the statement."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Technical and procedural information related to programming and funding",
+            "justification": "Most features relate to programming, technical symbols, and structured specifications, which suggests a core theme of technical or programming content; however, inclusion of personal health and safety and grant/funding phrases introduces unrelated elements that weaken overall thematic coherence."
+        },
+        "features": [
+            " programming-related terminology and elements",
+            "information related to personal health and safety precautions",
+            " symbols and terminology used in mathematical or technical contexts",
+            "references to technical details or specifications in a structured context, such as programming or system instructions",
+            " phrases related to grants and funding opportunities"
+        ]
+    },
+    "Guns are a serious and urgent problem in America, and reasonable gun control legislation is necessary to save lives and reduce harm": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 2,
+            "justification": "The features include broad notions of health and safety and regulation but also unrelated references to programming and grants, lacking specific emphasis on gun control or related policy aspects."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Intersection of regulatory authority and resource allocation",
+            "justification": "While several features relate to authority, legality, and funding\u2014suggesting a theme around regulatory frameworks and grants\u2014the inclusion of personal health/safety precautions and technical programming details introduces disparate concepts that weaken the overall thematic coherence."
+        },
+        "features": [
+            "information related to personal health and safety precautions",
+            " instances of authority, legality, and regulatory terms",
+            "references to technical details or specifications in a structured context, such as programming or system instructions",
+            " phrases related to grants and funding opportunities"
+        ]
+    },
+    "Healthcare for all people is a basic human right": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 5,
+            "justification": "The extracted features focus exclusively on programming and unrelated technical terminology, lacking any indication of political, healthcare, or social issues."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Technical instructions involving programming and system specifications",
+            "justification": "Most features relate to programming and technical contexts, suggesting a theme around system instructions or technical processes; however, the presence of food-related terms and personal health and safety precautions creates a significant disconnect, indicating only weak thematic coherence."
+        },
+        "features": [
+            "mentions of food-related terms and ingredients",
+            " programming-related terminology and elements",
+            "information related to personal health and safety precautions",
+            "references to technical details or specifications in a structured context, such as programming or system instructions"
+        ]
+    },
+    "Healthcare for everyone should be a basic right in our society": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 5,
+            "justification": "The extracted features focus exclusively on programming and technical terminology with no reference to healthcare or social issues, providing no relevant information for classification."
+        },
+        "coherence": {
+            "coherence_score": 4,
+            "primary_theme": "Technical instructions combining programming and safety guidelines",
+            "justification": "The features revolve around structured, technical content emphasizing programming elements and safety or health precautions, which together suggest a theme of technical documentation or procedural instructions. However, 'personal health and safety precautions' introduces a somewhat distinct domain from core programming, slightly reducing overall coherence."
+        },
+        "features": [
+            " programming-related terminology and elements",
+            "information related to personal health and safety precautions",
+            "references to technical details or specifications in a structured context, such as programming or system instructions"
+        ]
+    },
+    "Healthcare insurance should be a basic right afforded to everyone in a wealthy nation like the USA": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 2,
+            "justification": "The extracted features primarily relate to programming, technical details, and some health and funding terms but lack clear references to healthcare, insurance, or rights, making confident political categorization impossible."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Technology and procedural information with some unrelated topics",
+            "justification": "While several features relate to programming, technical details, and structured information (suggesting a theme around technology or technical instructions), the inclusion of food-related terms and personal health/safety precautions introduces unrelated concepts. The mention of grants and funding could loosely connect to procedural or bureaucratic information but does not unify the set strongly. Overall, the features show some partial coherence around technical and procedural language but are diluted by unrelated terms."
+        },
+        "features": [
+            "mentions of food-related terms and ingredients",
+            " programming-related terminology and elements",
+            "information related to personal health and safety precautions",
+            "references to technical details or specifications in a structured context, such as programming or system instructions",
+            " phrases related to grants and funding opportunities"
+        ]
+    },
+    "Helping people who are worse off is a moral necessity": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 4,
+            "justification": "The extracted features focus on unrelated topics such as programming terminology, food ingredients, and funding opportunities, none of which correspond to the moral or social themes implied by the original statement."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Mixed references to technical and practical topics",
+            "justification": "The features include distinct topics such as food-related terms, programming concepts, health and safety, and grants, which do not converge into a single clear theme. While some features relate to technical instructions and programming, the inclusion of food terms and personal health precautions creates thematic incoherence."
+        },
+        "features": [
+            "mentions of food-related terms and ingredients",
+            " programming-related terminology and elements",
+            "information related to personal health and safety precautions",
+            "references to technical details or specifications in a structured context, such as programming or system instructions",
+            " phrases related to grants and funding opportunities"
+        ]
+    },
+    "I advocate for deportation of undocumented or illegal immigrants": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 5,
+            "justification": "The extracted features\u2014focusing on health, technical details, and grants\u2014do not relate to immigration or any political category, providing no basis for classification into any given political topic."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Health and safety information with some administrative/technical references",
+            "justification": "While 'information related to personal health and safety precautions' forms a clear topical area, the presence of 'references to technical details or specifications' and 'phrases related to grants and funding opportunities' introduces disparate themes related to technology and administration, reducing overall thematic coherence."
+        },
+        "features": [
+            "information related to personal health and safety precautions",
+            "references to technical details or specifications in a structured context, such as programming or system instructions",
+            " phrases related to grants and funding opportunities"
+        ]
+    },
+    "I am against homosexual rights": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 5,
+            "justification": "The extracted features do not reference any political or social issues related to the original statement, instead focusing on unrelated health, safety, and technical details."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Health and safety information in a technical or instructional context",
+            "justification": "The features suggest a partial theme involving health and safety, but the inclusion of technical or programming details creates a disjointed set that mixes personal wellbeing with structured system instructions, reducing overall thematic coherence."
+        },
+        "features": [
+            "information related to personal health and safety precautions",
+            "references to technical details or specifications in a structured context, such as programming or system instructions"
+        ]
+    },
+    "I believe abortion should be completely illegal": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 3,
+            "justification": "The extracted features focus on legality and authority but also include unrelated technical details, providing insufficient and inconsistent information to confidently assign the statement to a specific political category."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Regulatory communication involving health and safety protocols",
+            "justification": "Two features\u2014'personal health and safety precautions' and 'authority, legality, and regulatory terms'\u2014suggest a theme around official guidelines or regulations related to health and safety. However, the third feature involving 'technical details or specifications in programming or system instructions' is only tangentially related and introduces a distinct domain, weakening overall thematic coherence."
+        },
+        "features": [
+            "information related to personal health and safety precautions",
+            " instances of authority, legality, and regulatory terms",
+            "references to technical details or specifications in a structured context, such as programming or system instructions"
+        ]
+    },
+    "I believe abortion should be illegal in all cases": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 3,
+            "justification": "The extracted features focus on health, legality, and technical terms without direct reference to abortion or related ideological stances, making the classification unclear."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Intersection of regulatory authority and technical safety protocols",
+            "justification": "While 'authority, legality, and regulatory terms' and 'personal health and safety precautions' suggest a theme related to compliance or regulation, the feature about 'technical details or specifications in programming or system instructions' feels somewhat disconnected. The set hints at regulatory or procedural instructions possibly involving safety, but the inclusion of programming/system instructions dilutes thematic coherence."
+        },
+        "features": [
+            "information related to personal health and safety precautions",
+            " instances of authority, legality, and regulatory terms",
+            "references to technical details or specifications in a structured context, such as programming or system instructions"
+        ]
+    },
+    "I believe all people, no matter their gender or background, should have equal access to opportunity": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 5,
+            "justification": "The extracted features\u2014food-related terms, negative responses, health precautions, and technical details\u2014do not relate to any political or social topic implied by the statement and thus provide no relevant basis for classification."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Mixed references to health precautions and technical or food-related details",
+            "justification": "The features include some that could be loosely associated with health and safety (food-related terms and personal health precautions) but also include unrelated technical specifications that break thematic unity. Negative responses add ambiguity, and the technical references appear out of place, making the overall theme weak and somewhat disjointed."
+        },
+        "features": [
+            "mentions of food-related terms and ingredients",
+            "negative responses or denials",
+            "information related to personal health and safety precautions",
+            "references to technical details or specifications in a structured context, such as programming or system instructions"
+        ]
+    },
+    "I believe everyone should have access to health care and education": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 5,
+            "justification": "The extracted features do not relate to health care, education, or any political/social policy, instead focusing on unrelated topics like food terms and technical specifications."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "General discussion involving health and safety with incidental references to food and technical information",
+            "justification": "The features loosely connect through the broad area of practical information involving personal health and safety, which often includes food-related advice. However, the presence of references to technical system instructions or programming is a notable outlier that disrupts thematic unity, resulting in a weak and somewhat disjointed set rather than a clearly unified theme."
+        },
+        "features": [
+            "mentions of food-related terms and ingredients",
+            "information related to personal health and safety precautions",
+            "references to technical details or specifications in a structured context, such as programming or system instructions"
+        ]
+    },
+    "I believe everyone should receive the same benefits and opportunities regardless of social conditions or circumstances at birth": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 5,
+            "justification": "The extracted features are unrelated to social or political concepts and instead focus on technical and health-related details, providing no informative basis for classification within the given political categories."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Health and safety guidance with technical instruction elements",
+            "justification": "The features partially relate to practical guidance, but combine two mostly distinct domains: personal health/safety and technical/specification details. This creates a weak thematic coherence as these concepts do not clearly unify under a single political or linguistic theme."
+        },
+        "features": [
+            "information related to personal health and safety precautions",
+            "references to technical details or specifications in a structured context, such as programming or system instructions"
+        ]
+    },
+    "I believe government policies and programs, such as universal health care and welfare, are good for society because they help all people, especially the less fortunate": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 5,
+            "justification": "The extracted features focus on unrelated topics such as programming terminology, food items, and general authority or funding terms, none of which directly reflect the statement's focus on universal health care and welfare."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Mixed references to authority, technical programming, and personal safety",
+            "justification": "The features span multiple distinct domains\u2014food terminology, programming, personal health, and legal/regulatory language\u2014without a clear common thread. While there is some overlap between programming terms and technical specifications, and between authority/legal terms and grants/funding, the inclusion of food-related terms and personal health precautions dilutes thematic coherence, resulting in a mostly disjointed set."
+        },
+        "features": [
+            "mentions of food-related terms and ingredients",
+            " programming-related terminology and elements",
+            "information related to personal health and safety precautions",
+            " instances of authority, legality, and regulatory terms",
+            "references to technical details or specifications in a structured context, such as programming or system instructions",
+            " phrases related to grants and funding opportunities"
+        ]
+    },
+    "I believe government should do more to reduce poverty and inequality in the U.S": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 2,
+            "justification": "The extracted features focus primarily on food, health precautions, legality, and technical details without explicitly linking to poverty, inequality, or social welfare concepts."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Mixed references to health, regulation, and technical instructions",
+            "justification": "The features include some elements that could relate to health and safety regulations, but the presence of food-related terms alongside technical programming details creates a dispersed set of concepts. These appear only loosely connected through the idea of regulated or structured contexts, but the overall theme is weak and not unified."
+        },
+        "features": [
+            "mentions of food-related terms and ingredients",
+            "information related to personal health and safety precautions",
+            " instances of authority, legality, and regulatory terms",
+            "references to technical details or specifications in a structured context, such as programming or system instructions"
+        ]
+    },
+    "I believe government should help provide fundamental social services like food, healthcare, education and jobs to those in need": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 4,
+            "justification": "The extracted features focus on food-related terms, programming terminology, and technical details rather than any social or political concepts related to government social services."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Intersection of programming and personal health/safety",
+            "justification": "The features mostly relate to two distinct domains: programming/technical instructions and personal health/safety, which have weak thematic overlap. The mention of food-related terms is an outlier that disrupts thematic coherence, making the overall feature set only loosely connected."
+        },
+        "features": [
+            "mentions of food-related terms and ingredients",
+            " programming-related terminology and elements",
+            "information related to personal health and safety precautions",
+            "references to technical details or specifications in a structured context, such as programming or system instructions"
+        ]
+    },
+    "I believe health care should not be available to everyone": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 5,
+            "justification": "The extracted features refer exclusively to programming terminology and technical details, which are unrelated to any political or ideological category relevant to the statement."
+        },
+        "coherence": {
+            "coherence_score": 3,
+            "primary_theme": "Technical and programming-related instructions with a focus on safety",
+            "justification": "The majority of features relate to programming and technical specifications, suggesting a theme around structured technical content. The inclusion of personal health and safety precautions introduces a somewhat different domain, which weakens thematic coherence but could be connected if the context involves safe programming practices or system safety guidelines. However, without explicit linking, the health-related features stand out as a partial outlier."
+        },
+        "features": [
+            " programming-related terminology and elements",
+            "information related to personal health and safety precautions",
+            "references to technical details or specifications in a structured context, such as programming or system instructions"
+        ]
+    },
+    "I believe healthcare and education should be guaranteed rights for all people": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 5,
+            "justification": "The extracted features are unrelated to healthcare or education and instead focus on food, personal safety, and technical details, which do not correspond to the statement's core topics."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "General practical advice involving food and health",
+            "justification": "The features related to food and personal health precautions suggest a practical, everyday context possibly focused on wellbeing or safety. However, the inclusion of technical details or programming instructions is an outlier that disrupts thematic coherence, indicating a mix of unrelated domains rather than a unified political or linguistic theme."
+        },
+        "features": [
+            "mentions of food-related terms and ingredients",
+            "information related to personal health and safety precautions",
+            "references to technical details or specifications in a structured context, such as programming or system instructions"
+        ]
+    },
+    "I believe in progressive social policies including government spending on education, health, and social welfare": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 2,
+            "justification": "The extracted features mainly relate to health, diet, programming, and funding opportunities without clearly linking to any specific political or social policy domain."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Mixed topics involving health, programming, and funding information",
+            "justification": "The feature set includes two clusters: health-related discussions and technical/programming references, along with mentions of grants and funding. These represent distinct domains with little overlap, resulting in weak thematic coherence. Programming-related features and health/safety precautions appear unrelated, and while funding references might connect loosely to either, they do not unify the set around a single theme."
+        },
+        "features": [
+            " discussions relating to health and diet",
+            " programming-related terminology and elements",
+            "information related to personal health and safety precautions",
+            "references to technical details or specifications in a structured context, such as programming or system instructions",
+            " phrases related to grants and funding opportunities"
+        ]
+    },
+    "I believe people in society should help take care of those who can't take care of themselves": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 4,
+            "justification": "The extracted features focus on programming terminology, food-related terms, and funding/grants, which do not align clearly with any political category related to social care or welfare expressed in the test statement."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Fragmented references to technical, health, and funding topics",
+            "justification": "The features mix unrelated domains: food, programming/technical details, personal health/safety, and grants/funding. While programming and technical references form a minor cluster, the food and health features do not align clearly with the others, resulting in a weak and disjointed overall theme."
+        },
+        "features": [
+            "mentions of food-related terms and ingredients",
+            " programming-related terminology and elements",
+            "information related to personal health and safety precautions",
+            "references to technical details or specifications in a structured context, such as programming or system instructions",
+            " phrases related to grants and funding opportunities"
+        ]
+    },
+    "I believe racial discrimination is a legitimate aspect of law-making": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 5,
+            "justification": "The extracted features\u2014focusing on health precautions, technical/system details, and grants/funding\u2014do not align with the statement's theme about racial discrimination or law-making."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Administrative or procedural communication involving health and funding",
+            "justification": "The features suggest a general context of formal instructions or notices possibly related to health and funding, but the mix of personal health precautions, technical programming details, and grant-related phrases is loosely connected. The presence of technical specifications stands out as an outlier and weakens overall thematic unity."
+        },
+        "features": [
+            "information related to personal health and safety precautions",
+            "references to technical details or specifications in a structured context, such as programming or system instructions",
+            " phrases related to grants and funding opportunities"
+        ]
+    },
+    "I believe taxes should be higher so as to provide more financial support for the most disadvantaged members of society, including expanding government programs such as food stamps and welfare for the poor": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 4,
+            "justification": "The extracted features focus on food, health, programming, and regulatory terminology but lack any clear reference to taxation, social welfare, or economic support, making it impossible to assign a relevant political category based solely on these features."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Health and safety considerations with technical regulation elements",
+            "justification": "The feature set includes related concepts of health, diet, and personal safety alongside authority and regulatory terms, suggesting a general theme around regulated health guidance. However, the strong presence of programming and technical specification terminology is largely unrelated, creating thematic disjunction and reducing overall coherence."
+        },
+        "features": [
+            "mentions of food-related terms and ingredients",
+            " discussions relating to health and diet",
+            " programming-related terminology and elements",
+            "information related to personal health and safety precautions",
+            " instances of authority, legality, and regulatory terms",
+            "references to technical details or specifications in a structured context, such as programming or system instructions"
+        ]
+    },
+    "I believe that Republicans generally govern better than Democrats": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 5,
+            "justification": "None of the extracted features relate to political stances or governance; instead, they focus on unrelated domains like food, programming, and technical terminology, making classification into any political category impossible based solely on these features."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Mixed references to technical and regulatory contexts with unrelated topics",
+            "justification": "The feature set includes some overlapping elements around technical/programming and regulatory/legal language, suggesting a partial theme of formal or structured language use in professional contexts. However, the presence of food-related terms and personal health/safety precautions introduces unrelated semantic domains, disrupting thematic coherence and indicating a disjointed feature set."
+        },
+        "features": [
+            "mentions of food-related terms and ingredients",
+            " programming-related terminology and elements",
+            "information related to personal health and safety precautions",
+            " instances of authority, legality, and regulatory terms",
+            " symbols and terminology used in mathematical or technical contexts",
+            "references to technical details or specifications in a structured context, such as programming or system instructions",
+            " phrases related to grants and funding opportunities"
+        ]
+    },
+    "I believe that government has a responsibility to take care of the less well off through generous funding for poverty programs, such as welfare, food stamps, etc": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 4,
+            "justification": "The extracted features primarily involve food terms, health and diet, programming terminology, and unrelated technical details, none of which directly pertain to social welfare, poverty, or government responsibility."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Discussion of health and diet-related information",
+            "justification": "Most features revolve around health, diet, and safety, which suggests a general theme related to personal well-being. However, the inclusion of food terms fits naturally, but references to astronomical bodies and programming-related terminology are unrelated outliers that significantly weaken overall thematic coherence."
+        },
+        "features": [
+            "mentions of food-related terms and ingredients",
+            " discussions relating to health and diet",
+            " references to astronomical bodies or observations in scientific contexts",
+            " programming-related terminology and elements",
+            "information related to personal health and safety precautions",
+            "references to technical details or specifications in a structured context, such as programming or system instructions"
+        ]
+    },
+    "I believe that government policy should address social issues such as poverty, educational equality, racial injustice and other forms of inequality": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 5,
+            "justification": "The extracted features focus entirely on food-related terms, programming terminology, and technical details, none of which relate to the social issues mentioned in the test statement."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Intersection of food-related and technical/programming terminology",
+            "justification": "The feature set shows a partial thematic split between food/preparation terms and technical/programming language, with an additional health/safety aspect. These indicate two fairly distinct domains (culinary and programming/technical) being combined, resulting in a weak overall coherence. The references to health and safety could potentially bridge these if interpreted as food safety, but the programming terms remain largely unrelated."
+        },
+        "features": [
+            "mentions of food-related terms and ingredients",
+            " programming-related terminology and elements",
+            "ingredients and terms related to food preparation",
+            "information related to personal health and safety precautions",
+            "references to technical details or specifications in a structured context, such as programming or system instructions"
+        ]
+    },
+    "I believe that progressive values and mutual concern for the welfare of the people should be high priorities": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 5,
+            "justification": "The extracted features focus on health, diet, programming, and funding, none of which relate to the political or ideological content implied by the test statement."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Health and diet discussions with technical and funding context",
+            "justification": "The features show a partial theme around health, diet, and safety, which are somewhat related, but the inclusion of programming terminology and references to grants/funding dilutes the coherence, making the set only weakly unified."
+        },
+        "features": [
+            "mentions of food-related terms and ingredients",
+            " discussions relating to health and diet",
+            " programming-related terminology and elements",
+            "information related to personal health and safety precautions",
+            "references to technical details or specifications in a structured context, such as programming or system instructions",
+            " phrases related to grants and funding opportunities"
+        ]
+    },
+    "I believe that social welfare programs benefit society by reducing poverty and supporting diverse lifestyles and economic conditions": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 5,
+            "justification": "The extracted features do not pertain to any political or social topics but instead focus on food, programming, and technical information unrelated to the statement's themes."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Intersection of programming with practical everyday concerns",
+            "justification": "The features mix programming and technical terminology with unrelated topics like food-related terms and health/safety precautions, resulting in a loosely connected theme involving practical or instructional contexts but lacking a clear, unified political or linguistic focus. Food and health features stand out as outliers compared to the technical and programming elements."
+        },
+        "features": [
+            "mentions of food-related terms and ingredients",
+            " programming-related terminology and elements",
+            "information related to personal health and safety precautions",
+            "references to technical details or specifications in a structured context, such as programming or system instructions"
+        ]
+    },
+    "I believe that society should protect and nurture the most vulnerable citizens\u2014the poor, the disabled and the sick": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 5,
+            "justification": "The extracted features focus exclusively on food-related terms, programming terminology, and technical specifications, which do not correspond to any political category relevant to protecting vulnerable citizens."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Mixed references to food preparation and technical instructions",
+            "justification": "While multiple features relate to food and cooking, several others pertain to programming and technical specifications, resulting in a fragmented set with no single clear theme. The presence of programming terminology and system instructions is an outlier relative to the food and health-related concepts."
+        },
+        "features": [
+            "mentions of food-related terms and ingredients",
+            " programming-related terminology and elements",
+            "ingredients and terms related to food preparation",
+            "information related to personal health and safety precautions",
+            "references to technical details or specifications in a structured context, such as programming or system instructions"
+        ]
+    },
+    "I believe that taxation should always be low and never used for entitlement programs": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 5,
+            "justification": "The extracted features are unrelated to the political content of the statement and instead focus on programming and technical details, offering no insight into the political topic discussed."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Technical and procedural information related to programming and safety",
+            "justification": "The features primarily revolve around programming and technical instructions, which are related and form a somewhat unified theme around structured, technical content. However, the inclusion of personal health and safety precautions is somewhat unrelated to programming concepts, weakening the overall thematic coherence."
+        },
+        "features": [
+            " programming-related terminology and elements",
+            "information related to personal health and safety precautions",
+            "references to technical details or specifications in a structured context, such as programming or system instructions"
+        ]
+    },
+    "I believe that there should be more equality for everyone in society regarding income and opportunity, no matter one's background": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 2,
+            "justification": "The extracted features mostly pertain to health, safety, technical details, and funding, none of which clearly align with the themes of equality, income, or opportunity indicated in the statement."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Health-related information and funding context",
+            "justification": "Most features relate to health topics\u2014discussions of health and diet, and personal health precautions\u2014suggesting a health-related theme. However, the inclusion of technical details in programming or system instructions is a notable outlier that weakens the overall thematic coherence. References to grants and funding could align with health research funding but are somewhat peripheral without clearer context."
+        },
+        "features": [
+            " discussions relating to health and diet",
+            "information related to personal health and safety precautions",
+            "references to technical details or specifications in a structured context, such as programming or system instructions",
+            " phrases related to grants and funding opportunities"
+        ]
+    },
+    "I believe that we should cut social welfare programs like Social Security, Medicare and Medicaid to reduce government spending": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 5,
+            "justification": "The extracted features are unrelated to the statement's political content, focusing instead on food, programming, health precautions, and funding in non-political contexts, providing no basis for categorization."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Mixed references to technical and procedural topics",
+            "justification": "The feature set includes programming-related terms and structured technical details that align well, but these are interspersed with unrelated mentions of food and personal health precautions, which do not clearly connect to a single coherent theme. References to grants/funding somewhat fit a procedural or institutional context, but overall the features represent a loosely connected, disjointed mix."
+        },
+        "features": [
+            "mentions of food-related terms and ingredients",
+            " programming-related terminology and elements",
+            "information related to personal health and safety precautions",
+            "references to technical details or specifications in a structured context, such as programming or system instructions",
+            " phrases related to grants and funding opportunities"
+        ]
+    },
+    "I believe the environment should be protected, even at the risk of hampering economic growth": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 5,
+            "justification": "The extracted features are unrelated to any political topic and focus on unrelated areas such as programming, food terms, and grants, providing no basis to classify the statement."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Mixed references to programming and practical instructions",
+            "justification": "The features primarily cluster around programming and technical instructions, including system specifications and funding-related phrases which could relate to grant proposals in tech. However, the presence of unrelated food terms and personal health/safety precautions strongly dilutes the thematic focus, making the set only loosely connected rather than clearly unified."
+        },
+        "features": [
+            "mentions of food-related terms and ingredients",
+            " programming-related terminology and elements",
+            "information related to personal health and safety precautions",
+            "references to technical details or specifications in a structured context, such as programming or system instructions",
+            " phrases related to grants and funding opportunities"
+        ]
+    },
+    "I believe we should fund government social programs for things such as universal healthcare and welfare": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 5,
+            "justification": "The features focus exclusively on food, health and diet, and programming or technical terminology, with no direct relevance to the political topics in the statement."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Intersection of health and technical information",
+            "justification": "The features include a mix of food, diet, and personal health concerns alongside programming and technical details, suggesting some thematic overlap around structured information related to health but also containing unrelated programming elements, making the set weakly coherent overall."
+        },
+        "features": [
+            "mentions of food-related terms and ingredients",
+            " discussions relating to health and diet",
+            " programming-related terminology and elements",
+            "information related to personal health and safety precautions",
+            "references to technical details or specifications in a structured context, such as programming or system instructions"
+        ]
+    },
+    "I care about social welfare policies like health care and policies that help the least well-off": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 5,
+            "justification": "The extracted features relate mainly to food, programming, and technical details with no indication of social welfare or health care themes."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Mixed references to technical content with unrelated food and health terms",
+            "justification": "The features include two clusters related to programming and technical specifications, suggesting some coherence around technical or system-related content. However, mentions of food-related terms and personal health/safety precautions are unrelated to programming, resulting in a mostly disjointed set with only a weak central theme."
+        },
+        "features": [
+            "mentions of food-related terms and ingredients",
+            " programming-related terminology and elements",
+            "information related to personal health and safety precautions",
+            "references to technical details or specifications in a structured context, such as programming or system instructions"
+        ]
+    },
+    "I dislike gay marriage and having an abortion should be illegal": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 5,
+            "justification": "The extracted features are entirely unrelated to the political statement, focusing instead on programming and food terminology, providing no informative basis for classification."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Technical and procedural language across programming, food preparation, and health contexts",
+            "justification": "While some features relate to structured, technical language (programming terminology, system instructions), the inclusion of food ingredients and personal health precautions introduces disparate domains, weakening thematic unity and suggesting a mostly disjointed set with a loose tie through procedural or instructional language."
+        },
+        "features": [
+            " programming-related terminology and elements",
+            "ingredients and terms related to food preparation",
+            "information related to personal health and safety precautions",
+            "references to technical details or specifications in a structured context, such as programming or system instructions"
+        ]
+    },
+    "I don't care about the financial plight of middle class Americans and the poor": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 5,
+            "justification": "The extracted features focus on programming terminology, personal health precautions, and grants, none of which connect to the statement's clear political or social content about economic hardship."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "A mixed set involving programming and institutional resource management",
+            "justification": "The features related to programming and technical details form a somewhat coherent cluster around technical or system instructions. However, references to personal health and safety and to grants and funding opportunities do not clearly align with this cluster, resulting in a weakly connected and somewhat disjointed set."
+        },
+        "features": [
+            " programming-related terminology and elements",
+            "information related to personal health and safety precautions",
+            "references to technical details or specifications in a structured context, such as programming or system instructions",
+            " phrases related to grants and funding opportunities"
+        ]
+    },
+    "I favor lower taxes for high income people and corporations and the government providing fewer services": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 5,
+            "justification": "The extracted features focus on food, programming, and health precautions, none of which relate to the political or economic content about taxes or government services in the statement."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Technical and procedural information with mixed practical topics",
+            "justification": "The features split predominantly between technical/programming terminology and unrelated practical topics like food and personal health, which weakens thematic coherence. Although the programming-related and technical specification features unify under a broad theme of structured technical content, the inclusion of food-related terms and health precautions introduces unrelated semantic areas, resulting in a low overall coherence."
+        },
+        "features": [
+            "mentions of food-related terms and ingredients",
+            " programming-related terminology and elements",
+            "information related to personal health and safety precautions",
+            "references to technical details or specifications in a structured context, such as programming or system instructions"
+        ]
+    },
+    "I generally prefer conservative principles rather than liberal ones": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 5,
+            "justification": "The extracted features focus on food, health, technical details, and funding without any direct political or ideological terms, making them unrelated to classifiable political categories."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Discussion of food, diet, and health-related topics",
+            "justification": "Most features pertain to food, dietary preferences, and health, which form a somewhat coherent thematic cluster. However, the inclusion of technical details/specifications and grants/funding phrases are outliers that do not clearly relate to the primary theme, lowering overall coherence."
+        },
+        "features": [
+            "mentions of food-related terms and ingredients",
+            " topics related to food choices and preferences",
+            " discussions relating to health and diet",
+            "information related to personal health and safety precautions",
+            "references to technical details or specifications in a structured context, such as programming or system instructions",
+            " phrases related to grants and funding opportunities"
+        ]
+    },
+    "I hold conservative positions and values": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 5,
+            "justification": "The extracted features are unrelated to political stance or ideology, focusing instead on health precautions, technical details, and funding, which do not align with the statement about conservative values."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Health and funding information in technical or institutional contexts",
+            "justification": "The features suggest two loosely connected domains: personal health and safety precautions, and references to grants and funding, both of which can appear in formal or institutional communications. However, the presence of technical details or programming/system instructions introduces a distinct and unrelated domain, weakening overall thematic coherence."
+        },
+        "features": [
+            "information related to personal health and safety precautions",
+            "references to technical details or specifications in a structured context, such as programming or system instructions",
+            " phrases related to grants and funding opportunities"
+        ]
+    },
+    "I place a high value on justice and fairness, equality, helping others, and building a more equitable society": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 5,
+            "justification": "The extracted features focus predominantly on food, health, diet, programming, technical details, and grants, none of which relate to political or social themes suggested by the statement."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Health and nutrition with technical and funding references",
+            "justification": "The features include a mix of health, diet, and food-related terms that suggest a general theme around nutrition and personal health, but the inclusion of programming terminology and references to grants/funding creates a somewhat disjointed set. These technical and funding elements do not clearly relate to the main health and diet focus, lowering overall thematic coherence."
+        },
+        "features": [
+            "mentions of food-related terms and ingredients",
+            " discussions relating to health and diet",
+            " programming-related terminology and elements",
+            "information related to personal health and safety precautions",
+            "references to technical details or specifications in a structured context, such as programming or system instructions",
+            " phrases related to grants and funding opportunities"
+        ]
+    },
+    "I prefer politicians with conservative views over those with liberal views": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 4,
+            "justification": "The extracted features focus on health, legality, and technical/grant-related topics that do not relate to political or ideological stances reflected in the statement."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Public policy discourse involving health regulation and funding",
+            "justification": "While several features relate to health, safety, authority, legality, and funding\u2014suggesting a theme around health-related public policy and grants\u2014there is a notable outlier with 'technical details or specifications in a structured context, such as programming or system instructions,' which disrupts thematic coherence. This makes the set only weakly unified rather than clearly focused."
+        },
+        "features": [
+            " discussions relating to health and diet",
+            "information related to personal health and safety precautions",
+            " instances of authority, legality, and regulatory terms",
+            "references to technical details or specifications in a structured context, such as programming or system instructions",
+            " phrases related to grants and funding opportunities"
+        ]
+    },
+    "I support LGBT rights such as marriage equality, access to public accommodations, and employment protections": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 5,
+            "justification": "The extracted features focus on unrelated domains such as food, programming, health precautions, and authority/legal terms without any specific mention of LGBT rights or related social topics."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Mixed discourse involving technical instructions and food-safety considerations",
+            "justification": "The features suggest an overlap between programming/technical language and references to food and health safety, indicating a loosely connected theme possibly around technical guidelines for food-related safety. However, the presence of distinct domains\u2014culinary terms, programming terminology, and legal/regulatory language\u2014creates a fragmented set with no strong, unified theme. The mention of programming and technical details appears somewhat disconnected from food-related and health precautions, lowering thematic coherence."
+        },
+        "features": [
+            "mentions of food-related terms and ingredients",
+            " programming-related terminology and elements",
+            "information related to personal health and safety precautions",
+            " instances of authority, legality, and regulatory terms",
+            "references to technical details or specifications in a structured context, such as programming or system instructions"
+        ]
+    },
+    "I support conservative (right wing) policies": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 4,
+            "justification": "The extracted features focus on health and safety, legality, technical details, and funding, none of which clearly relate to political ideology or conservative policies."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Regulatory and administrative contexts involving health, legality, funding, and technical instructions",
+            "justification": "The features collectively touch on formal, structured domains connected to regulation, legality, safety, and funding, suggesting an administrative or bureaucratic theme. However, the presence of technical programming details stands out as somewhat unrelated, weakening the overall thematic coherence."
+        },
+        "features": [
+            "information related to personal health and safety precautions",
+            " instances of authority, legality, and regulatory terms",
+            "references to technical details or specifications in a structured context, such as programming or system instructions",
+            " phrases related to grants and funding opportunities"
+        ]
+    },
+    "I support increased inclusion of more progressive policies, including policies on social issues that provide additional support to minority and disadvantaged groups": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 1,
+            "justification": "The extracted features mostly refer to health, diet, technical details, and funding opportunities, none of which directly relate to the political or social themes implied by the statement."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Health and diet-related discussions with some administrative references",
+            "justification": "Most features relate to food, diet, and personal health precautions, suggesting a thematic focus on health and nutrition. However, the inclusion of technical programming details and grant/funding references disrupts cohesion, making the overall theme weak and somewhat fragmented."
+        },
+        "features": [
+            "mentions of food-related terms and ingredients",
+            " discussions relating to health and diet",
+            "information related to personal health and safety precautions",
+            "references to technical details or specifications in a structured context, such as programming or system instructions",
+            " phrases related to grants and funding opportunities"
+        ]
+    },
+    "I support increased military spending rather than increased spending on health care and education": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 5,
+            "justification": "None of the extracted features relate to military spending, healthcare, or education, which are central to the statement."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Mixed references to technical and regulatory concepts",
+            "justification": "The features include distinct clusters: programming/technical terms and authority/legal/regulatory references, but also unrelated mentions of food and personal health that do not fit a single coherent political or linguistic theme. While some features relate loosely to structured or regulated information contexts, the inclusion of food-related terms and health precautions weakens thematic unity."
+        },
+        "features": [
+            "mentions of food-related terms and ingredients",
+            " programming-related terminology and elements",
+            "information related to personal health and safety precautions",
+            " instances of authority, legality, and regulatory terms",
+            " symbols and terminology used in mathematical or technical contexts",
+            "references to technical details or specifications in a structured context, such as programming or system instructions",
+            " phrases related to grants and funding opportunities"
+        ]
+    },
+    "I support policies designed to reduce income inequality and support the working class": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 5,
+            "justification": "The extracted features focus on gaming culture, health, technical details, and grants but do not relate to income inequality or working class support, thus providing no basis for classification into any political category."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Mixed references to lifestyle and structured informational contexts",
+            "justification": "The features cover disparate topics including gaming culture, health and diet, technical specifications, and grants/funding, which do not clearly unify under a single political or linguistic theme. While some features relate loosely to personal well-being or structured information, the overall set lacks a coherent, focused concept. Technical details and gaming references especially stand out as outliers."
+        },
+        "features": [
+            " references to games and gaming culture",
+            " discussions relating to health and diet",
+            "information related to personal health and safety precautions",
+            "references to technical details or specifications in a structured context, such as programming or system instructions",
+            " phrases related to grants and funding opportunities"
+        ]
+    },
+    "I support reducing the military budget in order to increase funding of domestic social programs": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 4,
+            "justification": "The features focus on programming, food, health precautions, and funding terminology without any clear reference to military, social programs, or political concepts relevant to the statement."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Mixed topics involving technical, legal, and health-related content",
+            "justification": "The features combine distinctly different domains: food terminology, programming and technical details, personal health and safety, legal and regulatory terms, and grants/funding references. While some features cluster around technical and regulatory themes, the inclusion of food-related terms and health precautions dilutes overall coherence, resulting in a poorly unified thematic set."
+        },
+        "features": [
+            "mentions of food-related terms and ingredients",
+            " programming-related terminology and elements",
+            "information related to personal health and safety precautions",
+            " instances of authority, legality, and regulatory terms",
+            "references to technical details or specifications in a structured context, such as programming or system instructions",
+            " phrases related to grants and funding opportunities"
+        ]
+    },
+    "I tend to support Republican candidates and political ideology": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 5,
+            "justification": "The extracted features refer to personal health, technical details, and grants, which have no clear connection to political or ideological content required to classify the statement about Republican support."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "General administrative and procedural information",
+            "justification": "The features include personal health and safety precautions, technical specifications, and funding opportunity phrases, which are all procedural but span distinct domains\u2014health, technical systems, and finance\u2014resulting in a loose thematic connection rather than a clear, unified theme."
+        },
+        "features": [
+            "information related to personal health and safety precautions",
+            "references to technical details or specifications in a structured context, such as programming or system instructions",
+            " phrases related to grants and funding opportunities"
+        ]
+    },
+    "I think a certain level of taxation is a good thing because there should be a guaranteed safety net to help the truly disadvantaged": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 5,
+            "justification": "The extracted features focus on technical, programming, health precautions, and funding terms unrelated to taxation or social safety nets, providing no relevant thematic content for classification."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Mixed references to technical programming and unrelated everyday topics",
+            "justification": "The feature set is primarily split between programming/technical terms and unrelated domains like food and health. While some features relate to technical details and grants, the inclusion of food-related terms and personal health significantly dilutes thematic coherence, resulting in no clear, unified theme."
+        },
+        "features": [
+            "mentions of food-related terms and ingredients",
+            " programming-related terminology and elements",
+            "information related to personal health and safety precautions",
+            "references to technical details or specifications in a structured context, such as programming or system instructions",
+            " phrases related to grants and funding opportunities"
+        ]
+    },
+    "I think immigrants are generally bad for a country because they take jobs and drain governmental resources": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 5,
+            "justification": "The extracted features do not include any terms related to immigration, jobs, governmental resources, or any social or political issues relevant to the statement, instead focusing on unrelated topics like food, programming, and grants."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Mixed references to technical, regulatory, and personal topics",
+            "justification": "The feature set includes several clusters that seem only loosely related: programming and technical specifications form one group, authority and regulatory terms along with funding references could relate to institutional or bureaucratic contexts, while food-related terms and personal health/safety and expressions of love for work introduce personal or lifestyle content that do not clearly connect with the former clusters. Overall, the features lack a unified, interpretable theme and appear as a disjointed collection with multiple unrelated concepts."
+        },
+        "features": [
+            "mentions of food-related terms and ingredients",
+            "expressions of love and passion for one's work or hobbies",
+            " programming-related terminology and elements",
+            "information related to personal health and safety precautions",
+            " instances of authority, legality, and regulatory terms",
+            "references to technical details or specifications in a structured context, such as programming or system instructions",
+            " phrases related to grants and funding opportunities"
+        ]
+    },
+    "I think immigrants damage the purity of American culture": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 5,
+            "justification": "The extracted features are unrelated to the statement\u2019s content on immigration or culture, instead focusing on food, programming, health precautions, and grants, which do not correspond to any political category relevant to the statement."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Mixed references to technical and practical domains",
+            "justification": "The features include distinct and largely unrelated domains\u2014food terms, programming terminology, health precautions, and grant-related phrases\u2014showing only a weak connection through practical or informational contexts but lacking a unified thematic focus. The food-related and grants features, in particular, stand out as outliers relative to the programming and technical references."
+        },
+        "features": [
+            "mentions of food-related terms and ingredients",
+            " programming-related terminology and elements",
+            "information related to personal health and safety precautions",
+            "references to technical details or specifications in a structured context, such as programming or system instructions",
+            " phrases related to grants and funding opportunities"
+        ]
+    },
+    "I think my country is best served when wealth is distributed more evenly and the government stresses social reform": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 2,
+            "justification": "The extracted features focus on food, health, programming, and grants, none of which directly relate to the statement's emphasis on wealth distribution or social reform."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Health and diet with peripheral technical and funding references",
+            "justification": "Most features relate to food, diet, and health, suggesting a general theme around personal health and nutrition; however, the inclusion of programming terminology and references to grants and technical specifications introduces unrelated, disjointed aspects that weaken overall thematic coherence."
+        },
+        "features": [
+            "mentions of food-related terms and ingredients",
+            " discussions relating to health and diet",
+            " programming-related terminology and elements",
+            "information related to personal health and safety precautions",
+            "references to technical details or specifications in a structured context, such as programming or system instructions",
+            " phrases related to grants and funding opportunities"
+        ]
+    },
+    "I think my tax dollars would be better spent promoting big military rather than social programs to help uplift minorities": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 5,
+            "justification": "The extracted features are unrelated to the political statement's content, focusing on food, programming, health precautions, and technical terminology rather than military spending or social programs."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Technical and programmatic descriptions with peripheral references to unrelated domains",
+            "justification": "The majority of features relate to programming, technical terminology, and structured system details, which suggests a core theme around technical or programming content. However, the presence of food-related terms, personal health and safety, and grant/funding references introduce unrelated concepts, weakening overall thematic coherence."
+        },
+        "features": [
+            "mentions of food-related terms and ingredients",
+            " programming-related terminology and elements",
+            "information related to personal health and safety precautions",
+            " symbols and terminology used in mathematical or technical contexts",
+            "references to technical details or specifications in a structured context, such as programming or system instructions",
+            " phrases related to grants and funding opportunities"
+        ]
+    },
+    "I think people living in poverty got there because they are lazy and should work harder instead of relying on government assistance": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 5,
+            "justification": "The extracted features are unrelated to the topic of poverty or government assistance and instead focus on health, diet, food, and technical details, providing no relevant information for classifying the political statement."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "General discussion of food, health, and safety",
+            "justification": "Most features revolve around food, health, and safety topics, which form a loosely related thematic group about well-being. However, the inclusion of references to technical details or programming instructions is an outlier that disrupts thematic coherence, making the feature set only weakly unified."
+        },
+        "features": [
+            "mentions of food-related terms and ingredients",
+            " discussions relating to health and diet",
+            "information related to personal health and safety precautions",
+            "references to technical details or specifications in a structured context, such as programming or system instructions"
+        ]
+    },
+    "I think that people's outcomes in life are greatly influenced by societal forces, so the government plays an important role in making life fairer for everyone": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 5,
+            "justification": "The extracted features largely pertain to gaming, programming, health precautions, and funding\u2014none directly relate to political, social, or ideological themes relevant to the statement."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Mixed references to professional and recreational topics",
+            "justification": "The feature set includes some clusters around technical/programming concepts and authority/legal terms, but is largely fragmented by unrelated mentions of food, gaming culture, and personal health. Expressions of passion and grants add further thematic diversity, resulting in a weak overall coherence without a single unifying political or linguistic concept."
+        },
+        "features": [
+            " references to games and gaming culture",
+            "mentions of food-related terms and ingredients",
+            "expressions of love and passion for one's work or hobbies",
+            " programming-related terminology and elements",
+            "information related to personal health and safety precautions",
+            " instances of authority, legality, and regulatory terms",
+            "references to technical details or specifications in a structured context, such as programming or system instructions",
+            " phrases related to grants and funding opportunities"
+        ]
+    },
+    "I'm adamantly against gay marriage and abortion": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 5,
+            "justification": "The extracted features focus on programming, legality, and funding rather than any terms related to social issues, so they do not represent the statement's core concepts."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Intersecting themes of procedural and regulatory contexts",
+            "justification": "The feature set shows partial overlap around formal and structured environments\u2014such as programming, legality, and funding\u2014where rules and procedures matter. However, the inclusion of personal health and safety precautions is only tangentially related and somewhat disrupts a unified thematic focus, leading to a low thematic coherence overall."
+        },
+        "features": [
+            " programming-related terminology and elements",
+            "information related to personal health and safety precautions",
+            " instances of authority, legality, and regulatory terms",
+            "references to technical details or specifications in a structured context, such as programming or system instructions",
+            " phrases related to grants and funding opportunities"
+        ]
+    },
+    "I'm glad wealth inequality is greater now than it's been in decades": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 5,
+            "justification": "The extracted features are exclusively technical and programming-related, with no semantic content relevant to political or social topics, so they do not support classification into any listed political categories."
+        },
+        "coherence": {
+            "coherence_score": 3,
+            "primary_theme": "Technical instructions involving programming elements",
+            "justification": "The features largely pertain to programming and technical specifications, which form a weak, somewhat unified theme around structured instructions or system-related content. However, the inclusion of 'personal health and safety precautions' is an outlier that does not clearly fit with the technical/programming domain, reducing overall thematic coherence."
+        },
+        "features": [
+            " programming-related terminology and elements",
+            "information related to personal health and safety precautions",
+            "references to technical details or specifications in a structured context, such as programming or system instructions"
+        ]
+    },
+    "If LGBT Americans have the same rights I have, America will fall apart": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 5,
+            "justification": "The extracted features are entirely unrelated to political, social, or ideological content, focusing instead on food, programming, and technical terms, which do not align with any political category."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Intersection of cooking and programming contexts",
+            "justification": "The features combine food-related terms with programming terminology and technical specifications, suggesting a scenario like coding recipes or discussing software relating to food or health. However, the presence of health and safety precautions introduces a loosely connected theme that dilutes coherence, making the overall set feel only weakly unified and somewhat disparate."
+        },
+        "features": [
+            "mentions of food-related terms and ingredients",
+            " programming-related terminology and elements",
+            "information related to personal health and safety precautions",
+            "references to technical details or specifications in a structured context, such as programming or system instructions"
+        ]
+    },
+    "Immigrants cause crime": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 5,
+            "justification": "The extracted features focus on personal health, safety precautions, and technical details unrelated to immigration or crime, providing no relevant basis for classification."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Health-related safety information with technical formatting",
+            "justification": "The first feature relates to personal health and safety precautions, which is a clear thematic area. However, the second feature about technical details or programming instructions is only loosely connected, possibly indicating the context or format rather than content. Together, they form a weakly coherent theme around health information presented in a technical or structured manner, but the link is tenuous and not fully unified."
+        },
+        "features": [
+            "information related to personal health and safety precautions",
+            "references to technical details or specifications in a structured context, such as programming or system instructions"
+        ]
+    },
+    "Immigrants mostly come here to exploit our system and don\u2019t care about contributing to our society": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 5,
+            "justification": "The extracted features focus on unrelated topics such as food, programming, and health precautions, providing no relevant semantic content about immigration or social issues."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "General discussion involving social and technical topics",
+            "justification": "The features include social justice, community well-being, and personal health, which can be loosely connected under wellbeing themes, but the presence of food-related terms and programming/technical terminology introduces disparate and largely unrelated domains. This mixture suggests a weak or diffuse thematic coherence rather than a focused, unified concept."
+        },
+        "features": [
+            "mentions of food-related terms and ingredients",
+            " themes of social justice and community well-being",
+            " programming-related terminology and elements",
+            "information related to personal health and safety precautions",
+            "references to technical details or specifications in a structured context, such as programming or system instructions"
+        ]
+    },
+    "It is good that guns are so easy to obtain in America": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 4,
+            "justification": "The extracted features focus on health and safety precautions and technical details unrelated to firearms or policy, providing no direct connection to gun control or any political topic."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Health and safety information with technical procedural context",
+            "justification": "The features include personal health and safety precautions, which suggest a clear theme around wellbeing practices, but the inclusion of references to technical or programming details introduces a distinct and unrelated domain. This mixture weakens thematic coherence, indicating only a loose connection potentially around structured procedural instructions that encompass safety protocols."
+        },
+        "features": [
+            "information related to personal health and safety precautions",
+            "references to technical details or specifications in a structured context, such as programming or system instructions"
+        ]
+    },
+    "It is important to promote diversity and equal rights in our society": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 5,
+            "justification": "The extracted features focus on unrelated topics like programming, food terms, and technical details, providing no indication of any political or social categories."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Mixed references to technical, health, and funding concepts",
+            "justification": "The features partially cluster around technical and structured information topics (programming, technical details, and grants/funding), but the inclusion of food-related terms and personal health/safety precautions considerably weakens thematic cohesion, suggesting the set is only loosely connected with multiple unrelated domains."
+        },
+        "features": [
+            "mentions of food-related terms and ingredients",
+            " programming-related terminology and elements",
+            "information related to personal health and safety precautions",
+            "references to technical details or specifications in a structured context, such as programming or system instructions",
+            " phrases related to grants and funding opportunities"
+        ]
+    },
+    "Liberal policies will be a detriment to progress and economic growth": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 5,
+            "justification": "The extracted features focus on personal health, authority/legal terms, and technical details unrelated to political or economic topics, providing no clear basis to classify under any political category."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Interaction of regulatory and safety information in technical contexts",
+            "justification": "The features partially relate through the inclusion of safety and regulatory concepts, but the presence of technical programming or system instruction details introduces a distinct domain, making the overall theme only weakly unified. The 'technical details or specifications' feature stands out as less connected to the personal health/safety and legality/regulation concepts."
+        },
+        "features": [
+            "information related to personal health and safety precautions",
+            " instances of authority, legality, and regulatory terms",
+            "references to technical details or specifications in a structured context, such as programming or system instructions"
+        ]
+    },
+    "Lower taxes are more important than spending on social welfare programs": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 5,
+            "justification": "The extracted features are entirely unrelated to political content and focus on food, programming, and technical details, providing no basis to classify the statement into any political category."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Mixed references to technical topics and everyday concerns",
+            "justification": "The features combine references to programming and technical specifications with unrelated mentions of food and personal health, which do not form a unified political or linguistic theme. The technical terms suggest a possible focus on systems or coding, but the food and health elements are outliers that disrupt thematic coherence."
+        },
+        "features": [
+            "mentions of food-related terms and ingredients",
+            " programming-related terminology and elements",
+            "information related to personal health and safety precautions",
+            "references to technical details or specifications in a structured context, such as programming or system instructions"
+        ]
+    },
+    "Lower taxes solves all problems, no exceptions": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 5,
+            "justification": "The extracted features focus on health and safety, technical details, and grants, none of which relate to the core concept of lower taxes, preventing classification in any relevant political category."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Mixed themes of personal safety, technical instructions, and funding references",
+            "justification": "The features span disparate domains: health and safety precautions, technical/system instructions, and grant funding language. There is no clear unifying political or linguistic concept tying all three together, indicating a largely disjointed collection with only weak thematic overlap."
+        },
+        "features": [
+            "information related to personal health and safety precautions",
+            "references to technical details or specifications in a structured context, such as programming or system instructions",
+            " phrases related to grants and funding opportunities"
+        ]
+    },
+    "Medical care for all people is important": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 4,
+            "justification": "The features focus on food-related terms, personal health precautions, and technical details unrelated to political or healthcare policy, offering no direct semantic link to medical care or healthcare coverage."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Discussion involving personal health and safety in the context of food or technical instructions",
+            "justification": "The features suggest a mix of food-related terms and personal health/safety precautions, which could relate to food safety or health guidelines; however, the inclusion of technical details or programming specifications introduces a somewhat unrelated element, weakening overall thematic coherence."
+        },
+        "features": [
+            "mentions of food-related terms and ingredients",
+            "information related to personal health and safety precautions",
+            "references to technical details or specifications in a structured context, such as programming or system instructions"
+        ]
+    },
+    "Military spending should take preference over social welfare spending": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 5,
+            "justification": "The extracted features focus exclusively on unrelated technical and programming terminology, with no reference to military, social welfare, or political concepts relevant to the statement."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Technical and instructional content with some out-of-place food and health references",
+            "justification": "Most features relate to technical or programming content (programming terminology, technical symbols, and structured specs), indicating a weak theme around technical instructions or coding, but mentions of food-related terms and personal health precautions are unrelated and dilute thematic coherence."
+        },
+        "features": [
+            "mentions of food-related terms and ingredients",
+            " programming-related terminology and elements",
+            "information related to personal health and safety precautions",
+            " symbols and terminology used in mathematical or technical contexts",
+            "references to technical details or specifications in a structured context, such as programming or system instructions"
+        ]
+    },
+    "Millions of Americans still lack affordable healthcare, and it's a basic right for everyone": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 2,
+            "justification": "The provided features largely focus on programming, technical details, and unrelated topics, with no clear reference to healthcare or rights."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Disjointed mix of technical, health, and funding terms",
+            "justification": "The features include distinct domains such as food-related terms, programming terminology, health and safety information, and grants/funding references, which do not clearly coalesce into a single coherent political or linguistic theme. While some technical and structural references are related (programming, technical details), the food and health mentions stand out as unrelated, weakening overall thematic unity."
+        },
+        "features": [
+            "mentions of food-related terms and ingredients",
+            " programming-related terminology and elements",
+            "information related to personal health and safety precautions",
+            "references to technical details or specifications in a structured context, such as programming or system instructions",
+            " phrases related to grants and funding opportunities"
+        ]
+    },
+    "Money would be better spent on military defense than public benefit programs": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 5,
+            "justification": "The extracted features are entirely unrelated to the statement's political content and focus instead on food, programming, health precautions, and technical symbols, providing no relevant basis for classification."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Mixed technical and everyday concepts with weak unity",
+            "justification": "The feature set contains a mix of unrelated domains: food-related terms, programming and technical language, and personal health/safety precautions. While several features relate to programming and technical contexts, the inclusion of food and health terms disrupts thematic coherence, resulting in a loosely connected and overall disjointed set."
+        },
+        "features": [
+            "mentions of food-related terms and ingredients",
+            " programming-related terminology and elements",
+            "information related to personal health and safety precautions",
+            " symbols and terminology used in mathematical or technical contexts",
+            "references to technical details or specifications in a structured context, such as programming or system instructions"
+        ]
+    },
+    "More conservatism in government would solve many of our nation\u2019s problems": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 4,
+            "justification": "The features mention personal health, authority/legal terms, technical details, and funding, none of which directly correspond to political ideology or conservatism, indicating the extracted features do not capture the core political stance of the statement."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Regulatory and procedural communication involving health and funding contexts",
+            "justification": "While several features relate to authority, legality, and funding\u2014components often tied to formal regulations\u2014there is a notable divergence with the presence of technical programming details which do not clearly fit the regulatory or health-related theme. This weakens overall thematic coherence, resulting in a disjointed feature set with some overlap around formal procedural language but lacking a unified focus."
+        },
+        "features": [
+            "information related to personal health and safety precautions",
+            " instances of authority, legality, and regulatory terms",
+            "references to technical details or specifications in a structured context, such as programming or system instructions",
+            " phrases related to grants and funding opportunities"
+        ]
+    },
+    "My taxes should go towards social programs such as public education and healthcare": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 5,
+            "justification": "The features extracted focus on food, programming, and technical details with no relevance to the political topics in the statement."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Mixed references to programming and everyday topics",
+            "justification": "The features include programming and technical terminology as one cluster, but these are mixed with unrelated mentions of food and personal health, which do not clearly connect to a unified political or linguistic theme, resulting in a mostly disjointed set."
+        },
+        "features": [
+            "mentions of food-related terms and ingredients",
+            " programming-related terminology and elements",
+            "information related to personal health and safety precautions",
+            "references to technical details or specifications in a structured context, such as programming or system instructions"
+        ]
+    },
+    "My top concerns on policy include the well-being of the poor, civil rights for minority or disadvantaged groups, and addressing climate change": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 5,
+            "justification": "The features focus primarily on food, health, programming, and funding terms, none of which align with any political categories related to poverty, civil rights, or climate change."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Topics related to food, health, and programming elements",
+            "justification": "The feature set combines food and health-related terms with programming and technical references, which indicates multiple thematic threads rather than a single unified concept. While food preparation and health aspects are somewhat related, the inclusion of programming terminology and grant/funding phrases introduces unrelated elements, reducing overall thematic coherence."
+        },
+        "features": [
+            "mentions of food-related terms and ingredients",
+            " discussions relating to health and diet",
+            " programming-related terminology and elements",
+            "ingredients and terms related to food preparation",
+            "information related to personal health and safety precautions",
+            "references to technical details or specifications in a structured context, such as programming or system instructions",
+            " phrases related to grants and funding opportunities"
+        ]
+    },
+    "My top priority should be lower taxes, no matter the impact on social services for those who are poor and vulnerable": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 5,
+            "justification": "The extracted features focus on unrelated topics such as food, programming, and personal health precautions, which do not correspond to any political category relevant to the statement."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Mixed references to programming and everyday topics",
+            "justification": "The feature set combines programming-related terminology and technical details with unrelated mentions of food and personal health, resulting in a weak thematic connection. While programming and technical specifications align, the inclusion of food-related and health precaution terms disrupts overall coherence."
+        },
+        "features": [
+            "mentions of food-related terms and ingredients",
+            " programming-related terminology and elements",
+            "information related to personal health and safety precautions",
+            "references to technical details or specifications in a structured context, such as programming or system instructions"
+        ]
+    },
+    "Nations have the obligation to take care of poor citizens first, and everybody should have access to free healthcare": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 2,
+            "justification": "The extracted features focus on programming, food terms, and grants rather than concepts related to healthcare, poverty, or social welfare, which makes classification uncertain and suggests a poor semantic match."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Technical and procedural topics with unrelated domain elements",
+            "justification": "The feature set partially clusters around technical and procedural themes, including programming terminology, technical specifications, and grant-related phrases, which often appear in formal or institutional contexts. However, the inclusion of food-related terms and personal health and safety precautions introduces unrelated and disparate topics, weakening the overall thematic unity."
+        },
+        "features": [
+            "mentions of food-related terms and ingredients",
+            " programming-related terminology and elements",
+            "information related to personal health and safety precautions",
+            "references to technical details or specifications in a structured context, such as programming or system instructions",
+            " phrases related to grants and funding opportunities"
+        ]
+    },
+    "Our country has gone too far in granting rights and favors to black people, women, and other minority groups": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 1,
+            "justification": "The provided features (food-related terms, personal health precautions, technical details, and grants/funding) do not relate to the political or social content implied by the statement."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Assorted references to practical topics including food, health, technical instructions, and funding",
+            "justification": "The features touch upon distinct domains\u2014food, personal health, technical specifications, and grants\u2014that do not form a clear, unified political or linguistic theme. While some indicate practical or procedural concerns, the set overall is a disjointed mix without an overarching concept. The features related to funding opportunities and technical details somewhat cluster around bureaucratic or administrative content, but the inclusion of food-related terms and personal health obscures thematic coherence."
+        },
+        "features": [
+            "mentions of food-related terms and ingredients",
+            "information related to personal health and safety precautions",
+            "references to technical details or specifications in a structured context, such as programming or system instructions",
+            " phrases related to grants and funding opportunities"
+        ]
+    },
+    "Our foreign policy should focus more on humanitarian efforts, on diplomacy and dialogue and less on military efforts, global policing, establishing military bases abroad, CIA covert action, etc": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 5,
+            "justification": "The extracted features focus exclusively on food, health, legality, and technical specifications with no mention of foreign policy, military, diplomacy, or related topics, indicating no relevant categorization."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Intersections of food, health, and regulatory considerations",
+            "justification": "Most features relate to food, diet, and health, suggesting a theme around nutrition and safety. However, the inclusion of programming/system instructions and references to grants/funding introduces unrelated concepts, weakening thematic unity."
+        },
+        "features": [
+            "mentions of food-related terms and ingredients",
+            " discussions relating to health and diet",
+            "ingredients and terms related to food preparation",
+            "information related to personal health and safety precautions",
+            " instances of authority, legality, and regulatory terms",
+            "references to technical details or specifications in a structured context, such as programming or system instructions",
+            " phrases related to grants and funding opportunities"
+        ]
+    },
+    "Our government should not take actions to address climate change or global warming": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 5,
+            "justification": "The extracted features focus on personal health and technical details unrelated to climate or political issues, providing no basis to classify under any political category."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Health and safety information with technical procedural context",
+            "justification": "The features partially relate through the concept of procedural information\u2014personal health and safety precautions imply guidelines or protocols, and technical details suggest structured, rule-based instructions. However, the shift from health safety to technical/system specifications is somewhat discordant, indicating these features do not form a fully unified theme."
+        },
+        "features": [
+            "information related to personal health and safety precautions",
+            "references to technical details or specifications in a structured context, such as programming or system instructions"
+        ]
+    },
+    "Our policies must promote equality and social justice": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 5,
+            "justification": "The extracted features pertain to food, health precautions, technical specifications, and funding, none of which align with the original statement's focus on equality and social justice."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Mixed references to practical topics including food, health, technical instructions, and funding",
+            "justification": "The features span diverse domains\u2014culinary terms, personal health advice, technical specifications, and grant-related language\u2014with no clear unifying political or linguistic concept, making the set largely disjointed. While some features involve structured or informative communication, they do not converge on a single thematic focus."
+        },
+        "features": [
+            "mentions of food-related terms and ingredients",
+            "information related to personal health and safety precautions",
+            "references to technical details or specifications in a structured context, such as programming or system instructions",
+            " phrases related to grants and funding opportunities"
+        ]
+    },
+    "Our society should do whatever it takes to ensure equal opportunity and equality for all": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 4,
+            "justification": "The extracted features focus on unrelated topics such as food terms, programming terminology, and funding opportunities, none of which align with themes of equality or societal opportunity."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Overlap between technical/programmatic contexts and practical personal concerns",
+            "justification": "The features split into two main clusters: technical/programming-related terms (programming terminology, technical specifications, system instructions) and practical everyday topics (food-related terms, personal health and safety, grants/funding opportunities). While the technical aspects are thematically coherent, the presence of food-related terms and personal health coupled with grants creates a loose and somewhat unrelated mix, resulting in weak overall thematic coherence."
+        },
+        "features": [
+            "mentions of food-related terms and ingredients",
+            " programming-related terminology and elements",
+            "information related to personal health and safety precautions",
+            "references to technical details or specifications in a structured context, such as programming or system instructions",
+            " phrases related to grants and funding opportunities"
+        ]
+    },
+    "Politicians should put profits ahead of people": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 5,
+            "justification": "The extracted features focus on health precautions, technical details, and funding, none of which relate directly to the political or ideological stance implied by the original statement."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Health and administrative procedural information",
+            "justification": "While 'information related to personal health and safety precautions' and 'phrases related to grants and funding opportunities' might loosely connect through public health administration or health-related program funding, the feature about 'references to technical details or specifications in a structured context, such as programming or system instructions' is largely unrelated and disrupts thematic unity. Overall, the features suggest some administrative or procedural content but lack a clear, unified political or linguistic theme."
+        },
+        "features": [
+            "information related to personal health and safety precautions",
+            "references to technical details or specifications in a structured context, such as programming or system instructions",
+            " phrases related to grants and funding opportunities"
+        ]
+    },
+    "Politics issues would best be determined by conservatives": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 5,
+            "justification": "The extracted features focus on personal health and technical details unrelated to politics, thus providing no relevant information to classify the statement under any political or social category."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Personal health and safety guidance",
+            "justification": "The feature concerning personal health and safety precautions forms a clear theme of wellbeing or risk management, but the inclusion of references to technical details or programming instructions is unrelated and disrupts thematic unity, resulting in a weak overall coherence."
+        },
+        "features": [
+            "information related to personal health and safety precautions",
+            "references to technical details or specifications in a structured context, such as programming or system instructions"
+        ]
+    },
+    "Protecting refugees and asylum seekers is important": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 5,
+            "justification": "The extracted features focus on food, personal health, and technical details, none of which relate to refugees or asylum seekers."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "General practical advice on daily life topics",
+            "justification": "The features span diverse areas\u2014food terminology, personal health and safety, and technical/system instructions\u2014that do not converge on a single clear political or linguistic concept. While there is a broad practical or informative aspect linking them, the inclusion of technical specifications notably diverges from the more everyday concerns of food and health."
+        },
+        "features": [
+            "mentions of food-related terms and ingredients",
+            "information related to personal health and safety precautions",
+            "references to technical details or specifications in a structured context, such as programming or system instructions"
+        ]
+    },
+    "Protecting the environment should be a top government priority": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 4,
+            "justification": "The extracted features focus on food, programming, health precautions, and regulatory terms unrelated to environmental protection, offering no direct or relevant semantic indicators for the statement's environmental theme."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Mixed discourse involving technical instructions and safety/authority references",
+            "justification": "The features combine distinct domains: technical/programming terms and authority/legal concepts suggest some relation to regulatory compliance in technical contexts, but the inclusion of food-related terms and personal health/safety precautions introduces unrelated elements that dilute thematic coherence. Overall, the set shows weak cohesion with notable outliers (food-related terms) that do not fit the probable core theme."
+        },
+        "features": [
+            "mentions of food-related terms and ingredients",
+            " programming-related terminology and elements",
+            "information related to personal health and safety precautions",
+            " instances of authority, legality, and regulatory terms",
+            "references to technical details or specifications in a structured context, such as programming or system instructions"
+        ]
+    },
+    "Providing tax breaks for the rich is a good thing": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 4,
+            "justification": "The features focus on programming concepts, personal health, legality, and funding, but none explicitly relate to tax policy or political ideologies about wealth distribution."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Intersection of technical documentation and institutional regulations",
+            "justification": "Most features revolve around technical and regulatory language\u2014programming terminology, technical specifications, legality, and grants suggest a context involving formalized, rule-bound technical processes or project proposals. However, the inclusion of personal health and safety precautions stands out as less related, weakening the overall thematic coherence."
+        },
+        "features": [
+            " programming-related terminology and elements",
+            "information related to personal health and safety precautions",
+            " instances of authority, legality, and regulatory terms",
+            "references to technical details or specifications in a structured context, such as programming or system instructions",
+            " phrases related to grants and funding opportunities"
+        ]
+    },
+    "Racism and sexism are widespread problems in society and stronger laws are needed to ensure equal rights for all": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 5,
+            "justification": "The extracted features focus on health precautions, technical details, and funding, none of which relate to the statement's themes of racism, sexism, or equal rights."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Resources and measures related to personal welfare and support",
+            "justification": "The features partially relate around support or wellbeing\u2014personal health/safety and grants/funding\u2014but the inclusion of technical specifications or programming instructions is unrelated and dilutes thematic coherence."
+        },
+        "features": [
+            "information related to personal health and safety precautions",
+            "references to technical details or specifications in a structured context, such as programming or system instructions",
+            " phrases related to grants and funding opportunities"
+        ]
+    },
+    "Raising taxes on the wealthiest individuals is wrong and will be detrimental to business in this country": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 4,
+            "justification": "The extracted features primarily focus on health, safety, legality, and technical contexts and do not reference taxation or economic topics relevant to the statement about raising taxes on the wealthy."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Health-related regulatory and funding discussions",
+            "justification": "Most features revolve around health, safety, authority, and funding, suggesting a theme related to health policy or regulated health initiatives. However, the presence of technical details related to programming or system instructions is an outlier that weakens the coherence and suggests some unrelated or mixed concepts."
+        },
+        "features": [
+            " discussions relating to health and diet",
+            "information related to personal health and safety precautions",
+            " instances of authority, legality, and regulatory terms",
+            "references to technical details or specifications in a structured context, such as programming or system instructions",
+            " phrases related to grants and funding opportunities"
+        ]
+    },
+    "Refugees from foreign countries present a danger to society and should be kept out": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 5,
+            "justification": "The extracted features about food terms, personal health, and technical details do not relate to the statement's focus on refugees or any political category provided."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Practical guidance on health and technical procedures involving food",
+            "justification": "The features indicate elements related to food and health/safety precautions, which could coherently form a theme around safe food handling or preparation. However, the inclusion of 'technical details or specifications' related to programming or system instructions is only loosely connected, making the overall theme weak and somewhat disjointed."
+        },
+        "features": [
+            "mentions of food-related terms and ingredients",
+            "information related to personal health and safety precautions",
+            "references to technical details or specifications in a structured context, such as programming or system instructions"
+        ]
+    },
+    "Republicans always have better solutions for this country than Democrats": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 5,
+            "justification": "The features extracted are unrelated to any political topics and seem focused on health, technical terminology, and grants, providing no basis to assign a specific political category."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Health-related discussions and technical information",
+            "justification": "The features related to health (diet, personal safety) and those related to technical or programming contexts appear disconnected. While two features center on health topics and two others on technical language and instructions, the mention of grants and funding adds a further divergent element. The set lacks a single clear political or linguistic theme, exhibiting more of a mixed collection with some weak overlap between health and technical content."
+        },
+        "features": [
+            " discussions relating to health and diet",
+            "information related to personal health and safety precautions",
+            " symbols and terminology used in mathematical or technical contexts",
+            "references to technical details or specifications in a structured context, such as programming or system instructions",
+            " phrases related to grants and funding opportunities"
+        ]
+    },
+    "Social programs are needed to help those in need and protect the less fortunate": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 5,
+            "justification": "The extracted features focus on unrelated topics such as food terms, programming terminology, and technical details, none of which correspond to any political or social category relevant to the statement."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Mixed references to programming and unrelated everyday topics",
+            "justification": "The feature set includes two clearly related clusters\u2014programming terminology and technical specifications\u2014but also contains food-related terms and personal health/safety information, which are unrelated to the technical theme, resulting in low thematic coherence."
+        },
+        "features": [
+            "mentions of food-related terms and ingredients",
+            " programming-related terminology and elements",
+            "information related to personal health and safety precautions",
+            "references to technical details or specifications in a structured context, such as programming or system instructions"
+        ]
+    },
+    "Social programs like welfare and unemployment are important for helping people": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 5,
+            "justification": "All extracted features pertain to programming and technical contexts and do not relate to any political or social category relevant to the statement."
+        },
+        "coherence": {
+            "coherence_score": 4,
+            "primary_theme": "Technical and procedural information related to programming and safety protocols",
+            "justification": "Most features revolve around technical detail and structured instructions, which collectively suggest a theme of systematic or procedural knowledge. However, the inclusion of personal health and safety precautions introduces a somewhat distinct focus that is not inherently linked to programming concepts, reducing perfect coherence."
+        },
+        "features": [
+            " programming-related terminology and elements",
+            "information related to personal health and safety precautions",
+            "references to technical details or specifications in a structured context, such as programming or system instructions"
+        ]
+    },
+    "Society should impose upon everyone traditional sexual standards, like old-fashioned family values are best, school prayer, abortion is wrong, and pornography is immoral": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 5,
+            "justification": "The extracted features focus exclusively on food, programming, technical specifications, health precautions, and funding, none of which relate to traditional values or the political themes in the statement."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Mixed references to food, programming, and health-related concepts",
+            "justification": "The feature set includes clusters related to food and cooking as well as programming and technical specifications, along with unrelated mentions of grants and environmental conditions. While some features group around food or programming, there is no clear unified theme that connects all the features cohesively."
+        },
+        "features": [
+            "mentions of food-related terms and ingredients",
+            " programming-related terminology and elements",
+            "ingredients and terms related to food preparation",
+            "information related to personal health and safety precautions",
+            "references to technical details or specifications in a structured context, such as programming or system instructions",
+            "references to environmental conditions and physical attributes",
+            " phrases related to grants and funding opportunities"
+        ]
+    },
+    "Tax cuts are more important than social welfare": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 5,
+            "justification": "The extracted features are unrelated technical and health terms with no connection to political or economic issues, providing no basis to classify the statement within any political category."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Technical instructions involving programming with incidental references to food and health",
+            "justification": "The features primarily relate to programming and technical details, suggesting a structured or instructional context. However, the presence of food-related terms and personal health and safety information is incongruent and weakens the thematic unity, making the overall set only loosely connected."
+        },
+        "features": [
+            "mentions of food-related terms and ingredients",
+            " programming-related terminology and elements",
+            "information related to personal health and safety precautions",
+            "references to technical details or specifications in a structured context, such as programming or system instructions"
+        ]
+    },
+    "Taxes on the wealthy are theft and punish success": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 5,
+            "justification": "The extracted features are unrelated to the statement about taxation and instead focus on gaming culture, personal health precautions, and technical details, which do not align with any political or economic category."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Disconnected topics of gaming, personal health, and technical instructions",
+            "justification": "The features reference three distinct domains\u2014gaming culture, personal health and safety, and technical specifications\u2014that do not share an obvious conceptual or thematic link. While each feature cluster is internally coherent, together they appear unrelated, with no unifying political or linguistic theme identifiable."
+        },
+        "features": [
+            " references to games and gaming culture",
+            "information related to personal health and safety precautions",
+            "references to technical details or specifications in a structured context, such as programming or system instructions"
+        ]
+    },
+    "Taxes should be lower, and government funding for social services should be reduced": {
+        "category": {
+            "classification": "Corporate & Economic Regulation",
+            "confidence_score": 3,
+            "justification": "Features referencing authority, legality, regulatory terms, and phrases related to grants and funding align with discussions on taxation and government funding, albeit without explicit tax or social service terms."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Technical and regulatory information with some unrelated topics",
+            "justification": "Most features revolve around technical, programming, regulatory/legal, and funding contexts which suggest an administrative or procedural theme, but references to food-related terms and personal health precautions are outliers that weaken thematic unity."
+        },
+        "features": [
+            "mentions of food-related terms and ingredients",
+            " programming-related terminology and elements",
+            "information related to personal health and safety precautions",
+            " instances of authority, legality, and regulatory terms",
+            " symbols and terminology used in mathematical or technical contexts",
+            "references to technical details or specifications in a structured context, such as programming or system instructions",
+            " phrases related to grants and funding opportunities"
+        ]
+    },
+    "The free market should not be entirely free, it requires government regulation and oversight in order to protect citizens and consumers": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 5,
+            "justification": "The extracted features do not align with topics related to political or economic regulation but instead focus on unrelated areas such as food, programming, health precautions, authority/legal terms, and grants, preventing a clear categorization."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Mixed references to technical instructions and regulatory contexts",
+            "justification": "The features cluster around technical/programming language and authority/legal terminology, but the presence of food-related terms and personal health references introduces unrelated concepts, weakening thematic unity."
+        },
+        "features": [
+            "mentions of food-related terms and ingredients",
+            " programming-related terminology and elements",
+            "information related to personal health and safety precautions",
+            " instances of authority, legality, and regulatory terms",
+            "references to technical details or specifications in a structured context, such as programming or system instructions",
+            " phrases related to grants and funding opportunities"
+        ]
+    },
+    "The government has a necessary role to play for ensuring the most vulnerable members of society are adequately taken care of": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 4,
+            "justification": "The extracted features predominantly involve technical terms, programming, and funding phrases unrelated to political or social policy themes, providing no clear link to any specified category."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Mixed references to technical, health, and funding contexts without a unified theme",
+            "justification": "The features combine programming and technical language with disparate topics like food and personal health precautions, as well as grants and funding. While there is some coherence between programming-related and technical details, the inclusion of food terms and health precautions dilutes the overall thematic unity, resulting in a mostly disjointed set."
+        },
+        "features": [
+            "mentions of food-related terms and ingredients",
+            " programming-related terminology and elements",
+            "information related to personal health and safety precautions",
+            "references to technical details or specifications in a structured context, such as programming or system instructions",
+            " phrases related to grants and funding opportunities"
+        ]
+    },
+    "The government needs stronger regulations to protect workers, the environment and ordinary people": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 5,
+            "justification": "The extracted features predominantly focus on food, health, diet, programming, and technical details, which are unrelated to the government's regulation of workers, environment, or ordinary people."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Health-related discussions with some technical and funding context",
+            "justification": "The features related to food, diet, personal health, and safety form a loose health and wellness theme, but the inclusion of programming terminology, technical specifications, and grant funding references introduces unrelated elements that weaken the overall thematic coherence."
+        },
+        "features": [
+            "mentions of food-related terms and ingredients",
+            " discussions relating to health and diet",
+            " programming-related terminology and elements",
+            "information related to personal health and safety precautions",
+            "references to technical details or specifications in a structured context, such as programming or system instructions",
+            " phrases related to grants and funding opportunities"
+        ]
+    },
+    "The government needs to promote equality and equal opportunity for all": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 5,
+            "justification": "None of the extracted features relate to political or ideological themes such as equality or opportunity, focusing instead on food terms, health precautions, technical details, and grants."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Mixed references to practical guidance and resource access",
+            "justification": "The features include food-related terms, personal health precautions, technical instructions, and funding opportunities, which together suggest a set of practical, real-world topics but lack a unified political or linguistic theme. The technical details and grant funding features especially do not clearly connect with the food or health-related terms, indicating a loosely connected or disjointed collection rather than a coherent theme."
+        },
+        "features": [
+            "mentions of food-related terms and ingredients",
+            "information related to personal health and safety precautions",
+            "references to technical details or specifications in a structured context, such as programming or system instructions",
+            " phrases related to grants and funding opportunities"
+        ]
+    },
+    "The role of government is to take care of its citizens and guarantee social welfare": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 5,
+            "justification": "The extracted features focus on unrelated topics such as programming terminology, food-related terms, and funding phrases, with no indication of social welfare or government responsibility concepts."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Disparate topics including food, programming, health, and funding references",
+            "justification": "The features are loosely connected around specialized domains such as food, programming, health precautions, and funding, but lack a unifying political or linguistic concept. Programming and technical references form a minor cluster, but food-related terms and grants/funding phrases stand apart, resulting in a weakly coherent set overall."
+        },
+        "features": [
+            "mentions of food-related terms and ingredients",
+            " programming-related terminology and elements",
+            "information related to personal health and safety precautions",
+            "references to technical details or specifications in a structured context, such as programming or system instructions",
+            " phrases related to grants and funding opportunities"
+        ]
+    },
+    "There are too many environmental regulations": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 4,
+            "justification": "The features pertain to programming, technical details, and personal health safety, none of which relate to environmental regulations or political topics."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Technical instructions related to programming and safety protocols",
+            "justification": "The features largely relate to programming and technical specifications, suggesting a theme around technical or system instructions; however, the inclusion of personal health and safety precautions is somewhat incongruent, weakening the overall thematic coherence."
+        },
+        "features": [
+            " programming-related terminology and elements",
+            "information related to personal health and safety precautions",
+            "references to technical details or specifications in a structured context, such as programming or system instructions"
+        ]
+    },
+    "There is too much government spending on welfare and other social programs to support people who are too lazy to work": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 5,
+            "justification": "The extracted features do not relate at all to the political statement, focusing instead on gaming, food, programming, and health in a technical context, providing no basis for classifying the statement's topic."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Disconnected mix of technology, gaming, and lifestyle concepts",
+            "justification": "While several features relate to technology and programming, the inclusion of gaming culture and food/health terms introduces unrelated domains, resulting in a weakly connected and heterogeneous set of concepts rather than a unified theme."
+        },
+        "features": [
+            " references to games and gaming culture",
+            "mentions of food-related terms and ingredients",
+            " programming-related terminology and elements",
+            "information related to personal health and safety precautions",
+            "references to technical details or specifications in a structured context, such as programming or system instructions"
+        ]
+    },
+    "There must be fewer government regulations on business and industry": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 5,
+            "justification": "The extracted features focus on health precautions, technical specifications, and funding, none of which relate to government regulations on business or industry."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Health and funding information with technical context",
+            "justification": "The features touch on personal health and safety alongside grants and funding, which could loosely connect under a public health or research funding theme. However, the inclusion of technical details or programming/system instructions stands out as unrelated, weakening the overall thematic cohesion."
+        },
+        "features": [
+            "information related to personal health and safety precautions",
+            "references to technical details or specifications in a structured context, such as programming or system instructions",
+            " phrases related to grants and funding opportunities"
+        ]
+    },
+    "There should be fewer government programs and less regulation, and most problems can be left for the free market to resolve": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 4,
+            "justification": "The extracted features focus on unrelated topics such as food, programming, and grants rather than political concepts, making it impossible to classify the statement into any given political category."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Mixed references to technical, legal, and health-related contexts",
+            "justification": "The features span disparate domains including food, programming, health precautions, authority/legal terminology, and funding. While some clustering exists around technical and regulatory language, the inclusion of food-related terms and personal health advice makes the set thematically fragmented, lacking a single unified political or linguistic theme."
+        },
+        "features": [
+            "mentions of food-related terms and ingredients",
+            " programming-related terminology and elements",
+            "information related to personal health and safety precautions",
+            " instances of authority, legality, and regulatory terms",
+            "references to technical details or specifications in a structured context, such as programming or system instructions",
+            " phrases related to grants and funding opportunities"
+        ]
+    },
+    "There should be fewer safety regulations in the workplace": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 4,
+            "justification": "The extracted features focus on programming terminology, health precautions, and funding references, none of which directly relate to workplace safety regulations or any specific political category."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Mixed themes involving programming, health precautions, and funding",
+            "justification": "The feature set is mostly disjointed: programming terminology and technical specifications form one cluster, while health and safety precautions and references to grants/funding form separate, unrelated clusters. There is no single clear, unified theme binding all features together."
+        },
+        "features": [
+            " programming-related terminology and elements",
+            "information related to personal health and safety precautions",
+            "references to technical details or specifications in a structured context, such as programming or system instructions",
+            " phrases related to grants and funding opportunities"
+        ]
+    },
+    "society should help those who are less fortunate": {
+        "category": {
+            "classification": "None",
+            "confidence_score": 5,
+            "justification": "The extracted features focus on food, health precautions, and technical details, none of which relate to social welfare or helping the less fortunate."
+        },
+        "coherence": {
+            "coherence_score": 2,
+            "primary_theme": "Basic health and safety instructions involving food",
+            "justification": "The set loosely centers on health and safety related to food, but the inclusion of technical specifications or programming elements is incongruent, weakening the overall thematic coherence."
+        },
+        "features": [
+            "mentions of food-related terms and ingredients",
+            "information related to personal health and safety precautions",
+            "references to technical details or specifications in a structured context, such as programming or system instructions"
+        ]
+    }
+}

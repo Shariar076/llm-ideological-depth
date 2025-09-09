@@ -60,7 +60,7 @@ def plot_ideal_points(ideal_points, file_name):
     plt.tight_layout()
     print(f"Saving figure at temp/ideal_points_{file_name}.png")
     plt.savefig(f"temp/ideal_points_{file_name}.png")
-    # plt.show()
+    plt.clf()
 
 
 if __name__=="__main__":
@@ -261,32 +261,60 @@ if __name__=="__main__":
 
     # Create the plot
     # plt.figure(figsize=(8, 6))
-    fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(8, 8))
+    # fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(8, 8))
 
 
-    ax1.plot(x, y1, label='Corr-Dim1', color='blue', linewidth=2)
-    ax1.plot(x, y2, label='Corr-DIM2', color='red', linewidth=2)
-    ax1.plot(x, y3, label='P_val-Dim1', color='blue', linewidth=2, linestyle="--")
-    ax1.plot(x, y4, label='P_val-DIM2', color='red', linewidth=2, linestyle="--")
-    ax1.set_xlabel('Trials')
-    ax1.set_ylabel('Abs. values')
-    ax1.set_title('MIRT Correlation with DW NOMINATE over Repeated Trials')
-    ax1.legend()
-    ax1.grid(True, alpha=0.3)
+    # ax1.plot(x, y1, label='Corr-Dim1', color='blue', linewidth=2)
+    # ax1.plot(x, y2, label='Corr-DIM2', color='red', linewidth=2)
+    # ax1.plot(x, y3, label='P_val-Dim1', color='blue', linewidth=2, linestyle="--")
+    # ax1.plot(x, y4, label='P_val-DIM2', color='red', linewidth=2, linestyle="--")
+    # ax1.set_xlabel('Trials')
+    # ax1.set_ylabel('Abs. values')
+    # ax1.set_title('MIRT Correlation with DW NOMINATE over Repeated Trials')
+    # ax1.legend()
+    # ax1.grid(True, alpha=0.3)
 
-    ax2.plot(x, y5, label='Corr-Dim1', color='blue', linewidth=2)
-    ax2.plot(x, y6, label='Corr-DIM2', color='red', linewidth=2)
-    ax2.plot(x, y7, label='P_val-Dim1', color='blue', linewidth=2, linestyle="--")
-    ax2.plot(x, y8, label='P_val-DIM2', color='red', linewidth=2, linestyle="--")
-    ax2.set_xlabel('Trials')
-    ax2.set_ylabel('Abs. values')
-    ax2.set_title('MIRT Correlation with R-IDEAL over Repeated Trials')
-    ax2.legend()
-    ax2.grid(True, alpha=0.3)
+    # ax2.plot(x, y5, label='Corr-Dim1', color='blue', linewidth=2)
+    # ax2.plot(x, y6, label='Corr-DIM2', color='red', linewidth=2)
+    # ax2.plot(x, y7, label='P_val-Dim1', color='blue', linewidth=2, linestyle="--")
+    # ax2.plot(x, y8, label='P_val-DIM2', color='red', linewidth=2, linestyle="--")
+    # ax2.set_xlabel('Trials')
+    # ax2.set_ylabel('Abs. values')
+    # ax2.set_title('MIRT Correlation with R-IDEAL over Repeated Trials')
+    # ax2.legend()
+    # ax2.grid(True, alpha=0.3)
 
-    # Show the plot
+    # # Show the plot
+    # plt.tight_layout()
+    colors = {
+        'col1': '#3182bd',
+        'col1_': '#9ecae1',
+        'col2': '#31a354',
+        'col2_': '#a1d99b',
+    }
+
+    fig, ax = plt.subplots(1, 1, figsize=(10, 6))
+
+    # Plotting the lines from the first original subplot (MIRT vs DW NOMINATE)
+    ax.plot(x, y1, label='Corr-Dim1 (DW NOMINATE)', color=colors['col1'], linewidth=2)
+    ax.plot(x, y2, label='Corr-Dim2 (DW NOMINATE)', color=colors['col1_'], linewidth=2)
+    ax.plot(x, y3, label='P_val-Dim1 (DW NOMINATE)', color=colors['col1'], linewidth=2, linestyle="--")
+    ax.plot(x, y4, label='P_val-Dim2 (DW NOMINATE)', color=colors['col1_'], linewidth=2, linestyle="--")
+
+    # Plotting the lines from the second original subplot (MIRT vs R-IDEAL)
+    ax.plot(x, y5, label='Corr-Dim1 (R-IDEAL)', color=colors['col2'], linewidth=2)
+    ax.plot(x, y6, label='Corr-Dim2 (R-IDEAL)', color=colors['col2_'], linewidth=2)
+    ax.plot(x, y7, label='P_val-Dim1 (R-IDEAL)', color=colors['col2'], linewidth=2, linestyle="--")
+    ax.plot(x, y8, label='P_val-Dim2 (R-IDEAL)', color=colors['col2_'], linewidth=2, linestyle="--")
+
+    ax.set_xlabel('Trials')
+    ax.set_ylabel('Abs. values')
+    ax.set_title('MIRT Correlations with DW NOMINATE and R-IDEAL over Repeated Trials')
+    ax.legend(loc='best', fontsize='small') # Adjust legend location and size for readability
+    ax.grid(True, alpha=0.3)
+
     plt.tight_layout()
-    plt.savefig(f"MIRT-Correlations-n_tune={n_tune}-n_samples={n_samples}_1.png")
+    plt.savefig(f"MIRT-Correlations-n_tune={n_tune}-n_samples={n_samples}_1.pdf")
     # plt.savefig(f"test.png")
     
     
@@ -297,4 +325,12 @@ Dim 2: 0.36614543786857495 ± 0.30228568624534913
 R-IDEAL Correlation:
 Dim 1: 0.6969731899984482 ± 0.43796922662006876
 Dim 2: 0.36614543786857495 ± 0.3752729919721361
+
+or
+DW Nominate Correlation:
+Dim 1: 0.6030553363570369 ± 0.41919933656329406
+Dim 2: 0.31194250513571953 ± 0.26918738057625446
+R-IDEAL Correlation:
+Dim 1: 0.6030553363570369 ± 0.43116351144632914
+Dim 2: 0.31194250513571953 ± 0.3282616443681644
 '''

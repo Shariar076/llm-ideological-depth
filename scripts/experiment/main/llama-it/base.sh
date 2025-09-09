@@ -1,4 +1,4 @@
-device=1
+device=2
 mode=personality_prompt
 
 model_name=llama-3.1-8b-it

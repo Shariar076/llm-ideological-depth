@@ -7,7 +7,7 @@ from sglang.utils import launch_server_cmd
 from sglang.utils import wait_for_server, terminate_process
 
 # ----------------------------------------- opponent llm server -----------------------------------------
-os.environ["CUDA_VISIBLE_DEVICES"] = "1,2"
+os.environ["CUDA_VISIBLE_DEVICES"] = "0,3"
 server_process, port = launch_server_cmd(
     f"python -m sglang.launch_server --model meta-llama/Llama-3.3-70B-Instruct --tp 2 --trust-remote-code --host 0.0.0.0"
 )

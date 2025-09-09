@@ -1,8 +1,9 @@
 import matplotlib.pyplot as plt
 import numpy as np
+from scipy import stats
 
-# layer = 20
-# model= "gemma-2-9b-it"
+layer = 20
+model= "gemma-2-9b-it"
 # plot_data = [
 #     [
 #         [(4, 46, 0)], 
@@ -15,11 +16,24 @@ import numpy as np
 #         [(48, 2, 0), (48, 2, 0), (48, 2, 0), (44, 6, 0), (37, 13, 0), (33, 17, 0), (23, 27, 0), (17, 33, 0), (12, 38, 0), (7, 43, 0)]
 #     ],
 # ]
-# plot_data = [[[(99, 7, 0), (12, 94, 0)], [(99, 7, 0), (82, 24, 0), (75, 31, 0), (60, 46, 0), (62, 44, 0), (68, 38, 0), (67, 39, 0), (52, 54, 0), (49, 57, 0), (40, 66, 0), (13, 93, 0)], [(99, 7, 0), (91, 15, 0), (78, 28, 0), (72, 34, 0), (65, 41, 0), (62, 44, 0), (59, 47, 0), (59, 47, 0), (51, 55, 0), (51, 55, 0), (51, 55, 0)]], [[(98, 8, 0), (36, 70, 0)], [(95, 11, 0), (99, 7, 0), (97, 9, 0), (80, 26, 0), (57, 49, 0), (55, 51, 0), (55, 51, 0), (55, 51, 0), (55, 51, 0), (55, 51, 0), (55, 51, 0)], [(95, 11, 0), (99, 7, 0), (97, 9, 0), (87, 19, 0), (79, 27, 0), (74, 32, 0), (70, 36, 0), (68, 38, 0), (71, 35, 0), (82, 24, 0), (69, 37, 0)]]]
-# plot_data = [[[(99, 7, 0), (106, 0, 0)], [(99, 7, 0), (105, 1, 0), (106, 0, 0), (104, 2, 0), (98, 8, 0), (91, 15, 0), (91, 15, 0), (95, 11, 0), (95, 11, 0), (95, 11, 0), (92, 14, 0)], [(99, 7, 0), (102, 4, 0), (106, 0, 0), (106, 0, 0), (105, 1, 0), (102, 4, 0), (98, 8, 0), (95, 11, 0), (93, 13, 0), (93, 13, 0), (84, 22, 0)]], [[(98, 8, 0), (98, 8, 0)], [(95, 11, 0), (87, 19, 0), (79, 27, 0), (67, 39, 0), (56, 50, 0), (55, 51, 0), (55, 51, 0), (55, 51, 0), (56, 50, 0), (58, 48, 0), (66, 40, 0)], [(95, 11, 0), (87, 19, 0), (75, 31, 0), (67, 39, 0), (62, 44, 0), (55, 51, 0), (55, 51, 0), (55, 51, 0), (55, 51, 0), (55, 51, 0), (61, 45, 0)]]]
+## plot_data = [[[(99, 7, 0), (12, 94, 0)], [(99, 7, 0), (82, 24, 0), (75, 31, 0), (60, 46, 0), (62, 44, 0), (68, 38, 0), (67, 39, 0), (52, 54, 0), (49, 57, 0), (40, 66, 0), (13, 93, 0)], [(99, 7, 0), (91, 15, 0), (78, 28, 0), (72, 34, 0), (65, 41, 0), (62, 44, 0), (59, 47, 0), (59, 47, 0), (51, 55, 0), (51, 55, 0), (51, 55, 0)]], [[(98, 8, 0), (36, 70, 0)], [(95, 11, 0), (99, 7, 0), (97, 9, 0), (80, 26, 0), (57, 49, 0), (55, 51, 0), (55, 51, 0), (55, 51, 0), (55, 51, 0), (55, 51, 0), (55, 51, 0)], [(95, 11, 0), (99, 7, 0), (97, 9, 0), (87, 19, 0), (79, 27, 0), (74, 32, 0), (70, 36, 0), (68, 38, 0), (71, 35, 0), (82, 24, 0), (69, 37, 0)]]]
+## plot_data = [[[(99, 7, 0), (106, 0, 0)], [(99, 7, 0), (105, 1, 0), (106, 0, 0), (104, 2, 0), (98, 8, 0), (91, 15, 0), (91, 15, 0), (95, 11, 0), (95, 11, 0), (95, 11, 0), (92, 14, 0)], [(99, 7, 0), (102, 4, 0), (106, 0, 0), (106, 0, 0), (105, 1, 0), (102, 4, 0), (98, 8, 0), (95, 11, 0), (93, 13, 0), (93, 13, 0), (84, 22, 0)]], [[(98, 8, 0), (98, 8, 0)], [(95, 11, 0), (87, 19, 0), (79, 27, 0), (67, 39, 0), (56, 50, 0), (55, 51, 0), (55, 51, 0), (55, 51, 0), (56, 50, 0), (58, 48, 0), (66, 40, 0)], [(95, 11, 0), (87, 19, 0), (75, 31, 0), (67, 39, 0), (62, 44, 0), (55, 51, 0), (55, 51, 0), (55, 51, 0), (55, 51, 0), (55, 51, 0), (61, 45, 0)]]]
 
-layer = 14
-model= "llama-3.1-8b-it"
+# 131K
+# plot_data = [[[(118, 8, 0), (17, 109, 0)], [(118, 8, 0), (101, 25, 0), (94, 32, 0), (79, 47, 0), (78, 48, 0), (83, 43, 0), (77, 49, 0), (55, 71, 0), (44, 82, 0), (19, 107, 0), (20, 106, 0)], [(118, 8, 0), (111, 15, 0), (100, 26, 0), (95, 31, 0), (92, 34, 0), (86, 40, 0), (41, 85, 0), (20, 106, 0), (39, 87, 0), (68, 58, 0), (69, 57, 0)]], [[(112, 14, 0), (44, 82, 0)], [(117, 9, 0), (123, 3, 0), (121, 5, 0), (98, 28, 0), (67, 59, 0), (57, 69, 0), (57, 69, 0), (57, 69, 0), (57, 69, 0), (57, 69, 0), (55, 71, 0)], [(117, 9, 0), (124, 2, 0), (121, 5, 0), (101, 25, 0), (73, 53, 0), (66, 60, 0), (70, 56, 0), (70, 56, 0), (50, 76, 0), (45, 81, 0), (57, 69, 0)]]]
+# plot_data = [[[(118, 8, 0), (126, 0, 0)], [(118, 8, 0), (126, 0, 0), (126, 0, 0), (123, 3, 0), (112, 14, 0), (103, 23, 0), (103, 23, 0), (106, 20, 0), (105, 21, 0), (97, 29, 0), (80, 46, 0)], [(118, 8, 0), (121, 5, 0), (126, 0, 0), (125, 1, 0), (121, 5, 0), (112, 14, 0), (100, 26, 0), (94, 32, 0), (90, 36, 0), (88, 38, 0), (67, 59, 0)]], [[(58, 68, 0), (113, 13, 0)], [(63, 63, 0), (65, 61, 0), (65, 61, 0), (58, 68, 0), (57, 69, 0), (57, 69, 0), (57, 69, 0), (57, 69, 0), (57, 69, 0), (57, 69, 0), (57, 69, 0)], [(63, 63, 0), (65, 61, 0), (62, 64, 0), (61, 65, 0), (54, 72, 0), (54, 72, 0), (55, 71, 0), (55, 71, 0), (57, 69, 0), (57, 69, 0), (57, 69, 0)]]]
+
+# 131K conf interval; only conservative
+plot_data = [
+    [[[(118, 8, 0), (17, 109, 0)], [(118, 8, 0), (101, 25, 0), (94, 32, 0), (79, 47, 0), (78, 48, 0), (83, 43, 0), (77, 49, 0), (55, 71, 0), (44, 82, 0), (19, 107, 0), (20, 106, 0)], [(118, 8, 0), (111, 15, 0), (100, 26, 0), (95, 31, 0), (92, 34, 0), (86, 40, 0), (41, 85, 0), (20, 106, 0), (39, 87, 0), (68, 58, 0), (69, 57, 0)]], [[(112, 14, 0), (44, 82, 0)], [(117, 9, 0), (123, 3, 0), (121, 5, 0), (98, 28, 0), (67, 59, 0), (57, 69, 0), (57, 69, 0), (57, 69, 0), (57, 69, 0), (57, 69, 0), (55, 71, 0)], [(117, 9, 0), (124, 2, 0), (121, 5, 0), (101, 25, 0), (73, 53, 0), (66, 60, 0), (70, 56, 0), (70, 56, 0), (50, 76, 0), (45, 81, 0), (57, 69, 0)]]],
+    [[[(118, 8, 0), (17, 109, 0)], [(118, 8, 0), (101, 25, 0), (94, 32, 0), (79, 47, 0), (78, 48, 0), (83, 43, 0), (77, 49, 0), (55, 71, 0), (44, 82, 0), (19, 107, 0), (20, 106, 0)], [(118, 8, 0), (111, 15, 0), (100, 26, 0), (95, 31, 0), (92, 34, 0), (86, 40, 0), (41, 85, 0), (20, 106, 0), (39, 87, 0), (68, 58, 0), (69, 57, 0)]], [[(112, 14, 0), (44, 82, 0)], [(117, 9, 0), (123, 3, 0), (121, 5, 0), (98, 28, 0), (67, 59, 0), (57, 69, 0), (57, 69, 0), (57, 69, 0), (57, 69, 0), (57, 69, 0), (55, 71, 0)], [(117, 9, 0), (124, 2, 0), (121, 5, 0), (101, 25, 0), (73, 53, 0), (66, 60, 0), (70, 56, 0), (70, 56, 0), (50, 76, 0), (45, 81, 0), (57, 69, 0)]]],
+    [[[(118, 8, 0), (17, 109, 0)], [(118, 8, 0), (101, 25, 0), (94, 32, 0), (79, 47, 0), (78, 48, 0), (83, 43, 0), (77, 49, 0), (55, 71, 0), (44, 82, 0), (19, 107, 0), (20, 106, 0)], [(118, 8, 0), (111, 15, 0), (100, 26, 0), (95, 31, 0), (92, 34, 0), (86, 40, 0), (41, 85, 0), (20, 106, 0), (39, 87, 0), (68, 58, 0), (69, 57, 0)]], [[(112, 14, 0), (44, 82, 0)], [(117, 9, 0), (123, 3, 0), (121, 5, 0), (98, 28, 0), (67, 59, 0), (57, 69, 0), (57, 69, 0), (57, 69, 0), (57, 69, 0), (57, 69, 0), (55, 71, 0)], [(117, 9, 0), (124, 2, 0), (121, 5, 0), (101, 25, 0), (73, 53, 0), (66, 60, 0), (70, 56, 0), (70, 56, 0), (50, 76, 0), (45, 81, 0), (57, 69, 0)]]],
+    [[[(118, 8, 0), (17, 109, 0)], [(118, 8, 0), (101, 25, 0), (94, 32, 0), (79, 47, 0), (78, 48, 0), (83, 43, 0), (77, 49, 0), (55, 71, 0), (44, 82, 0), (19, 107, 0), (20, 106, 0)], [(118, 8, 0), (111, 15, 0), (100, 26, 0), (95, 31, 0), (92, 34, 0), (86, 40, 0), (41, 85, 0), (20, 106, 0), (39, 87, 0), (68, 58, 0), (69, 57, 0)]], [[(112, 14, 0), (44, 82, 0)], [(117, 9, 0), (123, 3, 0), (121, 5, 0), (98, 28, 0), (67, 59, 0), (57, 69, 0), (57, 69, 0), (57, 69, 0), (57, 69, 0), (57, 69, 0), (55, 71, 0)], [(117, 9, 0), (124, 2, 0), (121, 5, 0), (101, 25, 0), (73, 53, 0), (66, 60, 0), (70, 56, 0), (70, 56, 0), (50, 76, 0), (45, 81, 0), (57, 69, 0)]]],
+    [[[(118, 8, 0), (17, 109, 0)], [(118, 8, 0), (101, 25, 0), (94, 32, 0), (79, 47, 0), (78, 48, 0), (83, 43, 0), (77, 49, 0), (55, 71, 0), (44, 82, 0), (19, 107, 0), (20, 106, 0)], [(118, 8, 0), (111, 15, 0), (100, 26, 0), (95, 31, 0), (92, 34, 0), (86, 40, 0), (41, 85, 0), (20, 106, 0), (39, 87, 0), (68, 58, 0), (69, 57, 0)]], [[(112, 14, 0), (44, 82, 0)], [(117, 9, 0), (123, 3, 0), (121, 5, 0), (98, 28, 0), (67, 59, 0), (57, 69, 0), (57, 69, 0), (57, 69, 0), (57, 69, 0), (57, 69, 0), (55, 71, 0)], [(117, 9, 0), (124, 2, 0), (121, 5, 0), (101, 25, 0), (73, 53, 0), (66, 60, 0), (70, 56, 0), (70, 56, 0), (50, 76, 0), (45, 81, 0), (57, 69, 0)]]]
+]
+
+# layer = 14
+# model= "llama-3.1-8b-it"
 # plot_data = [
 #     [
 #         [(3, 40, 7)], 
@@ -33,19 +47,33 @@ model= "llama-3.1-8b-it"
 #     ],
 # ]
 
-# plot_data = [[[(103, 3, 0), (6, 83, 17)], [(103, 3, 0), (88, 15, 3), (70, 14, 22), (39, 23, 44), (68, 10, 28), (79, 19, 8), (70, 36, 0), (66, 40, 0), (60, 46, 0), (59, 47, 0), (31, 15, 29)], [(101, 5, 0), (99, 6, 1), (95, 4, 7), (85, 6, 15), (89, 12, 5), (84, 20, 2), (74, 30, 2), (62, 39, 5), (55, 36, 15), (34, 13, 59), (0, 0, 106)]], [[(102, 4, 0), (40, 64, 2)], [(100, 6, 0), (100, 6, 0), (85, 21, 0), (73, 33, 0), (67, 39, 0), (58, 48, 0), (54, 52, 0), (59, 46, 0), (52, 47, 0), (38, 43, 1), (9, 11, 41)], [(102, 4, 0), (98, 8, 0), (102, 4, 0), (95, 11, 0), (72, 34, 0), (55, 51, 0), (50, 48, 8), (22, 28, 56), (2, 4, 100), (0, 0, 106), (0, 0, 106)]]]
-plot_data = [[[(103, 3, 0), (104, 0, 2)], [(103, 3, 0), (106, 0, 0), (106, 0, 0), (103, 3, 0), (98, 8, 0), (99, 7, 0), (98, 8, 0), (96, 10, 0), (89, 17, 0), (83, 23, 0), (55, 51, 0)], [(101, 5, 0), (103, 3, 0), (105, 1, 0), (104, 2, 0), (106, 0, 0), (104, 2, 0), (105, 1, 0), (97, 9, 0), (82, 24, 0), (74, 32, 0), (26, 4, 0)]], [[(102, 4, 0), (106, 0, 0)], [(100, 6, 0), (104, 2, 0), (106, 0, 0), (98, 8, 0), (81, 25, 0), (64, 42, 0), (58, 48, 0), (55, 51, 0), (55, 51, 0), (55, 51, 0), (55, 51, 0)], [(102, 4, 0), (104, 2, 0), (103, 3, 0), (105, 1, 0), (104, 2, 0), (97, 9, 0), (89, 17, 0), (84, 22, 0), (70, 36, 0), (54, 26, 0), (0, 0, 0)]]]
+## plot_data = [[[(103, 3, 0), (6, 83, 17)], [(103, 3, 0), (88, 15, 3), (70, 14, 22), (39, 23, 44), (68, 10, 28), (79, 19, 8), (70, 36, 0), (66, 40, 0), (60, 46, 0), (59, 47, 0), (31, 15, 29)], [(101, 5, 0), (99, 6, 1), (95, 4, 7), (85, 6, 15), (89, 12, 5), (84, 20, 2), (74, 30, 2), (62, 39, 5), (55, 36, 15), (34, 13, 59), (0, 0, 106)]], [[(102, 4, 0), (40, 64, 2)], [(100, 6, 0), (100, 6, 0), (85, 21, 0), (73, 33, 0), (67, 39, 0), (58, 48, 0), (54, 52, 0), (59, 46, 0), (52, 47, 0), (38, 43, 1), (9, 11, 41)], [(102, 4, 0), (98, 8, 0), (102, 4, 0), (95, 11, 0), (72, 34, 0), (55, 51, 0), (50, 48, 8), (22, 28, 56), (2, 4, 100), (0, 0, 106), (0, 0, 106)]]]
+## plot_data = [[[(103, 3, 0), (104, 0, 2)], [(103, 3, 0), (106, 0, 0), (106, 0, 0), (103, 3, 0), (98, 8, 0), (99, 7, 0), (98, 8, 0), (96, 10, 0), (89, 17, 0), (83, 23, 0), (55, 51, 0)], [(101, 5, 0), (103, 3, 0), (105, 1, 0), (104, 2, 0), (106, 0, 0), (104, 2, 0), (105, 1, 0), (97, 9, 0), (82, 24, 0), (74, 32, 0), (26, 4, 0)]], [[(102, 4, 0), (106, 0, 0)], [(100, 6, 0), (104, 2, 0), (106, 0, 0), (98, 8, 0), (81, 25, 0), (64, 42, 0), (58, 48, 0), (55, 51, 0), (55, 51, 0), (55, 51, 0), (55, 51, 0)], [(102, 4, 0), (104, 2, 0), (103, 3, 0), (105, 1, 0), (104, 2, 0), (97, 9, 0), (89, 17, 0), (84, 22, 0), (70, 36, 0), (54, 26, 0), (0, 0, 0)]]]
+
+# 131K
+# plot_data = [[[(119, 6, 1), (10, 115, 1)], [(122, 4, 0), (110, 11, 5), (92, 24, 10), (68, 37, 21), (91, 26, 9), (98, 22, 6), (89, 37, 0), (79, 47, 0), (71, 55, 0), (64, 58, 4), (49, 28, 49)], [(123, 3, 0), (117, 8, 1), (110, 11, 5), (102, 15, 9), (113, 11, 2), (113, 13, 0), (109, 17, 0), (94, 27, 5), (32, 21, 73), (15, 13, 98), (30, 45, 51)]], [[(124, 2, 0), (55, 71, 0)], [(121, 5, 0), (113, 13, 0), (98, 28, 0), (85, 41, 0), (81, 45, 0), (76, 50, 0), (69, 57, 0), (64, 62, 0), (47, 66, 13), (41, 49, 36), (28, 30, 68)], [(124, 2, 0), (121, 5, 0), (115, 11, 0), (102, 24, 0), (83, 43, 0), (64, 62, 0), (57, 69, 0), (56, 69, 1), (48, 59, 19), (45, 49, 32), (33, 37, 56)]]]
+# plot_data = [[[(119, 6, 1), (123, 2, 1)], [(122, 4, 0), (124, 2, 0), (124, 2, 0), (121, 5, 0), (118, 8, 0), (113, 13, 0), (111, 15, 0), (107, 19, 0), (96, 30, 0), (71, 55, 0), (57, 69, 0)], [(123, 3, 0), (124, 2, 0), (125, 1, 0), (124, 2, 0), (123, 3, 0), (125, 1, 0), (123, 3, 0), (125, 1, 0), (122, 4, 0), (99, 14, 13), (40, 0, 86)]], [[(55, 71, 0), (110, 16, 0)], [(46, 80, 0), (49, 77, 0), (53, 73, 0), (52, 74, 0), (52, 74, 0), (55, 71, 0), (56, 70, 0), (57, 69, 0), (57, 69, 0), (57, 69, 0), (57, 69, 0)], [(58, 68, 0), (56, 70, 0), (58, 68, 0), (52, 74, 0), (56, 70, 0), (54, 72, 0), (49, 77, 0), (44, 82, 0), (27, 87, 12), (8, 6, 112), (0, 0, 126)]]]
+
+# 131K conf interval; only conservative
+# plot_data = [
+#     [[[(119, 6, 1), (10, 115, 1)], [(122, 4, 0), (110, 11, 5), (92, 24, 10), (68, 37, 21), (91, 26, 9), (98, 22, 6), (89, 37, 0), (79, 47, 0), (71, 55, 0), (64, 58, 4), (49, 28, 49)], [(123, 3, 0), (117, 8, 1), (110, 11, 5), (102, 15, 9), (113, 11, 2), (113, 13, 0), (109, 17, 0), (94, 27, 5), (32, 21, 73), (15, 13, 98), (30, 45, 51)]], [[(124, 2, 0), (55, 71, 0)], [(121, 5, 0), (113, 13, 0), (98, 28, 0), (85, 41, 0), (81, 45, 0), (76, 50, 0), (69, 57, 0), (64, 62, 0), (47, 66, 13), (41, 49, 36), (28, 30, 68)], [(124, 2, 0), (121, 5, 0), (115, 11, 0), (102, 24, 0), (83, 43, 0), (64, 62, 0), (57, 69, 0), (56, 69, 1), (48, 59, 19), (45, 49, 32), (33, 37, 56)]]],
+#     [[[(119, 6, 1), (10, 115, 1)], [(121, 5, 0), (112, 11, 3), (86, 27, 13), (76, 34, 16), (87, 29, 10), (89, 32, 5), (90, 36, 0), (77, 49, 0), (70, 56, 0), (64, 57, 5), (44, 32, 50)], [(124, 2, 0), (112, 13, 1), (111, 10, 5), (103, 17, 6), (107, 11, 8), (113, 11, 2), (114, 12, 0), (93, 26, 7), (32, 18, 76), (16, 5, 105), (39, 32, 55)]], [[(124, 2, 0), (55, 71, 0)], [(122, 4, 0), (118, 8, 0), (107, 19, 0), (83, 43, 0), (80, 46, 0), (72, 54, 0), (71, 55, 0), (60, 66, 0), (56, 58, 12), (36, 56, 34), (26, 39, 61)], [(120, 6, 0), (120, 6, 0), (103, 23, 0), (95, 31, 0), (83, 43, 0), (68, 58, 0), (56, 70, 0), (57, 61, 8), (49, 60, 17), (44, 50, 32), (35, 35, 56)]]],
+#     [[[(119, 6, 1), (10, 115, 1)], [(119, 7, 0), (109, 15, 2), (84, 35, 7), (72, 38, 16), (82, 38, 6), (98, 24, 4), (90, 36, 0), (77, 49, 0), (61, 64, 1), (63, 57, 6), (47, 28, 51)], [(122, 4, 0), (119, 7, 0), (104, 19, 3), (96, 18, 12), (105, 14, 7), (111, 15, 0), (110, 16, 0), (98, 26, 2), (27, 20, 79), (12, 11, 103), (37, 30, 59)]], [[(124, 2, 0), (55, 71, 0)], [(121, 5, 0), (111, 15, 0), (112, 14, 0), (91, 35, 0), (75, 51, 0), (72, 54, 0), (66, 60, 0), (57, 67, 2), (51, 65, 10), (38, 49, 39), (30, 34, 62)], [(122, 4, 0), (118, 8, 0), (116, 10, 0), (108, 18, 0), (87, 39, 0), (67, 59, 0), (57, 69, 0), (56, 66, 4), (53, 58, 15), (39, 58, 29), (38, 42, 46)]]],
+#     [[[(119, 6, 1), (10, 115, 1)], [(120, 6, 0), (110, 12, 4), (93, 25, 8), (75, 32, 19), (83, 31, 12), (94, 26, 6), (89, 37, 0), (82, 44, 0), (67, 59, 0), (58, 61, 7), (53, 28, 45)], [(123, 3, 0), (119, 4, 3), (104, 16, 6), (104, 15, 7), (105, 18, 3), (111, 13, 2), (111, 15, 0), (93, 26, 7), (29, 30, 67), (14, 16, 96), (32, 39, 55)]], [[(124, 2, 0), (55, 71, 0)], [(123, 3, 0), (113, 13, 0), (95, 31, 0), (86, 40, 0), (81, 45, 0), (76, 50, 0), (58, 68, 0), (60, 66, 0), (45, 68, 13), (43, 50, 33), (30, 30, 66)], [(119, 7, 0), (116, 10, 0), (113, 13, 0), (97, 29, 0), (85, 41, 0), (58, 68, 0), (59, 67, 0), (56, 69, 1), (51, 61, 14), (45, 54, 27), (32, 34, 60)]]],
+#     [[[(119, 6, 1), (10, 115, 1)], [(122, 4, 0), (110, 14, 2), (93, 25, 8), (70, 33, 23), (83, 32, 11), (91, 31, 4), (86, 40, 0), (80, 46, 0), (67, 59, 0), (59, 58, 9), (38, 36, 52)], [(122, 4, 0), (116, 8, 2), (109, 11, 6), (101, 16, 9), (108, 16, 2), (111, 14, 1), (110, 16, 0), (91, 28, 7), (22, 25, 79), (14, 12, 100), (32, 26, 68)]], [[(124, 2, 0), (55, 71, 0)], [(125, 1, 0), (113, 13, 0), (103, 23, 0), (81, 45, 0), (81, 45, 0), (72, 54, 0), (67, 59, 0), (56, 68, 2), (45, 72, 9), (37, 52, 37), (27, 35, 64)], [(122, 4, 0), (120, 6, 0), (113, 13, 0), (103, 23, 0), (86, 40, 0), (68, 58, 0), (58, 68, 0), (57, 67, 2), (51, 59, 16), (43, 56, 27), (31, 40, 55)]]],
+# ]
+
 
 def plot_marked_lines():
     # Define x-values
     # being conservative
-    # x_vals_base = ["role_none", "role_conservative"]
-    # x_vals_caa = ["0.0", "-0.25", "-0.5", "-1.0", "-1.5", "-2.0", "-2.5", "-3.0", "-3.5", "-4.0", "-5.0"]
-    # x_vals_sta = ["0.0", "-0.25", "-0.5", "-1.0", "-1.5", "-2.0", "-2.5", "-3.0", "-3.5", "-4.0", "-5.0"]
+    x_vals_base = ["role_none", "role_conservative"]
+    x_vals_caa = ["0.0", "-0.25", "-0.5", "-1.0", "-1.5", "-2.0", "-2.5", "-3.0", "-3.5", "-4.0", "-5.0"]
+    x_vals_sta = ["0.0", "-0.25", "-0.5", "-1.0", "-1.5", "-2.0", "-2.5", "-3.0", "-3.5", "-4.0", "-5.0"]
     # being liberal
-    x_vals_base = ["role_none", "role_liberal"]
-    x_vals_caa = ["0.0", "0.25", "0.5", "1.0", "1.5", "2.0", "2.5", "3.0", "3.5", "4.0", "5.0"]
-    x_vals_sta = ["0.0", "0.25", "0.5", "1.0", "1.5", "2.0", "2.5", "3.0", "3.5", "4.0", "5.0"]
+    # x_vals_base = ["role_none", "role_liberal"]
+    # x_vals_caa = ["0.0", "0.25", "0.5", "1.0", "1.5", "2.0", "2.5", "3.0", "3.5", "4.0", "5.0"]
+    # x_vals_sta = ["0.0", "0.25", "0.5", "1.0", "1.5", "2.0", "2.5", "3.0", "3.5", "4.0", "5.0"]
     
     # Flatten all y-values to get global min/max for consistent y-axis
     # all_values = sum([sum(setting, []) for setting in plot_data], [])
@@ -58,117 +86,142 @@ def plot_marked_lines():
 
     # Plot titles
     titles = ['Base Model', 'CAA Steering', 'STA Steering']
-
+    plt.rcParams['font.size'] = 12 
     # Set up 1 row, 3 columns
-    fig, axs = plt.subplots(1, 3, figsize=(18, 5))
+    fig, axs = plt.subplots(1, 2, figsize=(7.5, 3)) # llama 7.5, 3  and 10, 3 for gemma
 
     # Colors for comparison
     markers = ['^', 's']
     linestyles = ['-', '--']
-    labels = ['No Argument', 'Argumentative']
+    labels = ['No Arg.', 'Lib Arg']
 
     # Plot each method: Base, CAA, STA
-    for i in range(3):
-        ax = axs[i]
+    for i in range(1, 3):
+        ax = axs[i-1]
         for j in range(2):  # 0 = baseline, 1 = argumentative
             data = plot_data[j][i]
             # Extract liberal, conservative, and null votes from tuples
-            # mult  * (100/106) to get %
-            lib_data =  [element[0] for element in data]
-            cons_data = [element[1] for element in data]
-            null_data = [element[2] for element in data]
+            # mult  * (100/126) to get %
+            lib_data =  [element[0]* (100/126) for element in data]
+            cons_data = [element[1]* (100/126) for element in data]
+            null_data = [element[2]* (100/126) for element in data]
             
             if i == 0:
-                ax.plot(x_vals_base, lib_data, markers[j], label=f'{labels[j]} Lib Vote', color="blue", linestyle=linestyles[j])
-                ax.plot(x_vals_base, cons_data, markers[j], label=f'{labels[j]} Cons Vote', color="red", linestyle=linestyles[j])
-                ax.plot(x_vals_base, null_data, markers[j], label=f'{labels[j]} Null Vote', color="green", linestyle=linestyles[j])
+                ax.plot(x_vals_base, lib_data, markers[j], label= f'Lib Votes  w {labels[j]}', color="blue", linestyle=linestyles[j])
+                ax.plot(x_vals_base, cons_data, markers[j], label=f'Cons Votes w {labels[j]}', color="red", linestyle=linestyles[j])
+                ax.plot(x_vals_base, null_data, markers[j], label=f'Null Vote w {labels[j]}', color="green", linestyle=linestyles[j])
             elif i == 1:
-                ax.plot(x_vals_caa, lib_data, markers[j], label=f'{labels[j]} Lib Vote', color="blue", linestyle=linestyles[j])
-                ax.plot(x_vals_caa, cons_data, markers[j], label=f'{labels[j]} Cons Vote', color="red", linestyle=linestyles[j])
-                ax.plot(x_vals_caa, null_data, markers[j], label=f'{labels[j]} Null Vote', color="green", linestyle=linestyles[j])
+                ax.plot(x_vals_caa, lib_data, markers[j],  label= f'Lib Votes  {labels[j]}', color="blue", linestyle=linestyles[j])
+                ax.plot(x_vals_caa, cons_data, markers[j],  label=f'Cons Votes {labels[j]}', color="red", linestyle=linestyles[j])
+                ax.plot(x_vals_caa, null_data, markers[j],  label=f'Null Votes {labels[j]}', color="green", linestyle=linestyles[j])
+                ax.set_xticks(ticks=np.linspace(0, 10, 6), labels=x_vals_caa[::2])
             else:
-                ax.plot(x_vals_sta, lib_data, markers[j], label=f'{labels[j]} Lib Vote', color="blue", linestyle=linestyles[j])
-                ax.plot(x_vals_sta, cons_data, markers[j], label=f'{labels[j]} Cons Vote', color="red", linestyle=linestyles[j])
-                ax.plot(x_vals_sta, null_data, markers[j], label=f'{labels[j]} Null Vote', color="green", linestyle=linestyles[j])
+                ax.plot(x_vals_sta, lib_data, markers[j],  label=f'Lib Votes w {labels[j]}', color="blue", linestyle=linestyles[j])
+                ax.plot(x_vals_sta, cons_data, markers[j], label=f'Cons Votes w {labels[j]}', color="red", linestyle=linestyles[j])
+                ax.plot(x_vals_sta, null_data, markers[j], label=f'Null Votes w {labels[j]}', color="green", linestyle=linestyles[j])
+                ax.set_xticks(ticks=np.linspace(0, 10, 6), labels=x_vals_sta[::2])
         
         ax.set_title(titles[i])
         ax.set_ylim(y_min, y_max)
         ax.set_xlabel('Multiplier')
-        ax.set_ylabel('Number of non-liberal votes')
+        ax.set_ylabel('Number of non-liberal ans')
+        
         ax.grid(True)
-        ax.legend()
+        if i==2 and 'gemma' in model:
+            ax.legend(loc='center left', bbox_to_anchor=(1.05, 0.5))
 
     plt.tight_layout()
-    # plt.savefig(f'analysis/comparison_layer_{layer}_{model}_being_conservative.png')
-    plt.savefig(f'analysis/comparison_layer_{layer}_{model}_being_liberal.png')
+    plt.savefig(f'analysis/comparison_layer_{layer}_131K_{model}_being_conservative.pdf')
+    plt.savefig(f'analysis/comparison_layer_{layer}_131K_{model}_being_conservative.png')
+    # plt.savefig(f'analysis/comparison_layer_{layer}_131K_{model}_being_liberal.pdf')
+    # plt.savefig(f'analysis/comparison_layer_{layer}_131K_{model}_being_liberal.png')
 
-
-def plot_grouped_bars():
+def plot_marked_lines_with_ci():
     # Define x-values
-    x_vals_base = [0]
-    x_vals_caa = [-0.25, -0.5, -1.0, -1.5, -2.0, -2.5, -3.0, -4.0]
-    x_vals_sta = [-0.25, -0.5, -1.0, -1.5, -2.0, -2.5, -3.0, -3.5, -4.0, -5.0]
+    x_vals_base = ["role_none", "role_conservative"]
+    x_vals_caa = ["0.0", "-0.25", "-0.5", "-1.0", "-1.5", "-2.0", "-2.5", "-3.0", "-3.5", "-4.0", "-5.0"]
+    x_vals_sta = ["0.0", "-0.25", "-0.5", "-1.0", "-1.5", "-2.0", "-2.5", "-3.0", "-3.5", "-4.0", "-5.0"]
+
+    y_min, y_max = 0, 100
+
+    # Add a margin for better readability
+    y_margin = (y_max - y_min) * 0.1
+    y_min -= y_margin
+    y_max += y_margin
 
     # Plot titles
     titles = ['Base Model', 'CAA Steering', 'STA Steering']
-    x_values = [x_vals_base, x_vals_caa, x_vals_sta]
+    plt.rcParams['font.size'] = 12
+    # Set up 1 row, 2 columns for CAA and STA plots
+    fig, axs = plt.subplots(1, 2, figsize=(10, 3))
 
-    # Set up 1 row, 3 columns with different widths
-    fig = plt.figure(figsize=(20, 6))
-    gs = fig.add_gridspec(1, 3, width_ratios=[0.5, 4, 5])
-    axs = [fig.add_subplot(gs[0, i]) for i in range(3)]
-
-    # Colors and labels
+    num_trials = len(plot_data)
+    confidence_level = 0.95
+    degrees_freedom = num_trials - 1
+    # Calculate the t-value for the given confidence level
+    t_value = stats.t.ppf((1 + confidence_level) / 2., degrees_freedom)
+    
+    # Colors for comparison
+    markers = ['^', 's']
+    linestyles = ['-', '--']
+    labels = ['No Arg.', 'Lib Arg']
     colors = ['blue', 'red', 'green']
-    vote_types = ['Liberal', 'Conservative', 'Null']
-    conditions = ['Baseline', 'Argumentative']
+    vote_labels = ['Lib Votes', 'Cons Votes', 'Null Votes']
+    
+    
+    # Plot each method: CAA, STA
+    for i in range(1, 3):
+        ax = axs[i - 1]
+        for j in range(2):  # 0 = baseline, 1 = argumentative
+            
+            # **MODIFICATION HERE**
+            # Extract data for the specific condition across all trials into a temporary list.
+            # This list will have a consistent shape (e.g., 5 trials x 11 data points x 3 votes).
+            data_for_condition = [trial[j][i] for trial in plot_data]
+            
+            # Now, convert this homogeneous list to a NumPy array.
+            data = np.array(data_for_condition)
 
-    # Bar width
-    bar_width = 0.13
-
-    # Plot each method: Base, CAA, STA
-    for i in range(3):
-        ax = axs[i]
-        x_pos = np.arange(len(x_values[i]))
-        
-        # For each condition (baseline, argumentative)
-        for j in range(2):
-            data = plot_data[j][i]
+            # Calculate mean and standard deviation across trials (axis=0)
+            mean_data = np.mean(data, axis=0)
+            std_data = np.std(data, axis=0)
             
-            # Extract vote counts and convert to percentages
-            lib_data = [element[0] * (100/50) for element in data]
-            cons_data = [element[1] * (100/50) for element in data]
-            null_data = [element[2] * (100/50) for element in data]
+            # **MODIFICATION HERE: Calculate Standard Error and CI margin**
+            sem_data = std_data / np.sqrt(num_trials)
+            ci_margin = t_value * sem_data
             
-            vote_data = [lib_data, cons_data, null_data]
-            
-            # Plot bars for each vote type
-            for k, (votes, color, vote_type) in enumerate(zip(vote_data, colors, vote_types)):
-                # Create spacing between baseline and argumentative groups
-                group_offset = j * (3 * bar_width + 0.1)  # Add 0.1 spacing between groups
-                bar_offset = k * bar_width
-                position = x_pos + group_offset + bar_offset
+            for k in range(3):  # 0 = liberal, 1 = conservative, 2 = null
+                # Extract mean and std for each vote type and normalize
+                mean_votes = mean_data[:, k] * (100 / 126)
+                # std_votes = std_data[:, k] * (100 / 126)
+                # Apply the same normalization to the CI margin
+                ci_margin_votes = ci_margin[:, k] * (100 / 126)
                 
-                bars = ax.bar(position, votes, bar_width, 
-                            color=color, alpha=0.7 if j == 0 else 1.0,
-                            label=f'{conditions[j]} {vote_type}' if i == 0 else '',
-                            edgecolor='black', linewidth=0.5)
-        
-        ax.set_title(titles[i], fontsize=14)
-        ax.set_xlabel('Multiplier', fontsize=12)
-        ax.set_ylabel('% of votes', fontsize=12)
-        ax.set_xticks(x_pos)
-        ax.set_xticklabels([str(x) for x in x_values[i]])
-        ax.set_ylim(0, 110)
-        ax.grid(True, alpha=0.3)
-        
-        # Only show legend on first subplot
-        if i == 2:
-            ax.legend(bbox_to_anchor=(1.05, 1), loc='upper left')
+                if i == 1:
+                    x_vals = x_vals_caa
+                    ax.plot(x_vals, mean_votes, markersize=5, marker=markers[j], label=f'{vote_labels[k]} {labels[j]}', color=colors[k], linestyle=linestyles[j])
+                    ax.fill_between(x_vals, mean_votes - ci_margin_votes, mean_votes + ci_margin_votes, color=colors[k], alpha=0.3)
+                    ax.set_xticks(ticks=np.arange(len(x_vals_caa))[::2], labels=x_vals_caa[::2])
+                else: # i == 2
+                    x_vals = x_vals_sta
+                    ax.plot(x_vals, mean_votes, markersize=5, marker=markers[j], label=f'{vote_labels[k]} {labels[j]}', color=colors[k], linestyle=linestyles[j])
+                    ax.fill_between(x_vals, mean_votes - ci_margin_votes, mean_votes + ci_margin_votes, color=colors[k], alpha=0.3)
+                    ax.set_xticks(ticks=np.arange(len(x_vals_sta))[::2], labels=x_vals_sta[::2])
+
+        ax.set_title(titles[i])
+        ax.set_ylim(y_min, y_max)
+        ax.set_xlabel('Multiplier')
+        ax.set_ylabel('% of non-liberal ans') # Updated label for clarity
+
+        ax.grid(True)
+        if i == 2 and 'gemma' in model:
+            ax.legend(loc='center left', bbox_to_anchor=(1.05, 0.5))
+
 
     plt.tight_layout()
-    plt.savefig(f'analysis/comparison_layer_{layer}_{model}_grouped.png', dpi=300, bbox_inches='tight')
+    plt.savefig(f'analysis/comparison_layer_{layer}_131K_{model}_being_conservative.pdf')
+    plt.savefig(f'analysis/comparison_layer_{layer}_131K_{model}_being_conservative.png')
+
     
-    
-plot_marked_lines()
-# plot_grouped_bars()
+# plot_marked_lines()
+plot_marked_lines_with_ci()

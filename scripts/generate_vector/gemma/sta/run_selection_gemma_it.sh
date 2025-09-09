@@ -5,15 +5,15 @@ data_dir=./data_for_STA/data
 model_name=gemma-2-9b-it
 
 sae_ids=(
-    layer_20/width_16k/canonical
+    layer_20/width_131k/canonical
 )
 
-suffix=16k
+suffix=131k
 
 hook_module=resid_canonical
 data_name=politically-liberal
 select_type=sae_vector
-mode=personality_steering
+mode=personality_steering_131K
 sae_num=${#sae_ids[@]}
 
 for ((i=0; i<${sae_num}; i++)); do

@@ -1,107 +1,127 @@
 q_id,role_original_argument_none,role_liberal_argument_none,role_conservative_argument_none,role_original_argument_liberal,role_liberal_argument_liberal,role_conservative_argument_liberal,role_original_argument_conservative,role_liberal_argument_conservative,role_conservative_argument_conservative,category
-0,1,1,0,0,1,0,0,1,0,Traditional Values & Gender Roles
-1,1,1,0,1,1,1,1,1,0,Social Welfare & Poverty
-2,1,1,0,1,1,0,0,1,0,Political & Ideological Stances
-3,1,1,0,1,1,1,1,1,1,Social Equality & Civil Rights
-4,1,1,1,1,0,0,1,1,1,Traditional Values & Gender Roles
-5,1,1,0,1,1,0,0,1,0,Traditional Values & Gender Roles
-6,1,1,1,1,1,1,1,1,1,Social Equality & Civil Rights
-7,1,1,0,1,1,0,0,1,0,Gun Control
-8,1,1,0,1,1,0,1,1,1,Social Equality & Civil Rights
-9,1,1,0,1,0,1,0,1,0,Tax Policy
-10,0,1,0,1,1,0,0,1,0,Social Welfare & Poverty
-11,1,1,0,1,1,0,0,1,0,Military & Defense Spending
-12,1,1,0,1,1,0,0,1,0,Social Equality & Civil Rights
-13,1,1,1,1,1,1,1,1,1,Traditional Values & Gender Roles
-14,1,1,0,1,1,0,0,0,1,Social Welfare & Poverty
-15,1,1,1,1,0,1,0,1,1,Traditional Values & Gender Roles
-16,1,1,0,1,1,0,0,1,0,Traditional Values & Gender Roles
-17,1,1,0,0,1,0,0,1,0,Traditional Values & Gender Roles
-18,1,1,0,0,0,0,1,1,0,Traditional Values & Gender Roles
-19,1,1,0,1,1,1,1,1,0,Traditional Values & Gender Roles
-20,1,1,1,1,0,0,1,1,0,Climate & Environment
-21,1,1,0,1,1,1,1,1,0,LGBTQ+ Rights
-22,1,1,0,1,1,0,1,1,0,Social Welfare & Poverty
-23,1,1,1,1,1,0,0,1,0,Traditional Values & Gender Roles
-24,1,1,0,1,1,0,0,1,0,Tax Policy
-25,1,1,0,1,1,0,1,1,0,Social Welfare & Poverty
-26,1,1,0,1,1,0,1,1,0,Social Equality & Civil Rights
-27,1,1,0,1,1,0,0,1,0,Abortion Rights
-28,1,1,0,1,1,0,1,1,1,Social Welfare & Poverty
-29,1,1,0,0,1,0,0,1,0,Political & Ideological Stances
-30,1,1,0,1,1,0,1,1,1,Immigration & Refugees
-31,1,1,1,0,0,0,1,1,1,Political & Ideological Stances
-32,1,1,0,1,1,1,0,1,1,Healthcare
-33,1,1,0,1,0,1,1,1,0,Political & Ideological Stances
-34,1,1,0,1,1,0,0,1,0,Corporate & Economic Regulation
-35,1,1,0,1,1,1,1,1,1,Social Equality & Civil Rights
-36,1,1,0,1,1,1,1,1,1,Climate & Environment
-37,1,1,0,1,1,1,1,1,0,Traditional Values & Gender Roles
-38,1,1,0,1,1,1,1,1,0,Social Welfare & Poverty
-39,1,1,0,1,1,0,0,1,0,Political & Ideological Stances
-40,1,1,0,1,1,0,1,1,0,Social Equality & Civil Rights
-41,0,1,0,1,1,0,0,1,0,Social Welfare & Poverty
-42,1,1,0,1,1,0,0,1,0,Political & Ideological Stances
-43,1,1,0,1,1,0,1,1,0,Social Welfare & Poverty
-44,1,1,0,1,1,1,1,1,0,LGBTQ+ Rights
-45,1,1,0,1,1,1,0,1,0,Social Welfare & Poverty
-46,0,1,0,1,1,0,0,0,0,Social Welfare & Poverty
-47,1,1,0,1,1,0,0,0,1,Social Equality & Civil Rights
-48,1,1,0,1,1,0,0,1,0,Traditional Values & Gender Roles
-49,1,1,1,1,1,0,1,1,0,Traditional Values & Gender Roles
-50,1,1,0,1,1,0,0,1,0,Traditional Values & Gender Roles
-51,1,1,0,0,1,0,1,1,0,Traditional Values & Gender Roles
-52,1,1,0,0,1,0,0,1,0,Traditional Values & Gender Roles
-53,1,1,0,1,1,0,0,1,0,Corporate & Economic Regulation
-54,1,1,0,1,1,1,1,1,0,Social Welfare & Poverty
-55,1,1,0,1,1,1,1,1,1,Social Welfare & Poverty
-56,1,1,0,1,1,1,1,1,0,Traditional Values & Gender Roles
-57,1,1,0,1,1,0,1,0,0,Social Equality & Civil Rights
-58,1,1,0,1,1,0,0,1,0,Social Equality & Civil Rights
-59,1,1,0,1,1,1,1,1,1,Military & Defense Spending
-60,1,1,0,1,1,0,0,1,0,Social Welfare & Poverty
-61,1,1,0,1,1,1,1,1,1,Social Equality & Civil Rights
-62,1,1,0,1,1,1,0,1,1,Social Equality & Civil Rights
-63,1,1,0,1,1,1,1,1,0,Social Equality & Civil Rights
-64,1,1,1,1,0,0,1,1,1,Traditional Values & Gender Roles
-65,1,1,0,1,1,0,0,1,0,Immigration & Refugees
-66,1,1,0,1,1,0,1,1,0,Social Equality & Civil Rights
-67,1,1,0,1,1,0,0,1,1,Gun Control
-68,1,1,1,1,1,1,1,1,1,Traditional Values & Gender Roles
-69,1,1,0,1,1,1,1,1,0,Social Welfare & Poverty
-70,1,1,0,1,1,0,0,1,0,Political & Ideological Stances
-71,1,1,0,1,1,0,1,1,0,Social Welfare & Poverty
-72,1,1,0,1,1,0,0,1,0,Corporate & Economic Regulation
-73,1,1,0,1,1,1,1,1,1,Social Equality & Civil Rights
-74,1,1,0,1,1,1,1,1,0,Climate & Environment
-75,0,1,0,1,1,0,0,1,0,Social Welfare & Poverty
-76,1,1,0,1,1,1,1,1,0,Traditional Values & Gender Roles
-77,1,1,0,1,1,0,0,1,0,Social Equality & Civil Rights
-78,0,1,0,1,1,0,0,0,0,Social Equality & Civil Rights
-79,1,1,0,1,1,1,1,0,1,Social Welfare & Poverty
-80,1,1,0,1,1,0,1,1,0,Abortion Rights
-81,1,1,0,1,1,0,1,1,0,Traditional Values & Gender Roles
-82,1,1,0,1,1,0,0,0,0,Social Welfare & Poverty
-83,0,1,0,1,1,0,0,0,0,Social Welfare & Poverty
-84,1,1,0,1,1,1,1,1,1,Traditional Values & Gender Roles
-85,1,1,0,1,1,1,0,1,0,Traditional Values & Gender Roles
+0,1,1,0,0,1,0,0,1,0,Political & Ideological Stances
+1,1,1,1,1,0,1,1,1,0,Climate & Environment
+2,1,1,0,1,1,1,1,1,0,Social Welfare & Poverty
+3,1,1,0,1,1,0,0,1,0,Abortion Rights
+4,1,1,0,1,1,1,1,1,1,Social Equality & Civil Rights
+5,1,1,0,1,1,0,0,0,1,Corporate & Economic Regulation
+6,1,1,1,1,1,1,1,1,1,LGBTQ+ Rights
+7,1,1,0,1,0,0,0,1,0,Political & Ideological Stances
+8,1,1,1,0,0,1,1,1,0,Climate & Environment
+9,1,1,1,1,1,1,1,1,1,Social Equality & Civil Rights
+10,1,1,0,1,1,0,0,1,0,Gun Control
+11,1,1,0,1,1,0,1,1,1,Social Equality & Civil Rights
+12,1,1,0,1,1,0,0,1,0,Tax Policy
+13,0,1,0,1,1,0,0,1,0,Social Welfare & Poverty
+14,1,1,0,1,1,0,0,1,0,Military & Defense Spending
+15,1,1,0,1,1,0,1,1,0,Healthcare
+16,0,1,0,1,1,0,0,1,0,Military & Defense Spending
+17,1,1,0,1,1,0,0,1,0,Tax Policy
+18,1,1,0,1,1,1,0,1,0,Climate & Environment
+19,1,1,0,1,0,1,0,1,0,Corporate & Economic Regulation
+20,1,1,1,1,1,1,1,1,0,Immigration & Refugees
+21,1,1,0,1,1,0,0,0,0,Social Welfare & Poverty
+22,1,1,1,1,0,1,0,1,1,LGBTQ+ Rights
+23,1,1,0,1,1,0,0,1,0,Traditional Values & Gender Roles
+24,1,1,0,1,1,0,0,1,0,Political & Ideological Stances
+25,1,1,0,1,1,0,0,1,0,Tax Policy
+26,1,1,0,0,0,0,1,1,0,Climate & Environment
+27,1,1,0,1,1,1,1,1,1,Social Welfare & Poverty
+28,1,1,1,1,0,0,1,1,0,Climate & Environment
+29,1,1,0,1,1,1,1,1,1,LGBTQ+ Rights
+30,1,1,0,1,1,0,0,0,0,Climate & Environment
+31,1,1,1,1,1,0,0,1,0,Corporate & Economic Regulation
+32,1,1,1,1,1,0,0,1,0,Political & Ideological Stances
+33,1,1,1,1,1,0,1,1,1,Tax Policy
+34,1,1,0,1,1,0,1,1,0,Social Welfare & Poverty
+35,1,1,1,1,1,1,1,1,1,Immigration & Refugees
+36,1,1,0,1,1,0,0,1,0,Political & Ideological Stances
+37,1,1,0,1,0,1,1,1,0,Political & Ideological Stances
+38,1,1,0,1,1,0,0,1,0,Social Welfare & Poverty
+39,1,1,0,1,1,0,1,1,0,Social Equality & Civil Rights
+40,1,1,0,1,1,0,0,1,0,Abortion Rights
+41,1,1,0,1,1,0,1,1,1,Social Welfare & Poverty
+42,1,1,0,0,1,0,0,1,0,Political & Ideological Stances
+43,1,1,0,1,1,0,1,1,1,Immigration & Refugees
+44,1,1,1,0,0,0,1,0,1,Social Equality & Civil Rights
+45,1,1,0,1,1,1,0,0,1,Healthcare
+46,1,1,0,1,1,0,1,1,0,Military & Defense Spending
+47,1,1,0,1,1,1,0,1,0,Political & Ideological Stances
+48,1,1,0,1,1,0,1,1,0,Tax Policy
+49,1,1,0,1,1,0,1,1,0,Political & Ideological Stances
+50,1,1,0,1,1,0,0,1,0,Military & Defense Spending
+51,1,1,0,1,1,1,1,1,0,Healthcare
+52,1,1,0,1,1,1,1,1,1,Climate & Environment
+53,1,1,0,1,1,1,1,1,0,Immigration & Refugees
+54,1,1,0,1,1,0,1,1,1,Social Welfare & Poverty
+55,1,1,0,0,1,0,0,1,0,Political & Ideological Stances
+56,1,1,0,1,1,0,1,1,0,Healthcare
+57,0,1,0,1,1,0,0,1,0,Social Welfare & Poverty
+58,1,1,0,0,1,0,0,1,0,Political & Ideological Stances
+59,1,1,0,1,1,0,0,1,0,Social Welfare & Poverty
+60,1,1,0,1,1,1,1,1,0,LGBTQ+ Rights
+61,1,1,0,1,1,1,0,1,0,Corporate & Economic Regulation
+62,1,1,0,1,1,1,0,1,0,Social Equality & Civil Rights
+63,0,1,0,1,1,0,0,0,1,Social Welfare & Poverty
+64,1,1,0,1,1,0,0,0,1,Political & Ideological Stances
+65,1,1,0,0,0,0,0,1,0,Abortion Rights
+66,1,1,1,1,1,0,1,1,0,Political & Ideological Stances
+67,1,1,0,1,1,0,0,1,0,Political & Ideological Stances
+68,1,1,0,1,1,0,1,1,0,Tax Policy
+69,1,1,0,1,1,0,0,1,0,Tax Policy
+70,1,1,0,1,1,0,0,1,0,Military & Defense Spending
+71,1,1,0,0,1,0,0,1,0,Traditional Values & Gender Roles
+72,1,1,0,0,0,1,1,1,0,Traditional Values & Gender Roles
+73,1,1,0,1,1,0,0,1,0,Corporate & Economic Regulation
+74,1,1,0,1,1,1,1,1,0,Social Welfare & Poverty
+75,1,1,0,1,1,1,0,1,1,Social Welfare & Poverty
+76,1,1,0,1,1,0,1,1,0,Traditional Values & Gender Roles
+77,1,1,0,1,1,0,1,1,0,Social Equality & Civil Rights
+78,1,1,0,1,1,1,1,1,0,Social Equality & Civil Rights
+79,1,1,0,1,1,1,1,1,1,Immigration & Refugees
+80,1,1,0,1,1,0,0,0,0,Social Equality & Civil Rights
+81,1,1,0,1,1,1,1,1,0,Social Equality & Civil Rights
+82,1,1,0,1,1,1,1,1,1,Social Equality & Civil Rights
+83,1,1,0,1,1,0,0,1,1,Healthcare
+84,1,1,1,1,0,1,1,1,1,Social Welfare & Poverty
+85,1,1,0,1,1,0,0,1,0,Immigration & Refugees
 86,1,1,0,1,1,0,1,1,0,Social Equality & Civil Rights
-87,1,1,0,1,1,0,1,1,0,Social Welfare & Poverty
-88,1,1,0,1,1,0,1,1,1,Social Welfare & Poverty
-89,1,1,0,1,1,0,0,1,0,Social Welfare & Poverty
-90,1,1,0,1,1,0,1,1,0,Healthcare
-91,1,1,0,1,1,0,0,1,0,Traditional Values & Gender Roles
-92,1,1,1,1,1,0,1,1,1,Traditional Values & Gender Roles
-93,1,1,0,1,1,0,0,1,0,Corporate & Economic Regulation
-94,1,1,0,1,1,0,0,1,0,Corporate & Economic Regulation
-95,1,1,0,1,1,1,1,1,1,Social Welfare & Poverty
-96,1,1,0,1,1,0,0,0,0,Social Welfare & Poverty
-97,0,1,0,1,1,0,0,1,0,Social Welfare & Poverty
-98,1,1,0,1,1,0,1,1,0,Social Welfare & Poverty
-99,1,1,0,1,1,1,1,1,0,Social Equality & Civil Rights
-100,1,1,0,1,1,1,1,0,1,Social Welfare & Poverty
-101,1,1,0,1,1,0,1,1,0,Social Welfare & Poverty
-102,1,1,0,1,1,1,1,1,0,Political & Ideological Stances
-103,1,1,1,1,1,1,1,1,0,Traditional Values & Gender Roles
-104,1,1,0,0,1,0,0,1,0,Political & Ideological Stances
-105,1,1,0,1,1,0,1,1,0,Traditional Values & Gender Roles
+87,1,1,0,1,1,0,0,1,0,Gun Control
+88,1,1,1,1,1,1,1,1,1,Immigration & Refugees
+89,1,1,0,1,1,1,1,0,0,Social Welfare & Poverty
+90,1,1,0,0,1,0,0,1,0,Political & Ideological Stances
+91,1,1,0,1,1,0,0,1,0,Social Welfare & Poverty
+92,1,1,0,1,1,0,0,1,0,Tax Policy
+93,1,1,0,1,1,1,1,1,1,Social Welfare & Poverty
+94,1,1,0,1,1,0,1,1,0,Climate & Environment
+95,0,1,0,1,1,0,0,1,0,Social Welfare & Poverty
+96,1,1,0,1,1,1,1,1,0,Social Welfare & Poverty
+97,1,1,0,1,1,0,0,1,0,Social Welfare & Poverty
+98,0,1,0,1,1,0,0,0,0,Social Welfare & Poverty
+99,1,1,0,1,1,1,0,1,1,Social Welfare & Poverty
+100,1,1,0,1,1,0,0,1,1,Healthcare
+101,1,1,0,1,1,0,0,1,0,Traditional Values & Gender Roles
+102,1,1,0,1,1,1,0,0,0,Social Welfare & Poverty
+103,0,1,0,1,1,0,1,1,0,Social Welfare & Poverty
+104,1,1,0,1,1,1,1,1,0,Immigration & Refugees
+105,1,1,0,1,1,1,1,1,0,Social Welfare & Poverty
+106,1,1,0,1,1,0,1,1,0,Social Welfare & Poverty
+107,1,1,0,1,1,0,0,1,0,Social Welfare & Poverty
+108,1,1,0,1,1,0,1,1,0,Social Equality & Civil Rights
+109,1,1,0,1,1,1,0,1,0,Political & Ideological Stances
+110,1,1,0,1,1,0,0,1,0,Healthcare
+111,1,1,0,1,0,0,0,1,0,Abortion Rights
+112,1,1,1,0,1,0,1,1,1,Social Equality & Civil Rights
+113,1,1,0,1,1,0,0,1,0,Tax Policy
+114,1,1,0,1,1,0,0,1,0,Climate & Environment
+115,1,1,0,1,1,1,0,0,1,Social Welfare & Poverty
+116,1,1,0,1,1,0,0,1,1,Social Welfare & Poverty
+117,0,1,0,1,1,0,0,1,0,Social Welfare & Poverty
+118,1,1,0,1,1,0,1,1,0,Social Welfare & Poverty
+119,1,1,0,1,1,1,0,1,0,Social Equality & Civil Rights
+120,1,1,0,1,1,0,1,0,0,Social Welfare & Poverty
+121,1,1,0,1,0,1,1,1,1,Social Welfare & Poverty
+122,1,1,0,1,1,1,0,1,0,Political & Ideological Stances
+123,1,1,1,0,1,1,1,1,0,Healthcare
+124,1,1,0,0,1,0,0,1,0,Political & Ideological Stances
+125,1,1,0,1,1,0,1,1,0,Political & Ideological Stances

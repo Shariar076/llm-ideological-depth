@@ -1,15 +1,15 @@
 device=2
 path_dir=./data_for_STA/data
-sae_id=layer_20/width_16k/canonical 
+sae_id=layer_20/width_131k/canonical 
 data_name=politically-liberal
 model_name=gemma-2-9b-it
-mode=personality_steering
+mode=personality_steering_131K
 select_type=act_and_fre_trim
 
 hook_module=resid_canonical
 layers=(20)
 trims=(0.35)
-suffix=16k
+suffix=131k
 layer_num=${#layers[@]}
 
 for ((i=0; i<${layer_num}; i++)); do

@@ -184,9 +184,9 @@ if __name__ == "__main__":
         for mymulti in args.mymultis:
             print(f"Layer {layer} multilier: {mymulti}")
             if args.model_name == "llama-3.1-8b-it":
-                precision = "32k"
+                precision = "131k"
             elif args.model_name == "gemma-2-9b" or args.model_name == "gemma-2-9b-it":
-                precision = "16k"
+                precision = "131k"
             else:
                 raise ValueError("Precision not supported")
                 

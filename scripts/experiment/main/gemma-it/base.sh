@@ -1,4 +1,4 @@
-device=1
+device=2
 mode=personality_prompt
 
 model_name=gemma-2-9b-it
