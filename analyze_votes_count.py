@@ -18,8 +18,8 @@ multipliers = [0.0, -0.25, -0.5, -1.0, -1.5, -2.0, -2.5, -3.0, -3.5, -4.0, -5.0]
 # multipliers = [0.0, 0.25, 0.5, 1.0, 1.5, 2.0, 2.5, 3.0, 3.5, 4.0, 5.0] 
 
 base_data_path = "results/politically-liberal/{model}_results_personality_prompt/main/base/eval_politically-liberal/{model}_base_{prompt_type}_{arg_type}.result.json"
-caa_data_path = "results/politically-liberal/{model}_results_personality_steering_131K/main/caa/eval_4_politically-liberal/{model}_steer_politically-liberal_caa_{arg_type}_layer{layer}_multiplier={multiplier}.result.json"
-sta_data_path = "results/politically-liberal/{model}_results_personality_steering_131K/main/sta_act_and_fre_trim/eval_4_politically-liberal/trim0.35/{model}_steer_politically-liberal_{arg_type}_sae_caa_layer{layer}_act_and_fre_trim_trim0.35_mymulti={multiplier}.result.json"
+caa_data_path = "results/politically-liberal/{model}_results_personality_steering_131K/main/caa/eval_politically-liberal/{model}_steer_politically-liberal_caa_{arg_type}_layer{layer}_multiplier={multiplier}.result.json"
+sta_data_path = "results/politically-liberal/{model}_results_personality_steering_131K/main/sta_act_and_fre_trim/eval_pt_politically-liberal/trim0.35/{model}_steer_politically-liberal_{arg_type}_sae_caa_layer{layer}_act_and_fre_trim_trim0.35_mymulti={multiplier}.result.json"
 
 gt_data = json.load(open(gt_data_path, "r"))
 

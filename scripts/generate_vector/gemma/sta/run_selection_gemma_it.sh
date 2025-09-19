@@ -28,8 +28,8 @@ for ((i=0; i<${sae_num}; i++)); do
         exit 1
     fi
 
-    output_file=${data_dir}/${data_name}/sae_caa_vector_it/${model_name}_${mode}/${select_type}/feature_${select_type}_${model_name}_layer${layer}_${suffix}_${hook_module}.json
-    log_path=./temp/${data_name}/sae_caa_vector_it/${model_name}_${mode}/${select_type}/logs/feature_${select_type}_${model_name}_layer${layer}_${suffix}_${hook_module}.log
+    output_file=${data_dir}/${data_name}/sae_caa_vector_pt/${model_name}_${mode}/${select_type}/feature_${select_type}_${model_name}_layer${layer}_${suffix}_${hook_module}.json
+    log_path=./temp/${data_name}/sae_caa_vector_pt/${model_name}_${mode}/${select_type}/logs/feature_${select_type}_${model_name}_layer${layer}_${suffix}_${hook_module}.log
 
     # Check if the directory exists, if not, create it
     output_dir=$(dirname ${output_file})

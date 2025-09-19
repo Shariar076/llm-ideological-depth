@@ -11,7 +11,7 @@ trims=(0.35)
 model_name=gemma-2-9b-it
 model_name_or_path=google/gemma-2-9b-it # replace ./model/gemma-2-9b-it with your own model path
 data_path=./data_for_STA/data
-vector_root=${data_path}/${data_name}/sae_caa_vector_it/${model_name}_${mode}/act_and_fre_trim/steering_vector
+vector_root=${data_path}/${data_name}/sae_caa_vector_pt/${model_name}_${mode}/act_and_fre_trim/steering_vector
 caa_vector_root=${data_path}/${data_name}/caa_vector_it/${model_name}_${mode}
 hook_module=resid_canonical
 max_new_tokens=(50)
@@ -24,8 +24,8 @@ for eval_data_name in politically-liberal; do
         layer=${layers[$i]}
         for ((j=0; j<${trim_num}; j++)); do
             trim=${trims[$j]}
-            output_file=./results/${data_name}/${model_name}_results_${mode}/main/sta_${vector_type}/eval_5_${eval_data_name}/trim${trim}/${model_name}_steer_${eval_data_name}_${arg_type}_sae_caa_layer${layer}_${vector_type}_trim${trim}.result.json
-            log_path=./results/${data_name}/${model_name}_results_${mode}/logs/main/sta_${vector_type}/eval_5_${eval_data_name}/trim${trim}/${model_name}_steer_${eval_data_name}_${arg_type}_sae_caa_layer${layer}_${vector_type}_trim${trim}.result.log
+            output_file=./results/${data_name}/${model_name}_results_${mode}/main/sta_${vector_type}/eval_pt_${eval_data_name}/trim${trim}/${model_name}_steer_${eval_data_name}_${arg_type}_sae_caa_layer${layer}_${vector_type}_trim${trim}.result.json
+            log_path=./results/${data_name}/${model_name}_results_${mode}/logs/main/sta_${vector_type}/eval_pt_${eval_data_name}/trim${trim}/${model_name}_steer_${eval_data_name}_${arg_type}_sae_caa_layer${layer}_${vector_type}_trim${trim}.result.log
 
             # Check if the directory exists, if not, create it
             log_dir=$(dirname ${log_path})

@@ -33,7 +33,7 @@ def act_and_fre(path_dir,
     #     raise ValueError("Precision not supported")
     if model_name in ["gemma-2-9b-it", "llama-3.1-8b-it"]:
         caa_vector_name = "caa_vector_it"
-        sae_caa_vector_name = f"sae_caa_vector_it"
+        sae_caa_vector_name = f"sae_caa_vector_pt"
     elif args.model_name == "gemma-2-9b":
         caa_vector_name = "caa_vector_pt"
         sae_caa_vector_name = "sae_caa_vector_pt"
@@ -63,7 +63,7 @@ def act_and_fre(path_dir,
                 # sae, _ = load_gemma_sae(sae_path, device="cpu")
                 # sae, _ = load_gemma_sae(args.sae_path, device="cpu")
                 sae, cfg_metadata, sparsity = SAE.from_pretrained(
-                    release="gemma-scope-9b-it-res-canonical",
+                    release="gemma-scope-9b-pt-res-canonical",
                     sae_id=sae_id,
                     device="cuda",
                 )

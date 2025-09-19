@@ -127,13 +127,13 @@ layer = 20
 
 
 
-llm_feat_data_df = pd.read_csv(f"data_for_STA/data/politically-liberal/test_data_sae_features_{sae_name}.csv")#.dropna()
+llm_feat_data_df = pd.read_csv(f"data_for_STA/data/politically-liberal/test_data_sae_features_{sae_name}_pt.csv")#.dropna()
 llm_feat_data_df = llm_feat_data_df[(llm_feat_data_df['train_act_norm']>0) | ((llm_feat_data_df['train_freq_norm']>0))]
 
-feats_scores = json.load(open(f"../saes-are-good-for-steering/data/cache/{model_name}-131k/output_scores.json", "r"))
+# feats_scores = json.load(open(f"../saes-are-good-for-steering/data/cache/{model_name}-131k/output_scores.json", "r"))
 
 
-llm_feat_data_df['output_score'] = llm_feat_data_df['feat_id'].apply(lambda x: feats_scores[f'{layer}_{x}'])
+# llm_feat_data_df['output_score'] = llm_feat_data_df['feat_id'].apply(lambda x: feats_scores[f'{layer}_{x}'])
 
 categories = ['Political & Ideological Stances', 'Tax Policy', 'Healthcare', 'Abortion Rights', 'Social Equality & Civil Rights', 'LGBTQ+ Rights', 'Social Welfare & Poverty', 'Corporate & Economic Regulation', 'Climate & Environment', 'Immigration & Refugees', 'Military & Defense Spending', 'Gun Control', 'Traditional Values & Gender Roles', 'None']
 
@@ -147,4 +147,4 @@ for statement, group in tqdm(llm_feat_data_df.groupby('statement'), total=126):
     out_data[statement]= dict(category=category, coherence=coherence, features = list(group['feat_desc'].unique()))
     # break
 
-json.dump(out_data, open(f"data_for_STA/data/politically-liberal/test_data_sae_features_{sae_name}.json", "w"), indent=4)
+json.dump(out_data, open(f"data_for_STA/data/politically-liberal/test_data_sae_features_{sae_name}_pt.json", "w"), indent=4)

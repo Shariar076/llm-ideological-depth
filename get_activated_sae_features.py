@@ -19,7 +19,7 @@ device="cuda"
 
 # model = HookedTransformer.from_pretrained("gemma-2-9b-it", device=device,  dtype=torch.bfloat16)
 # sae, cfg_metadata, sparsity = SAE.from_pretrained(
-#     release="gemma-scope-9b-it-res-canonical",  # see other options in sae_lens/pretrained_saes.yaml
+#     release="gemma-scope-9b-pt-res-canonical",  # see other options in sae_lens/pretrained_saes.yaml
 #     sae_id="layer_20/width_131k/canonical",  # won't always be a hook point
 #     device=device,
 # )
@@ -32,7 +32,7 @@ test_statements = json.load(open("data_for_STA/data/politically-liberal/test_new
 # sae_name = "llamascope-res-131k"
 
 layer = 20
-model_name ='gemma-2-9b-it'
+model_name ='gemma-2-9b'
 sae_name = "gemmascope-res-131k"
 
 def get_sae_features(statement):
@@ -74,18 +74,20 @@ def label_sae_features(feature_id):
 
 # all_data_df = pd.DataFrame(all_data)
 
-# all_data_df.to_csv(f"data_for_STA/data/politically-liberal/test_data_sae_features_{layer}-{sae_name}_manual.csv", index=False)
+# all_data_df.to_csv(f"data_for_STA/data/politically-liberal/test_data_sae_features_{layer}-{sae_name}_pt_manual.csv", index=False)
 
 # ----------------------------------------------------------------------------------------------------------------------------------- #
 
-all_data_df = pd.read_csv(f"data_for_STA/data/politically-liberal/test_data_sae_features_{layer}-{sae_name}_manual.csv")
+all_data_df = pd.read_csv(f"data_for_STA/data/politically-liberal/test_data_sae_features_{layer}-{sae_name}_pt_manual.csv")
 
-print("Total unique features:", len(all_data_df.feat_id.unique()))
+all_data_df = all_data_df[(all_data_df['train_act_norm']>0) | ((all_data_df['train_freq_norm']>0))]
+
+print("Total unique features:", len(all_data_df.feat_id.unique()), "Data size:", len(all_data_df))
 # tqdm.pandas()
 # all_data_df['feat_desc'] = all_data_df['feat_id'].progress_apply(label_sae_features)
 
-if os.path.exists(f"temp/{layer}-{sae_name}.json"):
-    feat_desc_cache = json.load(open(f"temp/{layer}-{sae_name}.json", "r"))
+if os.path.exists(f"temp/{layer}-{sae_name}-pt.json"):
+    feat_desc_cache = json.load(open(f"temp/{layer}-{sae_name}-pt.json", "r"))
 else:
     feat_desc_cache = {}
 
@@ -100,8 +102,11 @@ for index, row in tqdm(all_data_df.iterrows(), total=len(all_data_df)):
         feat_desc_cache[str(feature_id)]=str(feat_desc)
     else:
         row['feat_desc']= feat_desc_cache[str(feature_id)]
+    # print(feature_id, row['feat_desc'])
     complete_data.append(row)
-    if (index > 0 and index%1000==0) or index == len(all_data_df)-1:
-        json.dump(feat_desc_cache, open(f"temp/{layer}-{sae_name}.json", "w"), indent=4)
-        pd.DataFrame(complete_data).to_csv(f"data_for_STA/data/politically-liberal/test_data_sae_features_{layer}-{sae_name}.csv", index=False)
+    if (index > 0 and index%100==0) or index >= len(all_data_df)-1:
+        json.dump(feat_desc_cache, open(f"temp/{layer}-{sae_name}-pt.json", "w"), indent=4)
+        pd.DataFrame(complete_data).to_csv(f"data_for_STA/data/politically-liberal/test_data_sae_features_{layer}-{sae_name}_pt.csv", index=False)
         
+json.dump(feat_desc_cache, open(f"temp/{layer}-{sae_name}-pt.json", "w"), indent=4)
+pd.DataFrame(complete_data).to_csv(f"data_for_STA/data/politically-liberal/test_data_sae_features_{layer}-{sae_name}_pt.csv", index=False)

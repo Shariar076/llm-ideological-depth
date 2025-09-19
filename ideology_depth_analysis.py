@@ -14,8 +14,9 @@ warnings.filterwarnings('ignore')
 
 plt.rcParams.update({'font.size': 14, "figure.figsize": (10,6)})
 
-MODEL_1 = "gemma-2-9b-it"
-MODEL_2 = "llama-3.1-8b-it"
+MODEL_1 = "gemma-2-9b-it_original"
+# MODEL_2 = "llama-3.1-8b-it"
+MODEL_2 = "gemma-2-9b-it_ablated"
 
 def plot_response_heatmap(df, model):
     # response_cols = [col for col in df.columns if col not in ['category', 'q_id']]
@@ -106,7 +107,7 @@ def plot_null_vote_tendency_by_category(df_list, models):
     for container in ax.containers:
         heights = [patch.get_height() for patch in container.patches]
         labels = [f'{h:.2f}' if h > 0 else '' for h in heights]
-        ax.bar_label(container, labels=labels, fontsize=11)
+        ax.bar_label(container, labels=labels, fontsize=11, rotation=45)
         
     plt.title('Null response rate by Topic - Comparison')
     plt.xlabel('Categories')
@@ -114,8 +115,8 @@ def plot_null_vote_tendency_by_category(df_list, models):
     plt.ylim(0,0.5)
     plt.legend(ncol=2)
     plt.tight_layout()
-    plt.savefig("analysis/candidate_null_vote_tendency_comparison.pdf")
-    plt.savefig("analysis/candidate_null_vote_tendency_comparison.png")
+    plt.savefig("analysis/candidate_null_vote_tendency_comparison_ablated.pdf")
+    plt.savefig("analysis/candidate_null_vote_tendency_comparison_ablated.png")
     plt.clf()
 
 def plot_topic_coherence_radar(topic_scores_list, labels, suffix):
@@ -336,10 +337,10 @@ df_2 = pd.read_csv(f"analysis/{MODEL_2}_labeled_votes.csv")
 # df_2 = df_2.fillna(0.5)
 # # print(df)
 
-plot_response_heatmap(df_1, MODEL_1)
-plot_response_heatmap(df_2, MODEL_2)
+# plot_response_heatmap(df_1, MODEL_1)
+# plot_response_heatmap(df_2, MODEL_2)
 
-plot_conservative_tendency_by_category([df_1, df_2], [MODEL_1, MODEL_2])
+# plot_conservative_tendency_by_category([df_1, df_2], [MODEL_1, MODEL_2])
 
 plot_null_vote_tendency_by_category([df_1, df_2], [MODEL_1, MODEL_2])
 
@@ -352,9 +353,9 @@ plot_null_vote_tendency_by_category([df_1, df_2], [MODEL_1, MODEL_2])
 # topic_scores_1 = calculate_topic_scores(df_1, "role_liberal")
 # topic_scores_2 = calculate_topic_scores(df_2, "role_liberal")
 # plot_topic_coherence_radar([topic_scores_1, topic_scores_2], [MODEL_1, MODEL_2], "role_liberal")
-topic_scores_1 = calculate_topic_scores(df_1, "role_conservative")
-topic_scores_2 = calculate_topic_scores(df_2, "role_conservative")
-plot_topic_coherence_radar([topic_scores_1, topic_scores_2], [MODEL_1, MODEL_2], "role_conservative")
+# topic_scores_1 = calculate_topic_scores(df_1, "role_conservative")
+# topic_scores_2 = calculate_topic_scores(df_2, "role_conservative")
+# plot_topic_coherence_radar([topic_scores_1, topic_scores_2], [MODEL_1, MODEL_2], "role_conservative")
 
 # intra_consistency_1 = calculate_intra_condition_consistency(df_1)
 # intra_consistency_2 = calculate_intra_condition_consistency(df_2)
@@ -366,13 +367,13 @@ plot_topic_coherence_radar([topic_scores_1, topic_scores_2], [MODEL_1, MODEL_2],
 # # plot_ideological_clustering(df_2, MODEL_2)
 
 
-direction = "conservative"
-df_1 = pd.read_csv(f"analysis/{MODEL_1}_labeled_{direction}_steering_131K_votes.csv")
-df_2 = pd.read_csv(f"analysis/{MODEL_2}_labeled_{direction}_steering_131K_votes.csv")
+# direction = "conservative"
+# df_1 = pd.read_csv(f"analysis/{MODEL_1}_labeled_{direction}_steering_131K_votes.csv")
+# df_2 = pd.read_csv(f"analysis/{MODEL_2}_labeled_{direction}_steering_131K_votes.csv")
 
-topic_scores_1 = calculate_topic_scores(df_1, f"steering_{direction}_caa")
-topic_scores_2 = calculate_topic_scores(df_2, f"steering_{direction}_caa")
-plot_topic_coherence_radar([topic_scores_1, topic_scores_2], [MODEL_1, MODEL_2], f"steering_131K_{direction}_caa")
-topic_scores_1 = calculate_topic_scores(df_1, f"steering_{direction}_sta")
-topic_scores_2 = calculate_topic_scores(df_2, f"steering_{direction}_sta")
-plot_topic_coherence_radar([topic_scores_1, topic_scores_2], [MODEL_1, MODEL_2], f"steering_131K_{direction}_sta")
+# topic_scores_1 = calculate_topic_scores(df_1, f"steering_{direction}_caa")
+# topic_scores_2 = calculate_topic_scores(df_2, f"steering_{direction}_caa")
+# plot_topic_coherence_radar([topic_scores_1, topic_scores_2], [MODEL_1, MODEL_2], f"steering_131K_{direction}_caa")
+# topic_scores_1 = calculate_topic_scores(df_1, f"steering_{direction}_sta")
+# topic_scores_2 = calculate_topic_scores(df_2, f"steering_{direction}_sta")
+# plot_topic_coherence_radar([topic_scores_1, topic_scores_2], [MODEL_1, MODEL_2], f"steering_131K_{direction}_sta")

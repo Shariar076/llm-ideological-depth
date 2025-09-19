@@ -113,6 +113,7 @@ if __name__ == "__main__":
         # sae, sparsity = load_gemma_2_sae(args.sae_path, device=device)
         sae, cfg_metadata, sparsity = SAE.from_pretrained(
             release="gemma-scope-9b-it-res-canonical",
+            # release="gemma-scope-9b-pt-res-canonical",
             sae_id=args.sae_id,
             device=device,
         )

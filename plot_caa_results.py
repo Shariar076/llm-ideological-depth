@@ -164,7 +164,7 @@ def plot_ab_data_per_layer(
         )
     # use % formatting for y axis
     plt.gca().yaxis.set_major_formatter(plt.FuncFormatter(lambda x, _: f"{x:.0%}"))
-    plt.title(f"politically liberal CAA, {MODEL_NAME.upper()}")
+    plt.title(f"Per layer CAA Effect on politically liberal: {MODEL_NAME}")
     plt.xlabel("Layer")
     plt.ylabel("Probability of a Liberal Answer")
     plt.xticks(ticks=sorted(layers)[::2], labels=sorted(layers)[::2])

@@ -18,6 +18,7 @@ for ((i=0; i<${layer_num}; i++)); do
     echo "Layer: $layer, sae_path: $sae_path"
     for ((j=0; j<${trims_num}; j++)); do
         trim=${trims[$j]}
+        # log_path=./temp/sae_caa_vector_pt/${model_name}_${mode}/act_and_fre_trim/logs/${model_name}_${suffix}_steering_vector_sae_layer${layer}_act_and_fre_trim${trim}.log
         log_path=./temp/sae_caa_vector_it/${model_name}_${mode}/act_and_fre_trim/logs/${model_name}_${suffix}_steering_vector_sae_layer${layer}_act_and_fre_trim${trim}.log
         log_dir=$(dirname ${log_path})
         if [ ! -d "${log_dir}" ]; then

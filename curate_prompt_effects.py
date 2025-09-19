@@ -25,6 +25,7 @@ def count_votes(data):
         elif con_vote in llm_vote and lib_vote not in llm_vote:
             con_votes+=1
         else:
+            print(">>>",llm_vote)
             null_votes+=1
         # else:
         #     print(">>>>", non_lib_vote, llm_vote)
@@ -65,7 +66,9 @@ def get_ques_topic(q_idx):
 # used_prompts = ["none", "liberal", "conservative"]
 # arg_types = ["none", "matching", "not_matching"]
 
-models = ["gemma-2-9b-it", "llama-3.1-8b-it"]
+models = ["gemma-2-9b-it", 
+        #   "llama-3.1-8b-it"
+          ]
 roleplay_conditions = {
     "original": "none",
     "liberal": "liberal",
@@ -94,7 +97,7 @@ for model_idx, model in enumerate(models):
             prompt = roleplay_conditions[role]
             arg = argument_conditions[argument]
 
-            data_path = f"results/politically-liberal/{model}_results_personality_prompt/main/base/eval_politically-liberal/{model}_base_{prompt}_{arg}.result.json"
+            data_path = f"results/politically-liberal/{model}_original_results_personality_prompt/main/base/eval_politically-liberal/{model}_base_{prompt}_{arg}.result.json"
             data = json.load(open(data_path, "r"))
             print(f"role_{role}", f"arg_{arg}", "Total lib_votes, con_votes, null_votes:", count_votes(data))
             row_data = []
@@ -127,11 +130,11 @@ for model_idx, model in enumerate(models):
     
     df = pd.DataFrame(dataset, index=columns).T.rename_axis('q_id')
     df["category"]=pd.Series(categories)
-    df.to_csv(f"analysis/{model}_labeled_votes.csv")
+    df.to_csv(f"analysis/{model}_original_labeled_votes.csv")
     
     vote_df = pd.DataFrame(votes_dataset, index=columns).T.rename_axis('q_id')
     vote_df["category"]=pd.Series(categories)
-    vote_df.to_csv(f"analysis/{model}_votes.csv")
+    vote_df.to_csv(f"analysis/{model}_original_votes.csv")
     
 
 full_df = pd.DataFrame(json_data)

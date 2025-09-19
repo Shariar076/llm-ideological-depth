@@ -1,12 +1,12 @@
 rm -rf *__pycache__
 
-bash ./scripts/experiment/main/gemma-it/caa.sh none
-bash ./scripts/experiment/main/gemma-it/caa.sh matching
-bash ./scripts/experiment/main/gemma-it/caa.sh not_matching
+# bash ./scripts/experiment/main/gemma-it/caa.sh none
+# bash ./scripts/experiment/main/gemma-it/caa.sh matching
+# bash ./scripts/experiment/main/gemma-it/caa.sh not_matching
 
-bash ./scripts/experiment/main/llama-it/caa.sh none
-bash ./scripts/experiment/main/llama-it/caa.sh matching
-bash ./scripts/experiment/main/llama-it/caa.sh not_matching
+# bash ./scripts/experiment/main/llama-it/caa.sh none
+# bash ./scripts/experiment/main/llama-it/caa.sh matching
+# bash ./scripts/experiment/main/llama-it/caa.sh not_matching
 
 bash ./scripts/experiment/main/gemma-it/STA.sh none
 bash ./scripts/experiment/main/gemma-it/STA.sh matching
